@@ -11,9 +11,10 @@
 @layer base {
     :root {
     --primary: #057584;
-    --secondary: #cd5;
+    --secondary: #9e9f7f;
+    --grey: #efefef;
+    --head-primary: #313c4c;
     --gap: 10rem;
-    --grey: #fafafa;
     --duration: 30s;
     --duration1: 120s;
     --marquee-start: 0;
@@ -77,3 +78,63 @@ html, body {
     gap: var(--gap);
     animation: marquee var(--duration1) linear infinite;
   }
+
+  /* Swiper */
+  .swiper-slide.swiper-slide-active img {
+    border: solid var(--primary) 5px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: transparent !important;
+    background-image: none !important;
+    display: inline-flex;
+    height: 10px;
+    margin: 7px 15px;
+    opacity: 1 !important;
+    padding: 0;
+    position: relative;
+    width: 10px;
+    z-index: 1;
+    transition: 375ms cubic-bezier(0.7, 0, 0.3, 1);
+    cursor: pointer;
+  }
+
+  .swiper-pagination-bullet:hover {
+    border-radius: 0;
+  }
+
+  .swiper-pagination-bullet::before {
+    background: black;
+    content: "";
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    border: solid #000000 1px;
+    transform: scale(1) translate(-50%, -50%);
+    transition: 375ms cubic-bezier(0.7, 0, 0.3, 1);
+  }
+
+  .swiper-pagination-bullet:hover::before {
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    left: 5px;
+    background: transparent;
+  }
+
+.swiper-pagination-bullet-active::before {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+}
+
+.swiper .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    bottom: 15% !important;
+}

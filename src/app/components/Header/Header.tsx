@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center px-[3%] py-[0.5%] fixed top-0 left-0 w-full">
+    <header className="flex justify-between items-center px-[5%] py-[0.5%] fixed top-0 left-0 w-full">
         <div className="flex items-center gap-[15%]">
             <div><h2 className="text-5xl font-bold text-primary">TRI</h2></div>
             <nav className="flex gap-14 font-nuno text-white text-[15px]">
