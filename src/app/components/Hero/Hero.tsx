@@ -26,7 +26,7 @@ export default function Hero() {
                 <Link href='' className="rounded-[50px] border-[1px] font-nuno py-5 px-7 inline-block bg-transparent shadow-[0_0_0_0_#ffffff_inset] duration-300 ease-in-out transition-all hover:text-primary hover:shadow-[0_0_0_4em_#ffffff_inset,0_5px_15px_rgba(0,0,0,0.1)] hover:-translate-y-[3px]">Get Started</Link>
             </div>
             <div className="mt-[10%] font-nuno flex items-center text-white relative text-xl before:left-0 before:top-1/2 before:w-full before:h-[1px] before:bg-[#cccccc] after:left-0 after:top-1/2 after:w-full after:h-[1px] after:bg-[#cccccc] w-full">
-                <span className="mx-[0.5em] flex-[0_0_auto] font-medium font-spartan opacity-60 tracking-wider">You'll be in good company</span>
+                <span className="mx-[0.5em] flex-[0_0_auto] font-medium font-spartan opacity-60 tracking-wider">You&apos;ll be in good company</span>
             </div>
             <div className="flex justify-between text-8xl mt-[5%] mb-[10%]">
                 <SiIbm className="opacity-10 text-white"/> 

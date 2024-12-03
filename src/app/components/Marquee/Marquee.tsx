@@ -55,7 +55,7 @@ export default function Marquee() {
                         <div className='text-black hover:text-primary duration-300 delay-0 ease-in transition-colors flex gap-2 items-center font-bold'>
                             <FaAward className='text-7xl'/>
                             <div>
-                                <p className='text-xl'>African Achievers' Legacy Award</p>
+                                <p className='text-xl'>African Achievers&apos; Legacy Award</p>
                                 <p className=''>(2022)</p>
                             </div>
                         </div>
@@ -120,7 +120,7 @@ export default function Marquee() {
                         <div className='text-black hover:text-primary duration-300 delay-0 ease-in transition-colors flex gap-2 items-center font-bold'>
                             <FaAward className='text-7xl'/>
                             <div>
-                                <p className='text-xl'>African Achievers' Legacy Award</p>
+                                <p className='text-xl'>African Achievers&apos; Legacy Award</p>
                                 <p className=''>(2022)</p>
                             </div>
                         </div>
