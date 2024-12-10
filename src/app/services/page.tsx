@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { IoIosArrowDropright } from "react-icons/io";
 import Card from "../components/Services/Card";
+import ServicesData from "../../servicesData.json";
 
 export default function Services() {
   return (
@@ -34,36 +35,23 @@ export default function Services() {
               <span className="opacity-40 block">CEO of Tritek</span>
             </p>
           </article>
-          <Card
-            linkToService=""
-            imageSrc="/assets/icons/consult.svg"
-            cardText="Strategic Consulting Services"
-          />
-          <Card
-            linkToService=""
-            imageSrc="/assets/icons/company.svg"
-            cardText="Company & Business Setup"
-          />
-          <Card
-            linkToService=""
-            imageSrc="/assets/icons/investment.svg"
-            cardText="Investment Management"
-          />
-          <Card
-            linkToService=""
-            imageSrc="/assets/icons/acquisition.svg"
-            cardText="Acquisitions Finance Consulting"
-          />
-          <Card
-            linkToService=""
-            imageSrc="/assets/icons/management.svg"
-            cardText="Company Management"
-          />
-          <Card
-            linkToService=""
-            imageSrc="/assets/icons/privatePlacement.svg"
-            cardText="Private Placement Consulting"
-          />
+          {ServicesData.map(
+            (
+              item: {
+                linkToService: string;
+                imageSrc: string;
+                cardText: string;
+              },
+              index: number
+            ) => (
+              <Card
+                key={index}
+                linkToService={item.linkToService}
+                imageSrc={item.imageSrc}
+                cardText={item.cardText}
+              />
+            )
+          )}
         </section>
       </section>
     </main>
