@@ -9,8 +9,8 @@ export default function HomeAbout() {
             <h2 className="font-spartan text-lg tracking-wider font-medium text-secondary mb-[5%]">WHY TRITEK</h2>
             <h3 className="font-dm text-5xl w-5/6 text-head-primary">Empowering Careers in Technology</h3>
             <p className="text-2xl italic font-ibm my-[5%] text-head-primary">We are proud to have helped over 5,000 individuals transition seamlessly into the ever-evolving world of technology. </p>
-            <p className="font-nuno">Our proven track record highlights our ability to guide aspiring tech professionals through every step of their career path. From foundational learning to advanced expertise, we ensure our approach is tailored to each individual's unique goals and aspirations.</p>
-            <p className="font-nuno mt-[1.5%]">We remain committed to fostering a culture of growth and innovation, paving the way for fulfilling and rewarding careers in technology. With Tritek, your success is not just a goal—it's a guarantee backed by experience and dedication.</p>
+            <p className="font-nuno">Our proven track record highlights our ability to guide aspiring tech professionals through every step of their career path. From foundational learning to advanced expertise, we ensure our approach is tailored to each individual&apos;s unique goals and aspirations.</p>
+            <p className="font-nuno mt-[1.5%]">We remain committed to fostering a culture of growth and innovation, paving the way for fulfilling and rewarding careers in technology. With Tritek, your success is not just a goal — it&apos;s a guarantee backed by experience and dedication.</p>
             <div className="h-[1px] bg-[#ccc] my-[5%]"></div>
             <div className="flex justify-between text-secondary">
                 <div className="font-spartan text-center flex flex-col justify-center items-center">
