@@ -13,7 +13,7 @@ export default function Card({
   cardText: string;
 }) {
   return (
-    <section className="max-w-[28rem] border h-fit p-10 text-center flex items-center flex-col gap-20 bg-white">
+    <section className="md:max-w-[28rem] max-w-[21rem] border h-fit p-10 text-center flex items-center flex-col gap-20 bg-white">
       <Link href={linkToService} className="flex flex-col items-center gap-3">
         <div>
           <Image width={100} height={1} src={imageSrc} alt={cardText} />
