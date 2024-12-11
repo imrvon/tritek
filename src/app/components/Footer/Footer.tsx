@@ -1,6 +1,7 @@
-import { PiInstagramLogoFill, PiTiktokLogoFill, PiTwitterLogoFill } from "react-icons/pi";
-import { BsThreadsFill } from "react-icons/bs";
+import Image from 'next/image';
 import Link from 'next/link'
+import { FaMobileAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 
 export default function Footer() {
@@ -8,14 +9,51 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative z-10">
-        <div className="flex justify-center gap-4">
-            <Link href='' className='text-[#bdbdbd] text-3xl hover:-translate-y-2 hover:text-primary delay-0 duration-150 transition-all ease-in'><PiInstagramLogoFill /></Link>
-            <Link href='' className='text-[#bdbdbd] text-3xl hover:-translate-y-2 hover:text-primary delay-0 duration-150 transition-all ease-in'><PiTiktokLogoFill /></Link>
-            <Link href='' className='text-[#bdbdbd] text-3xl hover:-translate-y-2 hover:text-primary delay-0 duration-150 transition-all ease-in'><PiTwitterLogoFill /></Link>
-            <Link href='' className='text-[#bdbdbd] text-3xl hover:-translate-y-2 hover:text-primary delay-0 duration-150 transition-all ease-in'><BsThreadsFill /></Link>
+    <footer className="bg-[#eaeae8] flex flex-wrap px-[5%] py-[7%]">
+        <div className='w-1/4'>
+            <Link href='/' className=""><Image src='/assets/img/logo-black.png' width={2710} height={1003} alt="logo" className='w-1/2 mb-[15%]' /></Link>
+            <div className='flex items-center gap-1 mb-4'>
+                <FaMobileAlt />
+                <Link href='tel:447572277858' className='text-xs font-nuno'>+447572277858</Link>
+            </div>
+            <div className='flex items-center gap-1 mb-4'>
+                <FaEnvelope />
+                <Link href='mailto:info@tritekconsulting.co.uk' className='text-xs font-nuno'>info@tritekconsulting.co.uk</Link>
+            </div>
+            <div className='flex items-center gap-1'>
+                <FaMapMarkerAlt />
+                <p className='text-xs font-nuno'>Enfield, Greater London, UK</p>
+            </div>
         </div>
-        <p className="text-center py-[5%] lg:py-[2.5%] text-white opacity-85 mx-auto px-[2%]">GFL Real Estate {currentYear}. All Rights Reserved.</p>
+        <div className='w-1/4'>
+            <h4 className='mb-4 font-spartan font-semibold text-xl'>Services</h4>
+            <div className='flex flex-col gap-3 text-sm font-nuno'>
+                <Link href=''>Business Planning</Link>
+                <Link href=''>Feasibility Study</Link>
+                <Link href=''>Startup Funding</Link>
+                <Link href=''>Business Plan Review</Link>
+                <Link href=''>Investor Presentation</Link>
+            </div>
+        </div>
+        <div className='w-1/4'>
+            <h4 className='mb-4 font-spartan font-semibold text-xl'>Useful Link</h4>
+            <div className='flex flex-col gap-3 text-sm font-nuno'>
+                <Link href=''>FAQ</Link>
+                <Link href=''>Privacy Policy</Link>
+                <Link href=''>Terms and Condition</Link>
+                <Link href=''>Media</Link>
+                <Link href=''>Contact Us</Link>
+            </div>
+        </div>
+        <div className='w-1/4'>
+            <h4 className='mb-4 font-spartan font-semibold text-xl'>Contact</h4>
+            <div className='flex gap-4 mb-4'>
+                <span className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary"><FaFacebookF /></span>
+                <span className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary"><FaTwitter /></span>
+                <span className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary"><FaLinkedinIn /></span>
+            </div>
+            <p className='text-sm font-nuno'>Join over 5,000 individuals who have trusted Tritek to kickstart their journey into the dynamic world of technology.</p>
+        </div>
     </footer>
   )
 }

@@ -9,7 +9,6 @@ import About from './components/About/About'
 export default function page() {
   return (
     <div>
-        <Header />
         <Hero />
         <Marquee />
         <HomeAbout />
