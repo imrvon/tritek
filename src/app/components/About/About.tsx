@@ -1,8 +1,6 @@
 
 import Image from 'next/image'
 import success from '../../../../public/assets/img/successLogo.png'
-import { Swiper, SwiperSlide } from "swiper/react"; 
-import "swiper/css"; 
 const About = () => {
     const whyChoose = [
         {
