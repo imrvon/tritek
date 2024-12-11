@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero'
 import Marquee from './components/Marquee/Marquee'
 import HomeAbout from './components/HomeAbout/HomeAbout'
 import Testimonials from './components/Testimonials/Testimonials'
+import About from './components/About/About'
 
 export default function page() {
   return (
@@ -13,6 +14,7 @@ export default function page() {
         <Marquee />
         <HomeAbout />
         <Testimonials />
+        <About />
     </div>
   )
 }
