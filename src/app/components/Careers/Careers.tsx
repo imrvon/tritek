@@ -23,7 +23,7 @@ export default function Careers() {
                 </div>
 
                 <div className='w-[60%] flex flex-col gap-16 justify-center items-center'>
-                    <p className='text-[3rem] text-[#313c4c] text-left font-semibold font-dm'>Let's work together</p>
+                    <p className='text-[3rem] text-[#313c4c] text-left font-semibold font-dm'>Let&apos;s work together</p>
 
                     <div className='flex flex-col gap-10'>
                         <div className='flex flex-col gap-1'>
