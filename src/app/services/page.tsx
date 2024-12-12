@@ -54,6 +54,34 @@ export default function Services() {
           )}
         </section>
       </section>
+      <section className="bg-grey sm:px-10 px-4 sm:py-32 py-20">
+        <section className="flex gap-5 lg:items-center justify-between flex-col lg:flex-row">
+          <section className="lg:w-[1000px] max-w-[700px]">
+            <Image
+              src="/assets/img/services2.png"
+              className="w-full"
+              width={1000}
+              height={10}
+              alt=""
+            />
+          </section>
+          <section className="lg:w-[900px]">
+            <h3 className="font-bold sm:text-6xl text-4xl sm:leading-[4.5rem] font-nuno">
+              Organizational design for business
+            </h3>
+            <p className="italic my-5 sm:text-2xl text-xl">
+              We’re here to inform which tactics need funding and which are
+              drainsome resources for your company and team.
+            </p>
+            <button
+              type="button"
+              className="p-5 bg-secondary font-semibold text-white"
+            >
+              EXPLORE SOLUTION
+            </button>
+          </section>
+        </section>
+      </section>
     </main>
   );
 }
