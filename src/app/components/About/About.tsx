@@ -53,9 +53,17 @@ const About = () => {
             <section className="flex flex-wrap items-center ">
                 {/* about ceo  */}
                 <div className='grid grid-cols-2 items-center place-content-center max-sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1'>
-                    <div className="bg-[url(/assets/img/AboutImg.jpg)] bg-no-repeat bg-cover h-[630px] relative max-sm:bg-contain max-sm:w-full max-sm:h-[500px] max-sm:hidden">
-                        <div className="absolute top-0 left-0 w-full h-full bg-[#00000075] max-sm:bg-transparent"></div>
-                    </div>
+                <div className="bg-[url(/assets/img/AboutImg.jpg)] bg-no-repeat bg-cover h-[630px] relative max-sm:bg-contain max-sm:w-full max-sm:h-[500px]">
+  
+    <div className="absolute top-0 left-0 w-full h-full bg-[#00000075] max-sm:bg-transparent"></div>
+
+    
+    <div className="absolute bottom-[40px] left-0 w-[70%] h-[50px] px-4 py-2 bg-head-primary text-center text-white text-xl shadow-lg max-sm:bottom-[50px] max-sm:text-[16px] max-sm:px-3 font-nuno flex justify-center items-center">
+      <span className='font-semibold'>CEO:</span> <span className='font-medium mx-1 max-sm:mx-2'>Dr. Adeshola Cole</span>
+    </div>
+</div>
+
+
                     <div className=" px-[5%]  max-sm:w-[100%] max-sm:my-4 sm:my-6">
                         <h2 className="font-spartan text-lg tracking-wider font-semibold text-secondary mb-[5%]  ">MY STORY</h2>
                         <h3 className="font-dm text-5xl w-5/6 text-head-primary mb-[4.5%] max-sm:text-4xl ">MEET THE CEO</h3>
@@ -94,7 +102,7 @@ const About = () => {
                     </div>
 
                     <div className="bg-[url(/assets/img/company1.avif)] bg-no-repeat bg-cover h-[600px] relative max-sm:bg-cover max-sm:w-[100%] max-sm:h-[500px] max-sm:order-2 max-md:order-2 max-sm:area-image lg:block sm:hidden  max-sm:my-4">
-                        <div className="absolute top-0 left-0 w-full h-full bg-[#00000075] max-sm:bg-transparent"></div>
+                        <div className="absolute top-0 left-0 w-full h-full max-sm:bg-transparent"></div>
                     </div>
 
                 </div>
