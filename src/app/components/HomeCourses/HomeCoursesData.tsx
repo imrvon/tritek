@@ -10,7 +10,7 @@ export default [
         name: 'Data Analysis',
         description: "Transform raw data into actionable insights with Tritek's Data Analysis course!",
         img: '/assets/img/homecourse/course2.webp',
-        },
+        }, 
     {
         id: 3,
         name: 'Scrum Master',

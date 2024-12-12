@@ -26,6 +26,12 @@
 
 html, body {
     height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
     overflow-x: hidden;
 }
 
