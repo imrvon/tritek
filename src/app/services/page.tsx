@@ -22,7 +22,7 @@ export default function Services() {
           </p>
         </article>
       </section>
-      <section className="bg-[#f7f7f5] px-10 py-36">
+      <section className="bg-[#f7f7f5] md:px-10 px-5 py-28 md:py-36">
         <section className="grid lg:grid-cols-4 min-[480px]:grid-cols-2 grid-cols-1 md:gap-8 gap-5 justify-center place-items-center min-[480px]:place-items-stretch">
           <article className="min-[480px]:col-span-2 flex flex-col justify-center">
             <p className="font-semibold text-xl italic">
