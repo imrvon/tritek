@@ -63,12 +63,12 @@ function PostsBody() {
           )
         );
 
-        function truncateTextByChars(text: string, charLimit: number): string {
-          if (text.length <= charLimit) {
-            return text; // Return the original text if it's within the limit
-          }
-          return text.slice(0, charLimit) + '...'; // Truncate text and add ellipsis
-        }
+  function truncateTextByChars(text: string, charLimit: number): string {
+    if (text.length <= charLimit) {
+      return text; // Return the original text if it's within the limit
+    }
+    return text.slice(0, charLimit) + "..."; // Truncate text and add ellipsis
+  }
 
   return (
     <div className="px-[5%] font-ibm  py-6 md:py-10">
@@ -100,70 +100,76 @@ function PostsBody() {
       </div>
 
       {/* Post Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-10 gap-y-7 lg:gap-y-10 gap-x-[3.5%] ">
-        {filteredPosts.map((post: any) => {
-          const featuredImage =
-            post?._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "";
-          const category =
-            post?._embedded?.["wp:term"]?.[0]?.[0]?.name || "Uncategorized";
+      {filteredPosts?.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-10 gap-y-7 lg:gap-y-10 gap-x-[3.5%] ">
+          {filteredPosts.map((post: any) => {
+            const featuredImage =
+              post?._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "";
+            const category =
+              post?._embedded?.["wp:term"]?.[0]?.[0]?.name || "Uncategorized";
 
-          return (
-            <section
-              key={post.id}
-              className="bg-no-repeat bg-cover h-[27rem] lg:h-[30rem] hover:shadow-lg relative text-white pb-[5%] md:pb-[10%] px-[5%] md:px-[7.5%] w-full group overflow-hidden"
-            >
-              {/* Background Image with Hover Scaling */}
-              <div
-                className="absolute inset-0 transition-transform transform duration-700 group-hover:scale-[107.5%] "
-                style={{
-                  backgroundImage: `url(${featuredImage})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              ></div>
+            return (
+              <section
+                key={post.id}
+                className="bg-no-repeat bg-cover h-[27rem] lg:h-[30rem] hover:shadow-lg relative text-white pb-[5%] md:pb-[10%] px-[5%] md:px-[7.5%] w-full group overflow-hidden"
+              >
+                {/* Background Image with Hover Scaling */}
+                <div
+                  className="absolute inset-0 transition-transform transform duration-700 group-hover:scale-[107.5%] "
+                  style={{
+                    backgroundImage: `url(${featuredImage})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                ></div>
 
-              {/* Dark Overlay */}
-              <div className="absolute inset-0 bg-black/40"></div>
+                {/* Dark Overlay */}
+                <div className="absolute inset-0 bg-black/40"></div>
 
-              {/* Content Overlay */}
-              <div className="relative z-10 flex flex-col justify-end h-full">
-                <div className="flex font-spartan text-[1rem] sm:text-[1.1rem] md:text-[1rem] font-medium items-center gap-2 ">
-                  <Link
-                    href={`/blog/${post?.slug}`}
-                    className="font-bold hover:text-[#9e9f7f] text-center"
-                  >
-                    {category}
-                  </Link>
-                  <GoDotFill />
-                  <Link
-                    href={`/blog/${post?.slug}`}
-                    className="font-bold hover:text-[#9e9f7f] text-center"
-                  >
-                    Latest News
-                  </Link>
-                </div>
-                <div className="mt-3 h-auto md:h-[3.5rem] lg:h-[4rem]">
+                {/* Content Overlay */}
+                <div className="relative z-10 flex flex-col justify-end h-full">
+                  <div className="flex font-spartan text-[1rem] sm:text-[1.1rem] md:text-[1rem] font-medium items-center gap-2 ">
+                    <Link
+                      href={`/blog/${post?.slug}`}
+                      className="font-bold hover:text-[#9e9f7f] text-center"
+                    >
+                      {category}
+                    </Link>
+                    <GoDotFill />
+                    <Link
+                      href={`/blog/${post?.slug}`}
+                      className="font-bold hover:text-[#9e9f7f] text-center"
+                    >
+                      Latest News
+                    </Link>
+                  </div>
+                  <div className="mt-3 h-auto md:h-[3.5rem] lg:h-[4rem]">
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="font-dm text-[1.3rem] sm:text-[1.5rem]  md:text-[1.45rem] leading-[130%] hover:text-[#9e9f7f] font-bold text-center"
+                    >
+                      {truncateTextByChars(post.title.rendered || "", 45)}
+                    </Link>
+                  </div>
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="font-dm text-[1.3rem] sm:text-[1.5rem]  md:text-[1.45rem] leading-[130%] hover:text-[#9e9f7f] font-bold text-center"
+                    className="flex hover:text-[#9e9f7f] font-nuno items-center gap-2 mt-10 lg:mt-12 "
                   >
-                     {truncateTextByChars(post.title.rendered || "", 45)}
+                    <p className="text-[0.8rem] sm:text-[0.9rem] md:text-[0.8rem] leading-none font-bold">
+                      READ MORE
+                    </p>
+                    <IoIosArrowDropright className="text-[1.2rem]" />
                   </Link>
                 </div>
-                <Link
-                  href={`/blog/${post.slug}`}
-                  className="flex hover:text-[#9e9f7f] font-nuno items-center gap-2 mt-10 lg:mt-12 "
-                >
-                  <p className="text-[0.8rem] sm:text-[0.9rem] md:text-[0.8rem] leading-none font-bold">
-                    READ MORE
-                  </p>
-                  <IoIosArrowDropright className="text-[1.2rem]" />
-                </Link>
-              </div>
-            </section>
-          );
-        })}
-      </div>
+              </section>
+            );
+          })}
+        </div>
+      ) : (
+        <div className="flex justify-center items-center h-[10rem]">
+          <p className="text-2xl font-medium">No Posts Found</p>
+        </div>
+      )}
     </div>
   );
 }

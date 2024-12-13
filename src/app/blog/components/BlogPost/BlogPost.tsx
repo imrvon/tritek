@@ -5,7 +5,7 @@
 
 import React, { useEffect, useState } from "react";
 import { notFound } from "next/navigation";
-// import { BiSolidQuoteRight } from "react-icons/bi";
+import { BiSolidQuoteRight } from "react-icons/bi";
 import Link from "next/link";
 
 interface PostType {
@@ -62,11 +62,19 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   }, [params.slug]);
 
   if (loading) {
-    return <p>Loading post...</p>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <p className="text-2xl font-ibm">Loading post...</p>
+      </div>
+    );
   }
 
   if (!post) {
-    return <p>Post not found</p>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <p className="text-2xl font-ibm">Post not found</p>
+      </div>
+    );
   }
 
   // Extract details from the post object
@@ -77,19 +85,26 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
     _embedded?.["wp:term"]?.[0]?.map((term: any) => term.name).join(", ") ||
     "Uncategorized";
 
+    function truncateTextByChars(text: string, charLimit: number): string {
+      if (text.length <= charLimit) {
+        return text; // Return the original text if it's within the limit
+      }
+    return text.slice(0, charLimit) + "..."; // Truncate text and add ellipsis
+  }
+
   return (
-    <div className="px-[5%] mt-20 py-10">
+    <div className="px-[5%] mt-12 lg:mt-20 py-10">
       <div className="flex items-center gap-2 text-gray-500 mb-2">
         <span className="font-semibold">{categories}</span>
       </div>
-      <section className="flex gap-16 ">
+      <section className="flex flex-col md:flex-row gap-8 lg:gap-16 ">
         {/* Main Blog Post */}
-        <div className=" w-3/4  font-ibm">
+        <div className=" w-full md:w-3/4  font-ibm">
           {/* Categories */}
 
           {/* Title */}
           <div>
-            <h1 className="text-[2.7rem] font-dm font-bold mb-4">
+            <h1 className="text-[2rem] md:text-[2.2rem] lg:text-[2.7rem] font-dm font-bold mb-4">
               {title?.rendered}
             </h1>
             <h4 className="font-ibm italic font-medium text-[1.1rem] mb-8">
@@ -110,15 +125,46 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           )}
 
           {/* Content */}
-          <div
+          <div className="text-base text-black font-nuno space-y-4">
+            {content?.rendered
+              ?.split("</p>") // Split by closing </p> tag
+              .map((para, index) => {
+                if (index === 1) {
+                  // For the second paragraph, wrap it with blockquote and add the icon
+                  return (
+                    <div
+                      key={index}
+                      className="flex flex-col  gap-2 text-gray-500"
+                    >
+                      <div className=" py-1.5 lg:py-3 ">
+                        <BiSolidQuoteRight className="text-[3rem] italic" />
+                      </div>
+                      <blockquote
+                        className="text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem] font-dm text-black leading-[150%] italic"
+                        dangerouslySetInnerHTML={{ __html: para }}
+                      />
+                    </div>
+                  );
+                }
+                // Wrap other paragraphs with <p> tag
+                return (
+                  <p
+                    key={index}
+                    dangerouslySetInnerHTML={{ __html: para + "</p>" }}
+                  />
+                );
+              })}
+          </div>
+
+          {/* <div
             className="text-base text-gray-700 font-nuno space-y-4"
             dangerouslySetInnerHTML={{ __html: content?.rendered }}
-          />
+          /> */}
         </div>
 
         {/* Recent Posts Section */}
-        <div className=" w-1/4  font-dm">
-          <h1 className="text-[1.2rem] font-dm mt-6 mb-4">Recent Posts</h1>
+        <div className=" w-full md:w-1/4  font-dm">
+          <h1 className="text-[1.2rem] font-dm mt-0 md:mt-6 mb-4">Recent Posts</h1>
           <div className="grid grid-cols-1 gap-4">
             {recentPosts.slice(0, 5).map((recentPost: any) => {
               const recentImage =
@@ -127,17 +173,20 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
               const recentCategories =
                 recentPost?._embedded?.["wp:term"]?.[0]
                   ?.map((term: any) => term.name)
-                  .join(", ") || "Uncategorized"
-                  const recentDate = new Date(recentPost.date).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  });
+                  .join(", ") || "Uncategorized";
+              const recentDate = new Date(recentPost.date).toLocaleDateString(
+                "en-US",
+                {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                }
+              );
 
               return (
                 <div
                   key={recentPost.id}
-                  className="bg-white flex items-center border-b pb-4 gap-2"
+                  className="bg-white flex items-center border-b pb-4 gap-4 md:gap-2"
                 >
                   {/* Featured Image */}
                   <div className="w-1/3">
@@ -145,7 +194,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                       <img
                         src={recentImage}
                         alt={recentPost.title.rendered}
-                        className="w-full h-20 object-cover"
+                        className="w-full h-28 sm:h-32 md:h-20 object-cover"
                       />
                     )}
                   </div>
@@ -160,7 +209,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                         href={`/blog/${recentPost.slug}`}
                         className="hover:text-[#9e9f7f]"
                       >
-                        {recentPost.title.rendered}
+                         {truncateTextByChars(recentPost.title.rendered || "", 35)}
                       </Link>
                     </h2>
                   </div>
