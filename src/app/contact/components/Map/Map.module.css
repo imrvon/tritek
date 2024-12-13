@@ -1,0 +1,35 @@
+.location {
+  height: 100vh;
+  position: relative;
+}
+.location > iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+.card {
+    background: #FFF;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 20vw;
+}
+.card > div > * {
+    width: 100%;
+    height: auto;
+}
+.layer {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.layer > h4 {
+    font-weight: bold;
+}
+.layer:not(:last-child) {
+    border-bottom: 1px solid gray;
+}
+.container {
+    padding: 1rem;
+}
