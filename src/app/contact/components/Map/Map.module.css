@@ -1,35 +1,54 @@
 .location {
-  height: 100vh;
   position: relative;
 }
 .location > iframe {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   border: 0;
 }
 .card {
-    background: #FFF;
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    width: 20vw;
+  background: #fff;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 20vw;
 }
 .card > div > * {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 .layer {
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .layer > h4 {
-    font-weight: bold;
+  font-weight: bold;
 }
 .layer:not(:last-child) {
-    border-bottom: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 .container {
-    padding: 1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 755px) {
+  .location {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .location > iframe {
+    height: 80vh;
+  }
+  .card {
+    position: relative;
+    flex-grow: 1;
+    align-self: stretch;
+    top: 0;
+    left: 0;
+    width: 300px;
+    margin: 5px auto;
+    box-shadow:  -1px 4px 14px 0px rgba(128, 128, 128,0.3);;
+  }
 }
