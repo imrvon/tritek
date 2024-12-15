@@ -12,7 +12,7 @@ function page() {
       <Hero />
       <Contact />
       <Map />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
