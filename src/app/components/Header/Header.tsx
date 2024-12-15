@@ -8,10 +8,11 @@ export default function Header() {
         <div className="flex items-center gap-[5%]">
             <Link href='/' className="w-1/6"><Image src='/assets/img/logo-white.png' width={2710} height={1003} alt="logo" /></Link>
             <nav className="flex gap-14 font-nuno text-white text-[15px]">
-                <Link href='' className="tracking-wide">About</Link>
-                <Link href='' className="tracking-wide">Services</Link>
-                <Link href='' className="tracking-wide">Courses</Link>
-                <Link href='' className="tracking-wide">Careers</Link>
+                <Link href='/about' className="tracking-wide">About</Link>
+                <Link href='/services' className="tracking-wide">Services</Link>
+                <Link href='/contact' className="tracking-wide">Courses</Link>
+                <Link href='/careers' className="tracking-wide">Careers</Link>
+                <Link href='/blog' className="tracking-wide">Media</Link>
             </nav>
         </div>
         <div className='flex gap-4 text-white font-nuno w-2/6'>

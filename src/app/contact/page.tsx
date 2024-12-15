@@ -8,11 +8,9 @@ import Map from "./components/Map/Map";
 function page() {
   return (
     <>
-      <Header />
       <Hero />
       <Contact />
       <Map />
-      <Footer />
     </>
   );
 }

@@ -5,7 +5,7 @@ import SignatureDark from "../../assets/signature-dark.png";
 import Image from 'next/image';
 import { IoIosArrowDropright } from "react-icons/io";
 import { BsBackpack2Fill } from "react-icons/bs";
-import careerData from "./CareersData.tsx";
+import careerData from "./CareersData";
 
 export default function Careers() {
     const [isLoading, setIsLoading] = useState(false);

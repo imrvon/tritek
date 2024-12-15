@@ -9,10 +9,7 @@ export default function Services() {
   return (
     <main>
       <section
-        className="relative flex items-center justify-center h-[90vh] bg-fixed bg-cover bg-top"
-        style={{
-          backgroundImage: "url('/assets/img/hero_services.jpg')",
-        }}
+        className="relative flex items-center justify-center min-h-screen bg-fixed bg-cover bg-top bg-[url('/assets/img/hero_services.jpg')]"
       >
         <article className="z-10 text-white md:w-7/12 p-2 text-center mt-20">
           <h1 className="font-bold md:text-8xl text-5xl">Services</h1>
