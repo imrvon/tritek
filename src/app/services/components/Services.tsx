@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { IoIosArrowDropright } from "react-icons/io";
 import Card from "./Card";
-import ServicesData from "./servicesData.json";
+import ServicesData from "./ServicesData";
 
 export default function Services() {
   return (
