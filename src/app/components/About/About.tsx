@@ -96,7 +96,7 @@ const About = () => {
                         <p className="font-nuno mt-[2.5%]">We are a Multi-Award winning project management and business analysis training company that provides both training and practical work experience with mentorship support. I am a multi-award winning mentor, CEO, and recipient of the woman of the year award,2018.</p>
                         <h2 className="font-spartan text-lg tracking-wider font-semibold text-secondary mt-[3%]">OUR MISSION</h2>
                         <p className="font-nuno mt-[1.5%] ">At Tritek, our mission is clear: to provide the best training for all tech enthusiasts and facilitate a seamless transition into the dynamic realm of technology. We are driven by a passion to empower individuals with the knowledge and skills they need to thrive in the ever-evolving tech landscape.</p>
-                        <p className="font-nuno mt-[3.5%]">In the realm of challenges, we illuminate pathways to success. Our consulting firm does'nt just provide solutions; we architect possibilities, turning obstacles into opportunities, and aspiration into achievement. Dr Adesola Cole, CEO Tritek Consulting</p>
+                        <p className="font-nuno mt-[3.5%]">In the realm of challenges, we illuminate pathways to success. Our consulting firm does&apos;nt just provide solutions; we architect possibilities, turning obstacles into opportunities, and aspiration into achievement. Dr Adesola Cole, CEO Tritek Consulting</p>
                         <p className="font-nuno mt-[3.5%]">At Tritek, we take pride in having successfully helped over 5000 individuals seamlessly transition into the dynamic world of technology</p>
 
                     </div>

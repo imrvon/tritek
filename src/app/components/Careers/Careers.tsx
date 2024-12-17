@@ -24,7 +24,7 @@ export default function Careers() {
             <div className='p-5 w-full flex flex-wrap'>
 
                 <div className='flex flex-col items-center justify-center basis-[50%] max-sm:basis-[100%] shrink-0 grow'>
-                    <p className='italic text-[1.5rem]'>"We're thrilled with the end result - especially the fact that the project went live in time for a series of important meetings in the nation's capital."</p>
+                    <p className='italic text-[1.5rem]'>&quot;We&quot;re thrilled with the end result - especially the fact that the project went live in time for a series of important meetings in the nation&quot;s capital.&quot;</p>
                     <div className='flex w-full py-3'>
                         <div className='flex flex-col basis-[50%] shrink-0 grow'>
                             <p>Richard Garrett</p>
@@ -37,7 +37,7 @@ export default function Careers() {
                 </div>
 
                     {careerData.map((index) => (
-                        <div className='card w-full flex items-center justify-center flex-col basis-[25%] max-sm:basis-[100%] grow shrink-0 px-4 pt-2'>
+                        <div className='card w-full flex items-center justify-center flex-col basis-[25%] max-sm:basis-[100%] grow shrink-0 px-4 pt-2' key={index.id}>
                             <div className=' flex w-full items-center justify-center flex-col bg-[#ffffff] border border-[#0000001a] p-4'>
                                 {/* <Image className='w-20' src={Satistic} alt="" /> */}
                                 <BsBackpack2Fill className='text-[#9e9f7f] font-bold w-24 h-20' />
