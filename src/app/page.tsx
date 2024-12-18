@@ -5,6 +5,7 @@ import HomeAbout from './components/HomeAbout/HomeAbout'
 import Testimonials from './components/Testimonials/Testimonials'
 import HomeCourses from './components/HomeCourses/HomeCourses'
 import HomeEvents from './components/HomeEvents/HomeEvents'
+import FAQ from './components/FAQ/FAQ'
 
 export default function page() {
   return (
@@ -15,6 +16,7 @@ export default function page() {
         <HomeCourses />
         <HomeEvents />
         <Testimonials />
+        <FAQ />
     </div>
   )
 }
