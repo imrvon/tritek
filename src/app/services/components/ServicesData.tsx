@@ -1,4 +1,4 @@
-[
+export default [
   {
     "linkToService": "",
     "imageSrc": "/assets/icons/consult.svg",
