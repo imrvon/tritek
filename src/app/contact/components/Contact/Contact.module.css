@@ -50,15 +50,21 @@
 .wrapper > div {
     flex-grow: 1;
 }
-.input {
-    background: rgb(219, 218, 218);
+.input,
+.error {
+    background: rgba(219, 218, 218,0.4);
     padding: 1rem 0.5rem;
     /* border-radius: 5px; */
     display: block;
     width: 100%;
+    outline: none;
+}
+.input:focus,
+.form > form > div > textarea:focus {
+    outline: 2px solid #057584;
 }
 .form > form > div > textarea {
-    background: rgb(219, 218, 218);
+    background: rgba(219, 218, 218,0.4);
     padding: 1rem;
     display: block;
     width: 100%;
@@ -69,6 +75,9 @@
     padding: 1rem;
     color: #FFF;
     font-weight: 600;
+}
+.btn:active {
+    transform: scale(0.98);
 }
 
 .section > div:last-child {
@@ -98,6 +107,20 @@
 }
 .visit > p {
     flex-basis: 300;
+}
+
+.error {
+    border: 1px solid red;
+    outline: red;
+    position: relative;
+}
+.invalid > p {
+    color: red;
+    font-weight: 400;
+    font-size: small;
+}
+.valid > p {
+    display: none;
 }
 
 
