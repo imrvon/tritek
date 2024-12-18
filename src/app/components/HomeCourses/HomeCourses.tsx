@@ -26,7 +26,7 @@ export default function HomeCourses() {
                 </div>
                 ))}
         </div>
-        <div className="w-full lg:w-[48%] pl-[5%] py-[3%]">
+        <div className="w-full lg:w-[48%] pl-[5%] py-[3%] mt-[15%] md:mt-0">
             <h2 className="font-spartan text-lg tracking-wider font-medium text-secondary mb-[5%]">COURSES WE OFFER</h2>
             <h3 className="font-dm text-4xl md:text-5xl w-5/6 text-head-primary">Explore a wide range of courses tailored to help you excel in growing industries.</h3>
             <p className="text-lg sm:text-2xl italic font-ibm my-[5%] text-head-primary">We are a forward-thinking tech training company, committed to delivering cutting-edge learning experiences. </p>

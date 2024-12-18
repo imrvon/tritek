@@ -144,3 +144,10 @@ body {
     gap: 15px;
     bottom: 15% !important;
 }
+
+@media screen and (max-width:640px) {
+    .swiper .swiper-pagination {
+        bottom: 5% !important;
+    }
+}
+
