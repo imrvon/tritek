@@ -26,11 +26,11 @@ export default function Header() {
                 <Link href='/' className="w-1/2 mb-[5%] md:hidden"><Image src='/assets/img/logo-white.png' width={2710} height={1003} alt="logo" /></Link>
                 <Link href='/about' className="tracking-wide uppercase md:capitalize border-b-solid border-b-[1px] border-b-[rgba(255,255,255,.2)] md:border-b-transparent w-full text-center p-4 md:p-0 md:text-left md:w-auto">About</Link>
                 <Link href='/services' className="tracking-wide uppercase md:capitalize border-b-solid border-b-[1px] border-b-[rgba(255,255,255,.2)] md:border-b-transparent w-full text-center p-4 md:p-0 md:text-left md:w-auto">Services</Link>
-                <Link href='/contact' className="tracking-wide uppercase md:capitalize border-b-solid border-b-[1px] border-b-[rgba(255,255,255,.2)] md:border-b-transparent w-full text-center p-4 md:p-0 md:text-left md:w-auto">Courses</Link>
+                <Link href='' className="tracking-wide uppercase md:capitalize border-b-solid border-b-[1px] border-b-[rgba(255,255,255,.2)] md:border-b-transparent w-full text-center p-4 md:p-0 md:text-left md:w-auto">Courses</Link>
                 <Link href='/careers' className="tracking-wide uppercase md:capitalize border-b-solid border-b-[1px] border-b-[rgba(255,255,255,.2)] md:border-b-transparent w-full text-center p-4 md:p-0 md:text-left md:w-auto">Careers</Link>
                 <Link href='/blog' className="tracking-wide uppercase md:capitalize border-b-solid border-b-[1px] border-b-[rgba(255,255,255,.2)] md:border-b-transparent w-full text-center p-4 md:p-0 md:text-left md:w-auto">Media</Link>
                 <div className='flex text-white font-nuno justify-center mt-[5%] md:hidden'>
-                    <Link href='' className="rounded-[50px] py-[21px] px-[28px] shadow-[0_0_0_4em_#057584_inset] hover:-translate-y-[3px] ease-in-out transition-transform duration-300">Contact Us</Link>
+                    <Link href='/contact' className="rounded-[50px] py-[21px] px-[28px] shadow-[0_0_0_4em_#057584_inset] hover:-translate-y-[3px] ease-in-out transition-transform duration-300">Contact Us</Link>
                 </div>
                 <div className='mt-[5%] flex flex-col justify-center items-center md:hidden'>
                     <div className='flex items-center gap-1 mb-4'>
@@ -54,7 +54,7 @@ export default function Header() {
             </nav>
         </div>
         <div className='hidden md:flex text-white font-nuno justify-end w-5/12'>
-            <Link href='' className="rounded-[50px] py-[21px] px-[28px] shadow-[0_0_0_4em_#057584_inset] hover:-translate-y-[3px] ease-in-out transition-transform duration-300">Contact Us</Link>
+            <Link href='/contact' className="rounded-[50px] py-[21px] px-[28px] shadow-[0_0_0_4em_#057584_inset] hover:-translate-y-[3px] ease-in-out transition-transform duration-300">Contact Us</Link>
         </div>
     </header>
   )

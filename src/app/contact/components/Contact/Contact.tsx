@@ -81,7 +81,7 @@ function Contact() {
                 <input
                   type="text"
                   name="first name"
-                  placeholder="Firest Name"
+                  placeholder="First Name"
                   className={isFirstNameValid? styles.input : styles.error}
                   onChange={(e)=> updateFirstName(e.target.value)}
                 />
