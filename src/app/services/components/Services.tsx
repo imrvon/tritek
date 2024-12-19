@@ -76,7 +76,7 @@ export default function Services() {
                 </div>
             </div>
             <Link href=''
-              className="p-5 bg-secondary font-semibold text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%]"
+              className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%] font-nuno"
             >
               <span className="hidden sm:inline">Let’s Build a Smarter Workforce—</span>Contact Us Today!
             </Link>
@@ -111,7 +111,7 @@ export default function Services() {
                     </div>
                 </div>
                 <Link href=''
-                className="p-5 bg-secondary font-semibold text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%]"
+                className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%] font-nuno"
                 >
                 <span className="hidden sm:inline">Partner With Us to Drive Public-Sector Innovation—</span>Contact Our Team!
                 </Link>
