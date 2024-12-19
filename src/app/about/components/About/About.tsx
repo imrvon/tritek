@@ -6,8 +6,8 @@ export default function About() {
         <section>
             <div className='bg-[url(/assets/img/about.webp)] min-h-screen bg-no-repeat bg-cover relative bg-top sm:bg-center'>
                 <div className='flex flex-col gap-5 absolute top-0 left-0 w-full h-full justify-center items-center z-10'>
-                    <p className='text-white text-3xl sm:text-4xl md:text-5xl font-semibold font-dm text-center'>About Us</p>
-                    <p className='font-medium text-center text-xl sm:text-2xl text-white italic font-ibm w-9/12'>We are a Multi-Award winning project management and business analysis training company that provides both training and practical work experience with mentorship support.</p>
+                    <p className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-dm text-center'>About Us</p>
+                    <p className='font-medium text-center text-xl sm:text-2xl text-white italic font-ibm w-10/12 sm:w-9/12'>We are a Multi-Award winning project management and business analysis training company that provides both training and practical work experience with mentorship support.</p>
                 </div>
                 <div className='absolute top-0 left-0 w-full h-full bg-[#000000bb]'></div>
             </div>
@@ -15,7 +15,7 @@ export default function About() {
             <div className="flex flex-wrap flex-col md:flex-row">
                 <div className='md:w-1/2 p-[5%]'>
                     <h2 className="font-spartan text-lg tracking-wider font-medium text-secondary mb-[5%]">MEET OUR CEO</h2>
-                    <h3 className="font-dm text-3xl sm:text-4xl md::text-5xl w-5/6 text-head-primary">Dr. Adeshola Cole</h3>
+                    <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Dr. Adeshola Cole</h3>
                     <p className="font-nuno mt-[3.5%] text-lg">Hi, my name is Dr. Adeshola Cole and I am the CEO of Tritek Consulting Limited. I am a married mum of 3 exceptional children, who keep me super busy from time to time! I am a multi-award winning mentor, CEO, and recipient of the woman of the year award,2018.</p>
 
                     <p className="font-nuno mt-[3.5%] text-lg">I have a degree in literature in English, PRINCE 2 certified, an accredited PRINCE2 trainer, possess a diploma in change management,and I’m also scrum and scrum master certified.</p>
