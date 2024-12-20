@@ -14,13 +14,24 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const pathname = usePathname();
 
+    useEffect(()=> {
+        const changeBackground = () => {
+            if (window.scrollY >= 150) {
+                setNavbar(true)
+            } else {
+                setNavbar(false)
+            };
+        }
+        window.addEventListener('scroll', changeBackground);
+    }, []) 
+
     // Close menu on route change
   useEffect(() => {
     setMenuOpen(false);
   }, [pathname]);
 
   return (
-    <header className="flex justify-between items-center px-[5%] py-[1.5%] fixed top-0 left-0 w-full z-50">
+    <header className={navbar ? "flex justify-between items-center px-[5%] py-[1.5%] fixed top-0 left-0 w-full z-50 bg-[#000000a6]" : "flex justify-between items-center px-[5%] py-[1.5%] fixed top-0 left-0 w-full z-50"}>
         <div className={menuOpen ? "fixed top-0 left-0 w-full text-3xl text-white flex justify-end md:hidden bg-[#191919] py-4 pr-4" : "hidden"}>
             <PiX onClick={()=> setMenuOpen(!menuOpen)} />
         </div>
