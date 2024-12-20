@@ -5,7 +5,7 @@ import { PiDeviceMobileLight } from "react-icons/pi";
 import { PiEnvelopeOpenLight } from "react-icons/pi";
 import Link from "next/link";
 
-const MapUrl: string = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78803.7558317406!2d0.8212462702334286!3d51.88619668343394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8e24e12f62f05%3A0x175d5f1c455091de!2sColchester%2C%20UK!5e0!3m2!1sen!2sng!4v1703197805622!5m2!1sen!2sng';
+const MapUrl: string = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79193.08041824336!2d-0.16407370308423688!3d51.66379535318838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761878d288422d%3A0x19b8e39ceea4fef9!2sEnfield%2C%20UK!5e0!3m2!1sen!2sng!4v1734659490893!5m2!1sen!2sng';
 
 export default function Map(): JSX.Element {
   return (
