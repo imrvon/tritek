@@ -43,7 +43,7 @@ export default function Map(): JSX.Element {
             <div>
               <h4 className="text-primary text-[13px]">CONTACT</h4>
               <Link href="tel:+447412835416" className="text-[15px] text-black block">
-                tel:+4407300140669
+                +44 0730 0140669
               </Link>
               <Link href="tel:+4407401262066" className="text-[15px] text-black">
                 +44 0740 1262066

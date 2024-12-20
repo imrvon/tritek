@@ -1,16 +1,23 @@
 'use client'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image"
 import Link from "next/link"
 import { FaMobileAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa6";
 import { PiList, PiX } from "react-icons/pi";
+import { usePathname } from "next/navigation";
 
 
 export default function Header() {
 
     const [navbar, setNavbar] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false);
+    const pathname = usePathname();
+
+    // Close menu on route change
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="flex justify-between items-center px-[5%] py-[1.5%] fixed top-0 left-0 w-full z-50">
