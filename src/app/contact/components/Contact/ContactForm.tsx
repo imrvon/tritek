@@ -80,7 +80,7 @@ export default function ContactForm() {
           </span>
         </h4>
         <p className="sm:w-10/12">
-        Whether you're ready to kickstart your career in tech, upgrade your skills, or simply have questions about our programs, we're here to help! At Tritek Academy, we’re passionate about guiding you toward your goals and ensuring your journey in technology is as seamless as possible.
+        Whether you&apos;re ready to kickstart your career in tech, upgrade your skills, or simply have questions about our programs, we&apos;re here to help! At Tritek Academy, we&apos;re passionate about guiding you toward your goals and ensuring your journey in technology is as seamless as possible.
         </p>
       </div>
       <form
