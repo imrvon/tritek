@@ -1,13 +1,11 @@
-import React from "react";
-import Hero from "./components/Hero/Hero";
 import Contact from "./components/Contact/Contact";
-import Map from "./components/Map/Map";
-
+import ContactForm from "./components/Contact/ContactForm";
+import Map from "./components/Contact/Map";
 function page() {
   return (
     <>
-      <Hero />
       <Contact />
+      <ContactForm />
       <Map />
     </>
   );

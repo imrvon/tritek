@@ -1,155 +1,32 @@
-'use client';
+import Link from "next/link";
+import { PiDeviceMobileCameraLight } from "react-icons/pi";
+import { PiEnvelopeOpenLight } from "react-icons/pi";
 
-import styles from "./Contact.module.css";
-import { FaFacebook } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa6";
-import { RiInstagramFill } from "react-icons/ri";
-import { FaLinkedin } from "react-icons/fa";
-import React, { useState } from "react";
-
-function Contact() {
-
-  const [isEmailValid, setEmailValid] = useState(true)
-  const [isLastNameValid, setLastNameValid] = useState(true)
-  const [isFirstNameValid, setFirstNameValid] = useState(true)
-  const [isMessageValid, setMessageValid] = useState(true)
-
-  const [user, setUser] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    message: "",
-  });
- 
-  const updateEmail = (email: string) => {
-    setUser({
-      ...user,
-      email
-    });
-    let isValid = (/^[\w._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/).test(email)
-    setEmailValid(isValid)
-  };
-  const updateFirstName = (firstName: string) => {
-    setUser({
-      ...user,
-      firstName
-    })
-    let valid = /\b[A-Za-z]+\b/g
-    let wordLength = firstName.match(valid)?.length || 0
-    let state = (wordLength == 1)? true : false
-    setFirstNameValid(state)
-  }
-  const updateLastName = (lastName: string) => {
-    setUser({
-      ...user,
-      lastName
-    })
-    let valid = /\b[A-Za-z]+\b/g
-    let wordLength = lastName.match(valid)?.length || 0
-    let state = (wordLength == 1)? true : false
-    setLastNameValid(state)
-  }
-  const updateMessage = (message: string) => {
-    setUser({
-      ...user,
-      message
-    })
-    let valid = /\w+/g
-    let wordLength = message.match(valid)?.length || 0
-    let state = (wordLength >= 3)? true : false
-    setMessageValid(state)
-  }
-
-  const validateDate = ()=> {
-    return false
-  }
-
+export default function Contact() {
   return (
-    <div className={styles.section}>
-      <div className={styles.container}>
-        <div className={styles.content}>
-          <h2>How can we help your business to grow?</h2>
-          <p>
-            We bring the breathe of our experience and industry knowledge to
-            help you succeed
-          </p>
-        </div>
-        <div className={styles.form}>
-          <form action="#" onSubmit={(e)=> {e.preventDefault(); validateDate()}}>
-            <div className={styles.wrapper}>
-              <div className={isFirstNameValid? styles.valid : styles.invalid}>
-                <input
-                  type="text"
-                  name="first name"
-                  placeholder="First Name"
-                  className={isFirstNameValid? styles.input : styles.error}
-                  onChange={(e)=> updateFirstName(e.target.value)}
-                />
-                <p>field required</p>
-              </div>
-              <div className={isLastNameValid? styles.valid : styles.invalid}>
-                <input
-                  type="text"
-                  name="last name"
-                  placeholder="Last Name"
-                  className={isLastNameValid? styles.input : styles.error}
-                  onChange={(e)=>{updateLastName(e.target.value)}}
-                />
-                <p>field required</p>
-              </div>
+    <section className="bg-[url(/assets/img/contact.webp)] min-h-screen text-white bg-no-repeat bg-cover py-[10%] sm:py-[5%] flex flex-col items-center justify-center relative">
+        <div className="bg-black opacity-50 absolute top-0 left-0 w-full h-full"></div>
+        
+        <div className="relative z-10 font-nuno w-full sm:w-auto">
+            <h4 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-center mb-8 font-dm">Want to reach out<span className="font-light"><br/>to us?</span></h4>
+            <span className="font-heading text-center mx-auto block font-nuno">WE WANT TO HEAR ABOUT IT</span>
+            <div className="flex justify-center items-center sm:items-center lg:items-start p-[5%] sm:p-0 gap-4 mt-[10%] flex-col lg:flex-row">
+              <Link href='tel:+447412835416' className="inline-block sm:w-auto w-full sm:flex items-center sm:items-end gap-4 bg-primary p-6 hover:-translate-y-2 transition-transform delay-0 duration-300 flex-col sm:flex-row">
+                <div className="text-5xl flex justify-center sm:block sm:-mx-[9px] my-1"><PiDeviceMobileCameraLight/></div>
+                <div>
+                  <h5 className="text-sm tracking-[1] text-center sm:text-left">CALL US NOW</h5>
+                  <p className="font-medium tracking-[1] text-2xl sm:text-3xl text-center sm:text-left">+44 757 2277858</p>
+                </div>
+              </Link>
+              <Link href='mailto:info@tritekconsulting.co.uk' className="inline-block sm:w-auto w-full sm:flex items-center sm:items-end gap-4 bg-[#333333] p-6 hover:-translate-y-2 transition-transform delay-0 duration-300 flex-col sm:flex-row">
+                <div className="text-5xl flex justify-center sm:block "><PiEnvelopeOpenLight/></div>
+                <div>
+                  <h5 className="text-sm tracking-[1] text-center sm:text-left">GET IN TOUCH</h5>
+                  <p className="font-medium tracking-[1] text-2xl sm:text-3xl break-words sm:break-normal text-center sm:text-left">info@tritekconsulting.co.uk</p>
+                </div>
+              </Link>
             </div>
-            <div className={isEmailValid? styles.valid : styles.invalid}>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email*"
-                className={isEmailValid? styles.input : styles.error}
-                onChange={(e)=> updateEmail(e.target.value)}
-              />
-              <p>field required</p>
-            </div>
-            <div className={isMessageValid? styles.valid : styles.invalid}>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Your Message*"
-                onChange={(e)=>updateMessage(e.target.value)}
-                className={isMessageValid? styles.input : styles.error}
-              ></textarea>
-              <p>field required at list 3 words</p>
-            </div>
-            <button className={styles.btn}>send a message</button>
-          </form>
         </div>
-      </div>
-
-      <div>
-        <div className={styles.call}>
-          <h3>Call-us</h3>
-          <p>
-            <a href="tel:+1-800-700-600">1-800-700-600</a>
-          </p>
-        </div>
-        <div className={styles.visit}>
-          <h3>Visit-us</h3>
-          <p>
-            <b>Working hours: </b>
-            <br />
-            Monday - Friday 9 am to 7 pm EST
-          </p>
-        </div>
-        <div className="follow-us">
-          <h3>Follow-us</h3>
-          <div className={styles.icons}>
-            <FaFacebook />
-            <FaTwitter />
-            <RiInstagramFill />
-            <FaLinkedin />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+    </section>
+  )
 }
-export default Contact;
