@@ -9,7 +9,6 @@ import { PiDotOutline } from "react-icons/pi";
 function PostsBody() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [postsNew, setPostsNew] = useState([]);
-  const [jobsNew, setJobsNew] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -29,29 +28,6 @@ function PostsBody() {
 
     fetchPosts();
   }, []);
-
-  useEffect(() => {
-    async function fetchJobs() {
-      try {
-        const response = await fetch(
-          "https://dev-jozz-portfolio.pantheonsite.io/wp-json/wp/v2/job?_embed"
-        );
-        const data = await response.json();
-        setJobsNew(data);
-      } catch (error) {
-        console.error("Failed to fetch posts:", error);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchJobs();
-  }, []);
-
-  console.log("jobs", jobsNew);
-  postsNew?.forEach((post) => {
-    console.log("ACF Fields:", post.acf); // Access the custom fields
-  });
 
   if (loading) {
     return (
