@@ -12,15 +12,15 @@ export default function Automation() {
           </div>
   
           <div className="flex flex-wrap">
-              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
-                  <CourseForm />
-              </div>
               <div className="w-full lg:w-1/2 p-[5%]">
                   <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Process Automation</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-spartan">
                   Master process automation in 10 weeks and eliminate repetitive tasks forever. Learn RPA tools, workflow automation, and integration technologies while automating real business processes.</p>
                   <p className="font-nuno">Work with UiPath, Power Automate, and Zapier to create end-to-end automation solutions. Perfect for business analysts, operations professionals, or anyone ready to lead automation initiatives.</p>
                   <p className="font-nuno mt-5">Automation experts trained by Tritek save companies millions and command premium salaries.</p>
+              </div>
+              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+                  <CourseForm />
               </div>
           </div>
       </div>

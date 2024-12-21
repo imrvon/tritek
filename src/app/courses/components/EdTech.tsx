@@ -12,9 +12,6 @@ export default function EdTech() {
           </div>
   
           <div className="flex flex-wrap">
-              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
-                  <CourseForm />
-              </div>
               <div className="w-full lg:w-1/2 p-[5%]">
                   <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Education Technology Specialist</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-spartan">
@@ -22,6 +19,9 @@ export default function EdTech() {
                   <p className="font-nuno">Learn to implement learning management systems, develop digital curricula, and lead educational technology initiatives. Perfect for teachers and administrators ready to advance their careers in the growing EdTech sector.
                   </p>
                   <p className="font-nuno mt-5">EdTech specialists trained by Tritek are driving digital transformation in schools nationwide.</p>
+              </div>
+              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+                  <CourseForm />
               </div>
           </div>
       </div>

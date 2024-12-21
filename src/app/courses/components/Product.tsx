@@ -13,14 +13,14 @@ export default function Product() {
           </div>
   
           <div className="flex flex-wrap">
-              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
-                  <CourseForm/>
-              </div>
               <div className="w-full lg:w-1/2 p-[5%]">
                   <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Product Management</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-spartan">
                   Launch your product management career in 14 weeks. Learn to identify market opportunities, develop product strategies, and lead cross-functional teams while building a portfolio of real product launches.</p>
                   <p className="font-nuno">Master user research, create product roadmaps, and develop go-to-market strategies that drive results. Work directly with designers, developers, and stakeholders to bring products to life. Perfect for professionals ready to lead product innovation.</p>
+              </div>
+              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+                  <CourseForm/>
               </div>
           </div>
       </div>

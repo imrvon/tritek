@@ -12,9 +12,6 @@ export default function Blockchain() {
           </div>
   
           <div className="flex flex-wrap">
-              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
-                  <CourseForm/>
-              </div>
               <div className="w-full lg:w-1/2 p-[5%]">
                   <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Blockchain</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-spartan">
@@ -22,6 +19,9 @@ export default function Blockchain() {
                   <p className="font-nuno">Learn Solidity, Web3.js, and essential blockchain frameworks. Create smart contracts, develop DApps, and understand blockchain security. Perfect for developers ready to enter the revolutionary world of blockchain technology.
                   </p>
                   <p className="font-nuno mt-5">Join the blockchain revolution and command premium salaries in this cutting-edge field.</p>
+              </div>
+              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+                  <CourseForm/>
               </div>
           </div>
       </div>

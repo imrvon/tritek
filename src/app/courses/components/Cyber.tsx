@@ -13,9 +13,6 @@ export default function Cyber() {
           </div>
   
           <div className="flex flex-wrap">
-              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
-                  <CourseForm />
-              </div>
               <div className="w-full lg:w-1/2 p-[5%]">
                   <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Cyber Security</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-spartan">
@@ -30,6 +27,9 @@ export default function Cyber() {
                     </ul>
                     <p className="font-nuno mt-[3.5%] text-lg">Become the security expert companies are fighting to hire.
                     </p>
+                </div>
+                <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+                  <CourseForm />
               </div>
           </div>
       </div>

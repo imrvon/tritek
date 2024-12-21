@@ -12,9 +12,6 @@ export default function Scrum() {
           </div>
   
           <div className="flex flex-wrap">
-              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
-                  <CourseForm/>
-              </div>
               <div className="w-full lg:w-1/2 p-[5%]">
                   <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Scrum Mastery</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-spartan">
@@ -22,6 +19,9 @@ export default function Scrum() {
                   <p className="font-nuno">You&apos;ll work with actual development teams, handle real sprint ceremonies, and learn advanced Scrum techniques that separate great Scrum Masters from good ones. Perfect for project managers, team leads, or anyone passionate about Agile delivery.
                   </p>
                   <p className="font-nuno mt-5">Average starting salary for our Scrum Master graduates: $35,000. Time to certification: 6 weeks.</p>
+              </div>
+              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+                  <CourseForm/>
               </div>
           </div>
       </div>

@@ -12,15 +12,15 @@ export default function HR() {
           </div>
   
           <div className="flex flex-wrap">
-              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
-                  <CourseForm />
-              </div>
               <div className="w-full lg:w-1/2 p-[5%]">
                   <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">HR Training</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-spartan">
                   Modernise your HR career in 10 weeks. Master HR technologies, data-driven people analytics, and digital HR transformation while implementing real HR tech solutions.</p>
                   <p className="font-nuno">Learn HRIS platforms, HR analytics tools, and digital recruitment technologies. Perfect for HR professionals ready to lead digital transformation initiatives or transition into HR tech roles.</p>
                   <p className="font-nuno mt-5">HR tech specialists trained by Tritek are revolutionising people management nationwide.</p>
+              </div>
+              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+                  <CourseForm />
               </div>
           </div>
       </div>
