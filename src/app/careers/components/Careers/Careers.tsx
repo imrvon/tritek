@@ -5,7 +5,7 @@ export default function Careers() {
 
     return (
         <div className='bg-[#f7f7f5]'>
-            <div className='relative h-screen bg-[url(/assets/img/hero_career.webp)] bg-no-repeat bg-cover flex justify-center items-center'>
+            <div className='relative h-screen bg-[url(/assets/img/hero_career.webp)] bg-no-repeat bg-cover flex justify-center items-center sm:bg-left bg-center'>
                 <div className='flex flex-col gap-10 relative z-10'>
                     <p className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-dm text-center'>Careers</p>
                     <p className='font-medium text-center text-xl sm:text-2xl text-white italic font-ibm w-9/12 mx-auto'>Join a team that’s shaping the future of education, innovation, and technology. At Tritek Academy, we don’t just offer jobs—we offer careers that inspire and empower.</p>
