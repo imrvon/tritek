@@ -51,36 +51,36 @@ export default function Services() {
                 <p className="italic my-5 sm:text-2xl text-xl">
                     Our corporate training programs are designed to address the unique challenges of businesses across industries. We deliver hands-on, practical training to upskill your workforce and ensure they’re prepared for the demands of today—and tomorrow.</p>
                 <div>
-                <div>
-                    <h3 className="font-spartan text-lg my-4 text-head-primary">KEY FEATURES</h3>
-                    <ul className="font-nuno">
-                        <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Tailored Training Programs: Customisable courses in areas like Business Analysis, Cybersecurity, Process Automation, and Artificial Intelligence to meet your team’s specific needs.</span></li>
-                        <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Practical Learning: Real-world projects and case studies ensure participants gain applicable skills from day one.</span>
-                        </li>
-                        <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Flexible Delivery: Choose from on-site training, live virtual sessions, or hybrid models to suit your organisation’s schedule.</span>
-                        </li>
-                        <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">CPD-Certified Courses: Our programs are globally recognised and designed to meet industry standards.</span>
-                        </li>
-                    </ul>
+                    <div>
+                        <h3 className="font-spartan text-lg my-4 text-head-primary">KEY FEATURES</h3>
+                        <ul className="font-nuno">
+                            <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Tailored Training Programs: Customisable courses in areas like Business Analysis, Cybersecurity, Process Automation, and Artificial Intelligence to meet your team’s specific needs.</span></li>
+                            <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Practical Learning: Real-world projects and case studies ensure participants gain applicable skills from day one.</span>
+                            </li>
+                            <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Flexible Delivery: Choose from on-site training, live virtual sessions, or hybrid models to suit your organisation’s schedule.</span>
+                            </li>
+                            <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">CPD-Certified Courses: Our programs are globally recognised and designed to meet industry standards.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 className="font-spartan text-lg my-4 uppercase text-head-primary">How We Solve Your Challenges</h3>
+                        <ul className="font-nuno">
+                            <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Struggling with a skills gap? We create custom programs to upskill and reskill your team members.</span></li>
+                            <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Need training that aligns with your business objectives? Our courses are tailored to your organisational goals.</span>
+                            </li>
+                            <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Looking for measurable outcomes? We provide post-training analytics to track team progress and ROI.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h3 className="font-spartan text-lg my-4 uppercase text-head-primary">How We Solve Your Challenges</h3>
-                    <ul className="font-nuno">
-                        <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Struggling with a skills gap? We create custom programs to upskill and reskill your team members.</span></li>
-                        <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Need training that aligns with your business objectives? Our courses are tailored to your organisational goals.</span>
-                        </li>
-                        <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Looking for measurable outcomes? We provide post-training analytics to track team progress and ROI.
-                        </span>
-                        </li>
-                    </ul>
-                </div>
+                <Link href=''
+                className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%] font-nuno"
+                >
+                <span className="hidden sm:inline">Let’s Build a Smarter Workforce—</span>Contact Us Today!
+                </Link>
             </div>
-            <Link href=''
-              className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%] font-nuno"
-            >
-              <span className="hidden sm:inline">Let’s Build a Smarter Workforce—</span>Contact Us Today!
-            </Link>
-        </div>
       </div>
       <div className="bg-grey flex flex-col-reverse lg:flex-row flex-wrap">
             <div className="w-full lg:w-2/3 p-[5%]">

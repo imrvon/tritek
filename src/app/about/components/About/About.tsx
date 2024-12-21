@@ -18,13 +18,12 @@ export default function About() {
                     <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Dr. Adeshola Cole</h3>
                     
                     <p className="font-nuno mt-[3.5%] text-lg">Dr. Adeshola Cole is the driving force behind Tritek Academy’s transformative mission. As the CEO and Founder, she has dedicated her career to creating pathways for individuals to excel in tech, regardless of their background.</p>
-                    <p className="font-nuno mt-[3.5%] text-lg">Under Dr. Cole’s leadership, Tritek Academy has grown into a globally recognized EdTech organisation, empowering over 5,000 individuals to transition into tech careers. Her vision has earned her numerous accolades, including:
-                        <ul className='mt-[5%]'>
-                            <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Outstanding Woman in Tech 2023</span></li>
-                            <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Emerging CEO of the Year 2022</span></li>
-                            <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Recognition among the Top 100 Influential Global Voices</span></li>
-                        </ul>
-                    </p>
+                    <p className="font-nuno mt-[3.5%] text-lg">Under Dr. Cole’s leadership, Tritek Academy has grown into a globally recognized EdTech organisation, empowering over 5,000 individuals to transition into tech careers. Her vision has earned her numerous accolades, including:</p>
+                    <ul className='mt-[5%]'>
+                        <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Outstanding Woman in Tech 2023</span></li>
+                        <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Emerging CEO of the Year 2022</span></li>
+                        <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Recognition among the Top 100 Influential Global Voices</span></li>
+                    </ul>
                     <p className="font-nuno mt-[3.5%] text-lg">Her impact goes beyond business success. Dr. Cole has spearheaded initiatives to foster diversity and inclusion, with Tritek Academy being recognised as one of the Top 20 Black Businesses in the UK by Channel 4 in partnership with Lloyds Bank.</p>
                     <p className="font-nuno mt-[3.5%] text-lg">Dr. Cole’s philanthropic efforts include sponsoring over 100 individuals to access life-changing tech opportunities. She mentors young women weekly at Oasis Academy, providing them with the tools to dream big and achieve more.</p>
                     <p className="font-nuno mt-[3.5%] text-lg">Dr. Cole lives by the mantra: “Make a way, not an excuse.” Her authenticity, integrity, and resilience inspire learners and professionals alike to break barriers and unlock their potential.</p>
