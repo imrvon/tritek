@@ -85,7 +85,7 @@ export default function Courses() {
                     <div className="text-5xl font-bold text-primary shadow-[0_20px_40px_0px_rgba(0,0,0,0.1)] flex justify-center items-center bg-white rounded-[50%] h-24 w-24 mb-[5%] md:mb-0"><h4>2</h4></div>
                     <div className="font-nuno w-10/12 sm:w-7/12 md:text-left text-center">
                         <h4 className="text-2xl mb-1">Schedule your lesson</h4>
-                        <p>Select a time that works best for you. With flexible scheduling, it's easy to fit learning into your busy life.</p>
+                        <p>Select a time that works best for you. With flexible scheduling, it&apos;s easy to fit learning into your busy life.</p>
                     </div>
                 </div>
                 <div className="flex gap-[5%] flex-wrap  flex-col justify-center items-center md:items-start md:justify-normal md:flex-row">
