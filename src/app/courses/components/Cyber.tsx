@@ -20,8 +20,8 @@ export default function Cyber() {
                   <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Cyber Security</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-spartan">
                   Break into cybersecurity in 14 weeks. Master ethical hacking, threat detection, and security architecture while earning industry-recognised certifications. Cybersecurity professionals are desperately needed – with 3.5 million unfilled positions globally.</p>
-                  <p className="font-nuno">This isn't theoretical security training. You'll hack real systems (legally), stop actual cyber attacks, and build security infrastructure using industry-standard tools. Perfect for IT professionals, network administrators, or anyone passionate about digital security.</p>
-                  <p className="font-nuno mt-[3.5%] text-lg">Our hands-on approach means you'll graduate with experience in:</p>
+                  <p className="font-nuno">This isn&apos;t theoretical security training. You&apos;ll hack real systems (legally), stop actual cyber attacks, and build security infrastructure using industry-standard tools. Perfect for IT professionals, network administrators, or anyone passionate about digital security.</p>
+                  <p className="font-nuno mt-[3.5%] text-lg">Our hands-on approach means you&apos;ll graduate with experience in:</p>
                     <ul className='mt-[5%]'>
                         <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Penetration testing real networks</span></li>
                         <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Building secure systems from scratch</span></li>
