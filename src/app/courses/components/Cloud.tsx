@@ -18,7 +18,7 @@ export default function Cloud() {
               <div className="w-full lg:w-1/2 p-[5%]">
                   <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Cloud Computing</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-spartan">
-                  Master cloud technologies in 14 weeks and step into one of tech's highest-paying fields. Learn AWS, Azure, and Google Cloud while building real cloud infrastructure and deploying actual applications.</p>
+                  Master cloud technologies in 14 weeks and step into one of tech&apos;s highest-paying fields. Learn AWS, Azure, and Google Cloud while building real cloud infrastructure and deploying actual applications.</p>
                   <p className="font-nuno">Develop hands-on experience with cloud security, infrastructure as code, and containerisation. Perfect for IT professionals ready to transition to cloud roles or developers seeking to enhance their cloud expertise.
                   </p>
                   <p className="font-nuno mt-5">Cloud architects trained by Tritek command average starting salaries of $65,000.</p>
