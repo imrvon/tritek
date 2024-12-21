@@ -7,6 +7,7 @@ interface Course {
     title: string;
     description: string;
     img: string;
+    link: string;
   }
 
 export default function Courses() {
@@ -116,7 +117,7 @@ export default function Courses() {
                     <div className="text-center pt-[2.5%] px-[2.5%] pb-[5%]">
                         <h3 className="text-3xl text-head-primary font-medium font-dm">{course.title}</h3>
                         <h3 className="text-lg font-nuno w-9/12 mx-auto">{course.description}</h3>
-                        <Link href='' className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%] font-nuno"
+                        <Link href={course.link} className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%] font-nuno"
                     >Enroll Now</Link>
                     </div>                 
                 </div>
