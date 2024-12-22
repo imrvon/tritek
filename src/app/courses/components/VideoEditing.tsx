@@ -20,7 +20,7 @@ export default function VideoEditing() {
                   <p className="font-nuno mt-5">Video Editors work with major brands and production houses. Join them.</p>
               </div>
               <div className="w-full lg:w-1/2">
-                  <CourseForm/>
+                  <CourseForm courseTitle="Video Editing"/>
               </div>
           </div>
       </div>

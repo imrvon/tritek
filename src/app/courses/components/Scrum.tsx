@@ -21,7 +21,7 @@ export default function Scrum() {
                   <p className="font-nuno mt-5">Average starting salary for our Scrum Master graduates: $35,000. Time to certification: 6 weeks.</p>
               </div>
               <div className="w-full lg:w-1/2">
-                  <CourseForm/>
+                  <CourseForm courseTitle="Scrum Mastery"/>
               </div>
           </div>
       </div>

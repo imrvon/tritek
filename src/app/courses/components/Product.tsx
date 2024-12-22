@@ -20,7 +20,7 @@ export default function Product() {
                   <p className="font-nuno">Master user research, create product roadmaps, and develop go-to-market strategies that drive results. Work directly with designers, developers, and stakeholders to bring products to life. Perfect for professionals ready to lead product innovation.</p>
               </div>
               <div className="w-full lg:w-1/2">
-                  <CourseForm/>
+                  <CourseForm courseTitle="Product Management"/>
               </div>
           </div>
       </div>

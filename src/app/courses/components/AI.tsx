@@ -19,7 +19,7 @@ export default function AI() {
                 <p className="font-nuno">Our AI course goes beyond theory. You&apos;ll create chatbots, develop recommendation systems, and build predictive models using the same tools and frameworks used by tech giants. Work directly with TensorFlow, PyTorch, and OpenAI&apos;s cutting-edge technologies.</p>
             </div>
             <div className="w-full lg:w-1/2">
-                <CourseForm />
+                <CourseForm courseTitle="Artificial Intelligence" />
             </div>
         </div>
     </div>

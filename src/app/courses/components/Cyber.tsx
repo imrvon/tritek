@@ -29,7 +29,7 @@ export default function Cyber() {
                     </p>
                 </div>
                 <div className="w-full lg:w-1/2">
-                  <CourseForm />
+                  <CourseForm courseTitle='Cyber Security' />
               </div>
           </div>
       </div>

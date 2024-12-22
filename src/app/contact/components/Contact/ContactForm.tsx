@@ -17,7 +17,7 @@ export default function ContactForm() {
   const [isSuccess, setIsSuccess] = useState(false);
 
   const service_id = process.env.NEXT_PUBLIC_SERVICE_ID as string;
-  const template_id = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
+  const template_id = process.env.NEXT_PUBLIC_TEMPLATE_ID_2 as string;
   const public_key = process.env.NEXT_PUBLIC_USER_KEY as string;
 
   const form = useRef<HTMLFormElement | null>(null);

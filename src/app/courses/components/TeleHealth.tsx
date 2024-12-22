@@ -21,7 +21,7 @@ export default function TeleHealth() {
                   <p className="font-nuno mt-5">Join the digital health revolution and shape the future of healthcare delivery.</p>
               </div>
               <div className="w-full lg:w-1/2">
-                  <CourseForm/>
+                  <CourseForm courseTitle="Teelhealth Technology"/>
               </div>
           </div>
       </div>

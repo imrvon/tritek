@@ -21,7 +21,7 @@ export default function Cloud() {
                   <p className="font-nuno mt-5">Cloud architects trained by Tritek command average starting salaries of $65,000.</p>
               </div>
               <div className="w-full lg:w-1/2">
-                  <CourseForm />
+                  <CourseForm courseTitle="Cloud Computing" />
               </div>
           </div>
       </div>

@@ -20,7 +20,7 @@ export default function HR() {
                   <p className="font-nuno mt-5">HR tech specialists trained by Tritek are revolutionising people management nationwide.</p>
               </div>
               <div className="w-full lg:w-1/2">
-                  <CourseForm />
+                  <CourseForm courseTitle="HR Training"/>
               </div>
           </div>
       </div>

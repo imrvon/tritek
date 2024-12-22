@@ -20,7 +20,7 @@ export default function Digital() {
                   <p className="font-nuno mt-5">Our graduates manage six-figure marketing budgets and command premium salaries. Join them.</p>
               </div>
               <div className="w-full lg:w-1/2">
-                  <CourseForm/>
+                  <CourseForm courseTitle="Digital Marketing"/>
               </div>
           </div>
       </div>

@@ -21,7 +21,7 @@ export default function EdTech() {
                   <p className="font-nuno mt-5">EdTech specialists trained by Tritek are driving digital transformation in schools nationwide.</p>
               </div>
               <div className="w-full lg:w-1/2">
-                  <CourseForm />
+                  <CourseForm courseTitle="Education Technology Specialist"/>
               </div>
           </div>
       </div>

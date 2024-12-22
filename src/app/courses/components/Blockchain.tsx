@@ -21,7 +21,7 @@ export default function Blockchain() {
                   <p className="font-nuno mt-5">Join the blockchain revolution and command premium salaries in this cutting-edge field.</p>
               </div>
               <div className="w-full lg:w-1/2">
-                  <CourseForm/>
+                  <CourseForm courseTitle="Blockchain"/>
               </div>
           </div>
       </div>

@@ -20,7 +20,7 @@ export default function Data() {
                   <p className="font-nuno mt-5">Graduate guarantee: Join the 90% of our data analysts who secure roles within 4 months.</p>
               </div>
               <div className="w-full lg:w-1/2">
-                  <CourseForm />
+                  <CourseForm courseTitle="Data Analysis" />
               </div>
           </div>
       </div>

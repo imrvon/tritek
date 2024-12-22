@@ -11,9 +11,14 @@ interface FormValues {
   phone_number: string;
   email_address: string;
   message: string;
+  courseTitle: string; // Included courseTitle in FormValues
 }
 
-export default function CourseForm() {
+interface CourseFormProps {
+  courseTitle: string; // Props for courseTitle
+}
+
+export default function CourseForm({ courseTitle }: CourseFormProps) {
   const [isSuccess, setIsSuccess] = useState(false);
 
   const service_id = process.env.NEXT_PUBLIC_SERVICE_ID as string;
@@ -61,6 +66,7 @@ export default function CourseForm() {
       phone_number: '',
       email_address: '',
       message: '',
+      courseTitle, // Automatically include courseTitle in initialValues
     },
     validationSchema: basicSchema,
     onSubmit,
@@ -159,6 +165,14 @@ export default function CourseForm() {
             </small>
           )}
         </div>
+
+        {/* Hidden Input for courseTitle */}
+        <input
+          type="hidden"
+          name="courseTitle"
+          value={values.courseTitle}
+          readOnly
+        />
 
         <button
           type="submit"
