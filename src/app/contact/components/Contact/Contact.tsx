@@ -18,7 +18,7 @@ export default function Contact() {
                   <p className="font-medium tracking-[1] text-2xl sm:text-3xl text-center sm:text-left">+44 7401 262066</p>
                 </div>
               </Link>
-              <Link href='mailto:info@tritekconsulting.co.uk' className="inline-block sm:w-auto w-full sm:flex items-center sm:items-end gap-4 bg-[#333333] p-6 hover:-translate-y-2 transition-transform delay-0 duration-300 flex-col sm:flex-row">
+              <Link href='mailto:info@tritekconsulting.co.uk?subject=Quick Enquiry!' className="inline-block sm:w-auto w-full sm:flex items-center sm:items-end gap-4 bg-[#333333] p-6 hover:-translate-y-2 transition-transform delay-0 duration-300 flex-col sm:flex-row">
                 <div className="text-5xl flex justify-center sm:block "><PiEnvelopeOpenLight/></div>
                 <div>
                   <h5 className="text-sm tracking-[1] text-center sm:text-left">GET IN TOUCH</h5>
