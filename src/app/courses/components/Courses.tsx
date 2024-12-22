@@ -57,7 +57,7 @@ export default function Courses() {
                     <p className="font-nuno mt-[3.5%] text-lg">Our graduates don’t just land jobs, they thrive as leaders in their industries. With hands-on experience and career mentorship, you’ll be ready to command six-figure salaries in record time.</p>
                     <p className="font-nuno mt-[3.5%] text-lg">Join thousands of successful alumni who’ve redefined their careers with the Elite Tech Training Programme.</p>
                 </div>
-                <Link href=''
+                <Link href='#courses'
                 className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%] font-nuno"
                 >
                 Begin Your Elite Journey
@@ -100,7 +100,7 @@ export default function Courses() {
             </div>
         </div>
 
-        <div className="py-[5%]">
+        <div className="py-[5%]" id="courses">
             <h4 className="text-4xl font-bold text-center font-dm pb-[5%]">Our Courses</h4>
             <div className="flex flex-wrap">
                 {CoursesData.map((course: Course, index: number) => (

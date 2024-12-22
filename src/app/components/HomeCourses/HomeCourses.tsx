@@ -18,7 +18,7 @@ export default function HomeCourses() {
                             <h4 className="text-head-primary text-xl font-bold font-spartan">{data.name}</h4>
                             <p className="text-sm font-nuno">{data.description}</p>
                         </div>
-                        <Link href='/contact' className="flex gap-1 items-center text-sm text-secondary mt-[5%] font-nuno w-fit group/inner">
+                        <Link href={data.link} className="flex gap-1 items-center text-sm text-secondary mt-[5%] font-nuno w-fit group/inner">
                             ENROL NOW
                             <PiCaretCircleRight className="text-xl group-hover/inner:translate-x-2 transition-transform duration-200 ease-in-out"/>
                         </Link>
@@ -42,7 +42,7 @@ export default function HomeCourses() {
                 <li className="flex gap-1 items-center sm:w-1/2"><PiCheckCircle className="text-xl" /> Cloud Computing</li>
             </ul>
             <p className="py-2">All courses are <strong className="text-[#191919]">CPD Certified</strong>, ensuring global recognition.</p>
-            <Link href='/contact' className="flex gap-1 items-center text-sm text-secondary mt-[5%] font-nuno w-fit group hover:text-black transition-color duration-200 ease-in-out">
+            <Link href='/courses' className="flex gap-1 items-center text-sm text-secondary mt-[5%] font-nuno w-fit group hover:text-black transition-color duration-200 ease-in-out">
                 SEE ALL COURSES
                 <PiCaretCircleRight className="text-lg group-hover:translate-x-2 transition-transform duration-200 ease-in-out"/>
             </Link>

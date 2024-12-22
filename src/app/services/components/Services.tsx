@@ -6,8 +6,7 @@ export default function Services() {
   return (
     <section>
       <div
-        className="relative flex items-center justify-center min-h-screen bg-fixed bg-cover bg-top bg-[url('/assets/img/hero_services.webp')]"
-      >
+        className="relative flex items-center justify-center min-h-screen bg-fixed bg-cover bg-top bg-[url('/assets/img/hero_services.webp')]">
         <article className="z-10 text-white md:w-7/12 p-2 text-center mt-20">
           <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-dm">Services</h1>
           <p className="text-xl sm:text-2xl italic my-10 sm:leading-10 font-ibm">
@@ -27,7 +26,7 @@ export default function Services() {
                 <div className="flex justify-center items-center flex-col bg-white text-center w-full sm:w-[49%] p-[5%] lg:p-0 sm:mb-0 mb-[5%]">
                     <Image src="/assets/icons/acquisition.svg" width={1024} height={998} alt="icon" className="w-1/3"/>
                     <h4 className="font-spartan font-bold text-xl text-head-primary w-[70%] my-[2.5%]">Corporate Training Services</h4>
-                    <Link href='/contact' className="flex gap-1 items-center text-sm text-secondary mt-[5%] font-nuno w-fit group hover:text-black transition-color duration-200 ease-in-out">
+                    <Link href='#corp' className="flex gap-1 items-center text-sm text-secondary mt-[5%] font-nuno w-fit group hover:text-black transition-color duration-200 ease-in-out">
                         READ MORE
                         <PiCaretCircleRight className="text-lg group-hover:translate-x-2 transition-transform duration-200 ease-in-out"/>
                     </Link>
@@ -35,7 +34,7 @@ export default function Services() {
                 <div className="flex justify-center items-center flex-col bg-white text-center w-full sm:w-[49%] p-[5%] lg:p-0 sm:mb-0 mb-[5%]">
                     <Image src="/assets/icons/company.svg" width={1024} height={998} alt="icon" className="w-1/3"/>
                     <h4 className="font-spartan font-bold text-xl text-head-primary w-[70%] my-[2.5%]">Public-Sector Partnerships</h4>
-                    <Link href='/contact' className="flex gap-1 items-center text-sm text-secondary mt-[5%] font-nuno w-fit group hover:text-black transition-color duration-200 ease-in-out">
+                    <Link href='#pub' className="flex gap-1 items-center text-sm text-secondary mt-[5%] font-nuno w-fit group hover:text-black transition-color duration-200 ease-in-out">
                         READ MORE
                         <PiCaretCircleRight className="text-lg group-hover:translate-x-2 transition-transform duration-200 ease-in-out"/>
                     </Link>
@@ -43,7 +42,7 @@ export default function Services() {
                 
           </div>
       </div>
-      <div className="bg-grey flex flex-wrap">
+      <div className="bg-grey flex flex-wrap" id="corp">
             <div className="w-full h-[500px] lg:h-auto lg:w-1/3 bg-[url(/assets/img/serv1.webp)] bg-center bg-cover lg:bg-left bg-no-repeat"></div>
             <div className="w-full lg:w-2/3 p-[5%]">
                 <h2 className="font-spartan text-lg font-medium text-secondary mb-[5%] uppercase">Corporate Training Services</h2>
@@ -75,14 +74,14 @@ export default function Services() {
                         </ul>
                     </div>
                 </div>
-                <Link href=''
+                <Link href='/contact'
                 className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%] font-nuno"
                 >
                 <span className="hidden sm:inline">Let’s Build a Smarter Workforce—</span>Contact Us Today!
                 </Link>
             </div>
       </div>
-      <div className="bg-grey flex flex-col-reverse lg:flex-row flex-wrap">
+      <div className="bg-grey flex flex-col-reverse lg:flex-row flex-wrap" id="pub">
             <div className="w-full lg:w-2/3 p-[5%]">
                 <h2 className="font-spartan text-lg font-medium text-secondary mb-[5%] uppercase">Public-Sector Partnerships</h2>
                 <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Driving Impact for Communities and Institutions</h3>
@@ -110,7 +109,7 @@ export default function Services() {
                         </ul>
                     </div>
                 </div>
-                <Link href=''
+                <Link href='/contact'
                 className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%] font-nuno"
                 >
                 <span className="hidden sm:inline">Partner With Us to Drive Public-Sector Innovation—</span>Contact Our Team!

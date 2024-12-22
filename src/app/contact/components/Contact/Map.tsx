@@ -42,11 +42,11 @@ export default function Map(): JSX.Element {
             </div>
             <div>
               <h4 className="text-primary text-[13px]">CONTACT</h4>
-              <Link href="tel:+447412835416" className="text-[15px] text-black block">
-                +44 0730 0140669
+              <Link href="tel:447401262066" className="text-[15px] text-black block">
+              +44 7401 262066
               </Link>
-              <Link href="tel:+4407401262066" className="text-[15px] text-black">
-                +44 0740 1262066
+              <Link href="tel:447496149132" className="text-[15px] text-black">
+              +44 7496 149132
               </Link>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function Map(): JSX.Element {
             </div>
             <div>
               <h4 className="text-primary text-[13px]">E-MAIL</h4>
-              <Link href="mailto:info@tritekconsulting.co.uk" className="text-[15px] text-black">
+              <Link href="mailto:info@tritekconsulting.co.uk?subject=Quick Enquiry!" className="text-[15px] text-black">
                 info@tritekconsulting.co.uk
               </Link>
             </div>
