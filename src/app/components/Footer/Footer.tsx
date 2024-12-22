@@ -12,17 +12,17 @@ export default function Footer() {
     <footer className="bg-[#eaeae8] flex flex-wrap px-[5%] py-[7%]">
         <div className='w-full sm:w-1/2 lg:w-1/4 lg:mb-0 mb-[10%] sm:mb-[5%]'>
             <Link href='/' className=""><Image src='/assets/img/logo-black.png' width={2710} height={1003} alt="logo" className='w-1/2 mb-[15%]' /></Link>
-            <div className='flex items-center gap-1 mb-4'>
+            <div className='flex items-center gap-1 hover:text-primary duration-150 ease-in-out transition-colors mb-4'>
                 <FaMobileAlt />
-                <Link href='tel:447401262066' className='text-xs sm:text-sm font-nuno'>+44 7401 262066</Link>
+                <Link href='tel:447401262066' className='text-sm font-nuno'>+44 7401 262066</Link>
             </div>
-            <div className='flex items-center gap-1 mb-4'>
+            <div className='flex items-center gap-1 hover:text-primary duration-150 ease-in-out transition-colors mb-4'>
                 <FaEnvelope />
-                <Link href='mailto:info@tritekconsulting.co.uk' className='text-xs sm:text-sm font-nuno'>info@tritekconsulting.co.uk</Link>
+                <Link href='mailto:info@tritekconsulting.co.uk' className='text-sm font-nuno'>info@tritekconsulting.co.uk</Link>
             </div>
-            <div className='flex items-center gap-1'>
+            <div className='flex items-center gap-1 hover:text-primary duration-150 ease-in-out transition-colors'>
                 <FaMapMarkerAlt />
-                <p className='text-xs sm:text-sm font-nuno'>Enfield, Greater London, UK</p>
+                <p className='text-sm font-nuno'>Enfield, Greater London, UK</p>
             </div>
         </div>
         <div className='w-full sm:w-1/2 lg:w-1/4 lg:mb-0 mb-[10%] sm:mb-[5%]'>
