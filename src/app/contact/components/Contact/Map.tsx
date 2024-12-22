@@ -61,7 +61,7 @@ export default function Map(): JSX.Element {
               </Link>
             </div>
           </div>
-          <Link href="mailto:info@tritekconsulting.co.uk?subject=Quick Enquiry!">
+          <Link href="mailto:info@tritekconsulting.co.uk?subject=Schedule a Free Meeting">
             <button className="bg-primary text-white flex items-center gap-2 font-light w-fit tracking-[1px] p-6 hover:-translate-y-2 transition-transform delay-0 duration-300">
               SCHEDULE A MEETING
               <span>
