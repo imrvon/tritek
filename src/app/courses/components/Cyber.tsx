@@ -28,7 +28,7 @@ export default function Cyber() {
                     <p className="font-nuno mt-[3.5%] text-lg">Become the security expert companies are fighting to hire.
                     </p>
                 </div>
-                <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+                <div className="w-full lg:w-1/2">
                   <CourseForm />
               </div>
           </div>

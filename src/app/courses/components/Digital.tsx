@@ -19,7 +19,7 @@ export default function Digital() {
                   <p className="font-nuno">You&apos;ll work with Google Analytics, Facebook Ads, SEO tools, and marketing automation platforms while creating campaigns that deliver measurable results. Perfect for marketers seeking advancement or professionals ready to enter the digital marketing space.</p>
                   <p className="font-nuno mt-5">Our graduates manage six-figure marketing budgets and command premium salaries. Join them.</p>
               </div>
-              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+              <div className="w-full lg:w-1/2">
                   <CourseForm/>
               </div>
           </div>

@@ -18,7 +18,7 @@ export default function AI() {
                 Transform into a sought-after AI professional in just 16 weeks. Master machine learning algorithms, neural networks, and deep learning while building real AI applications that solve business problems. Companies are desperately seeking AI talent – with salaries starting at $120,000.</p>
                 <p className="font-nuno">Our AI course goes beyond theory. You&apos;ll create chatbots, develop recommendation systems, and build predictive models using the same tools and frameworks used by tech giants. Work directly with TensorFlow, PyTorch, and OpenAI&apos;s cutting-edge technologies.</p>
             </div>
-            <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+            <div className="w-full lg:w-1/2">
                 <CourseForm />
             </div>
         </div>

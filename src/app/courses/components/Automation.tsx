@@ -19,7 +19,7 @@ export default function Automation() {
                   <p className="font-nuno">Work with UiPath, Power Automate, and Zapier to create end-to-end automation solutions. Perfect for business analysts, operations professionals, or anyone ready to lead automation initiatives.</p>
                   <p className="font-nuno mt-5">Automation experts trained by Tritek save companies millions and command premium salaries.</p>
               </div>
-              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+              <div className="w-full lg:w-1/2">
                   <CourseForm />
               </div>
           </div>

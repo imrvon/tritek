@@ -19,7 +19,7 @@ export default function VideoEditing() {
                   <p className="font-nuno">Learn Adobe Premiere Pro, After Effects, and modern editing techniques. Create motion graphics, master color grading, and develop the technical skills that separate professional editors from amateurs. Perfect for creative professionals or anyone passionate about video production.</p>
                   <p className="font-nuno mt-5">Video Editors work with major brands and production houses. Join them.</p>
               </div>
-              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+              <div className="w-full lg:w-1/2">
                   <CourseForm/>
               </div>
           </div>

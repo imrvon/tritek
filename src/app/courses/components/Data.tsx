@@ -19,7 +19,7 @@ export default function Data() {
                   <p className="font-nuno">Learn to clean data, perform advanced analysis, and create compelling visualisations that drive business decisions. Work with tools like Tableau, Power BI, and Python libraries used by top companies. Perfect for analysts seeking advancement or professionals ready to enter the data field.</p>
                   <p className="font-nuno mt-5">Graduate guarantee: Join the 90% of our data analysts who secure roles within 4 months.</p>
               </div>
-              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+              <div className="w-full lg:w-1/2">
                   <CourseForm />
               </div>
           </div>

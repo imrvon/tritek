@@ -19,7 +19,7 @@ export default function HR() {
                   <p className="font-nuno">Learn HRIS platforms, HR analytics tools, and digital recruitment technologies. Perfect for HR professionals ready to lead digital transformation initiatives or transition into HR tech roles.</p>
                   <p className="font-nuno mt-5">HR tech specialists trained by Tritek are revolutionising people management nationwide.</p>
               </div>
-              <div className="w-full h-[500px] lg:h-auto lg:w-1/2">
+              <div className="w-full lg:w-1/2">
                   <CourseForm />
               </div>
           </div>
