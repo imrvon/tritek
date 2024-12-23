@@ -14,7 +14,7 @@ export default function Hero() {
             className="absolute h-full w-full top-0 bottom-0 object-cover -z-10 bg-right" id='wrapper'
         >
             <source
-            src="/assets/bg-vid.mp4"
+            src="https://culturefoodsmarket.com/wp-content/uploads/2024/12/bg-vid.mp4"
             type="video/mp4"
             />
         </video>
