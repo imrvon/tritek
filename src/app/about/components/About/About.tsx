@@ -12,6 +12,47 @@ export default function About() {
                 <div className='absolute top-0 left-0 w-full h-full bg-[#000000bb]'></div>
             </div>
 
+            <div className='flex flex-wrap flex-col md:flex-row'>
+                <div className="p-[5%] md:w-1/2">
+                    <h3 className="font-dm text-3xl sm:text-4xl md::text-5xl w-5/6 text-head-primary">Welcome to Tritek Academy</h3>
+                    <p className="font-nuno mt-[2.5%] text-lg">At Tritek Academy, we believe technology is not just a tool; it’s a gateway to transformation. In a world where traditional career paths are constantly disrupted, we stand at the crossroads of change, empowering individuals to harness technology and redefine their futures.</p>
+                    
+                    <h2 className="font-spartan text-lg tracking-wider font-semibold text-secondary mt-[3%]">OUR MISSION</h2>
+                    <p className="font-nuno mt-[1.5%] text-lg">To go beyond traditional technical education by crafting learning journeys that transform lives. We nurture the human potential behind the code, the strategy behind the systems, and the purpose behind the projects.</p>
+                    <p className="font-nuno mt-[3.5%] text-lg">Through immersive, project-based experiences in Business Analysis, Cybersecurity, Data Analysis, Digital Marketing, Product Management, Project Management, and emerging technologies, we prepare professionals to tackle real-world challenges and make meaningful contributions to their industries.</p>
+
+                    <h2 className="font-spartan text-lg tracking-wider font-semibold text-secondary mt-[3%] uppercase">Our Vision</h2>
+                    <p className="font-nuno mt-[1.5%] text-lg">We envision a future where technology education knows no boundaries. Tritek Academy is the cornerstone of global digital career transformation, enabling every individual, regardless of their background, to harness the power of technology for impactful innovation.</p>
+                    <p className="font-nuno mt-[3.5%] text-lg">Our graduates don’t just earn certificates – they become architects of digital transformation, leveraging their skills to revolutionize industries, solve complex problems, and lead with confidence.</p>
+                </div>
+                <div className="bg-[url(/assets/img/company.webp)] bg-no-repeat bg-cover relative h-[500px] md:h-auto md:w-1/2"></div>
+            </div>
+
+            <div className="flex flex-wrap flex-col-reverse md:flex-row">
+                <div className='h-[500px] md:h-auto md:w-1/2 bg-[url(/assets/img/about3.webp)] bg-cover bg-no-repeat md:bg-top lg:bg-left'></div>
+                <div className='md:w-1/2 p-[5%]'>
+                    <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">What Sets Us Apart</h3>
+                        <div>
+                            <ul className='mt-[5%]'>
+                                <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Human-Centric Approach: Every learner’s story matters. From healthcare professionals embracing telehealth to educators driving digital innovation, we tailor education to real-world needs.</span></li>
+                                <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Practical Excellence: Our comprehensive curriculum bridges the gap between learning and doing, equipping learners with hands-on experience through live projects and simulations.</span></li>
+                                <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Global Impact: With a presence in the UK, Nigeria, the US, and Canada, we’ve helped over 5,000 professionals transition into high-demand tech roles.</span></li>
+                            </ul>
+                        </div>
+
+                        <h3 className="font-spartan text-lg my-4 text-head-primary uppercase">Our Values</h3>
+                        <div>
+                            <ul className='mt-[5%]'>
+                                <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Innovation: Staying ahead of industry trends to provide cutting-edge skills.</span></li>
+                                <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Excellence: Delivering top-tier, practical training aligned with global standards.</span></li>
+                                <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Community: Building an inclusive ecosystem of learners, alumni, and mentors dedicated to lifelong growth.
+                                </span></li>
+                            </ul>
+                        </div>
+                    <p className="font-nuno mt-[3.5%] text-lg">Join Tritek Academy and take the first step toward a career transformation that not only prepares you for the future but empowers you to shape it.</p>
+                </div>  
+            </div>
+
             <div className="flex flex-wrap flex-col md:flex-row">
                 <div className='md:w-1/2 p-[5%]'>
                     <h2 className="font-spartan text-lg tracking-wider font-medium text-secondary mb-[5%] uppercase">About the CEO</h2>
@@ -33,48 +74,6 @@ export default function About() {
                 </div>
 
                 <div className='h-[500px] md:h-auto md:w-1/2 bg-[url(/assets/img/ceo.webp)] bg-cover bg-no-repeat md:bg-top lg:bg-left'></div>
-            </div>
-
-            <div className='flex flex-wrap flex-col-reverse md:flex-row'>
-                <div className="bg-[url(/assets/img/company.webp)] bg-no-repeat bg-cover relative h-[500px] md:h-auto md:w-1/2"></div>
-                <div className="p-[5%] md:w-1/2">
-                    <h3 className="font-dm text-3xl sm:text-4xl md::text-5xl w-5/6 text-head-primary">Welcome to Tritek Academy</h3>
-                    <p className="font-nuno mt-[2.5%] text-lg">At Tritek Academy, we believe technology is not just a tool; it’s a gateway to transformation. In a world where traditional career paths are constantly disrupted, we stand at the crossroads of change, empowering individuals to harness technology and redefine their futures.</p>
-                    
-                    <h2 className="font-spartan text-lg tracking-wider font-semibold text-secondary mt-[3%]">OUR MISSION</h2>
-                    <p className="font-nuno mt-[1.5%] text-lg">To go beyond traditional technical education by crafting learning journeys that transform lives. We nurture the human potential behind the code, the strategy behind the systems, and the purpose behind the projects.</p>
-                    <p className="font-nuno mt-[3.5%] text-lg">Through immersive, project-based experiences in Business Analysis, Cybersecurity, Data Analysis, Digital Marketing, Product Management, Project Management, and emerging technologies, we prepare professionals to tackle real-world challenges and make meaningful contributions to their industries.</p>
-
-                    <h2 className="font-spartan text-lg tracking-wider font-semibold text-secondary mt-[3%] uppercase">Our Vision</h2>
-                    <p className="font-nuno mt-[1.5%] text-lg">We envision a future where technology education knows no boundaries. Tritek Academy is the cornerstone of global digital career transformation, enabling every individual, regardless of their background, to harness the power of technology for impactful innovation.</p>
-                    <p className="font-nuno mt-[3.5%] text-lg">Our graduates don’t just earn certificates – they become architects of digital transformation, leveraging their skills to revolutionize industries, solve complex problems, and lead with confidence.</p>
-                </div>
-            </div>
-
-            <div className="flex flex-wrap flex-col md:flex-row">
-                <div className='md:w-1/2 p-[5%]'>
-                    <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">What Sets Us Apart</h3>
-                        <div>
-                            <ul className='mt-[5%]'>
-                                <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Human-Centric Approach: Every learner’s story matters. From healthcare professionals embracing telehealth to educators driving digital innovation, we tailor education to real-world needs.</span></li>
-                                <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Practical Excellence: Our comprehensive curriculum bridges the gap between learning and doing, equipping learners with hands-on experience through live projects and simulations.</span></li>
-                                <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Global Impact: With a presence in the UK, Nigeria, the US, and Canada, we’ve helped over 5,000 professionals transition into high-demand tech roles.</span></li>
-                            </ul>
-                        </div>
-
-                        <h3 className="font-spartan text-lg my-4 text-head-primary uppercase">Our Values</h3>
-                        <div>
-                            <ul className='mt-[5%]'>
-                                <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Innovation: Staying ahead of industry trends to provide cutting-edge skills.</span></li>
-                                <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Excellence: Delivering top-tier, practical training aligned with global standards.</span></li>
-                                <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Community: Building an inclusive ecosystem of learners, alumni, and mentors dedicated to lifelong growth.
-                                </span></li>
-                            </ul>
-                        </div>
-                    <p className="font-nuno mt-[3.5%] text-lg">Join Tritek Academy and take the first step toward a career transformation that not only prepares you for the future but empowers you to shape it.</p>
-                </div>
-
-                <div className='h-[500px] md:h-auto md:w-1/2 bg-[url(/assets/img/about3.webp)] bg-cover bg-no-repeat md:bg-top lg:bg-left'></div>
             </div>
         </section>
     )
