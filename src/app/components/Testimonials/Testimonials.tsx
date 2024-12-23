@@ -64,7 +64,7 @@ export default function Testimonials() {
                     alt={data.name}
                     className="rounded-[50%] grayscale"
                   />
-                  <PiPlayFill className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl cursor-pointer text-primary scale-100 hover:scale-125 transition-transform duration-150 ease-in-out" />
+                  <PiPlayFill className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl cursor-pointer text-[#eeeeee] scale-100 hover:scale-125 transition-transform duration-150 ease-in-out" />
                 </div>
                 <div className="flex flex-col justify-center sm:pl-8 text-center sm:text-left sm:w-2/3 relative sm:before:absolute sm:before:w-[1px] sm:before:bg-black sm:before:h-full sm:before:left-0 sm:before:top-0">
                   <p className="mb-[5%] w-full sm:w-11/12 sm:px-0 px-4">{data.description}</p>

@@ -73,6 +73,13 @@ export default function Marquee() {
                                 <p className=''>(2023)</p>
                             </div>
                         </div>
+                        <div className='text-black hover:text-primary duration-300 delay-0 ease-in transition-colors flex gap-2 items-center font-bold'>
+                            <FaAward className='text-7xl'/>
+                            <div>
+                                <p className='text-xl'>Top 20 Black-owned Businesses by Chanel & Lloyd Banks</p>
+                                <p className=''>(2024)</p>
+                            </div>
+                        </div>
                     </div>
                     <div className='flex marquee-group' aria-hidden>
                         <div className='text-black hover:text-primary duration-300 delay-0 ease-in transition-colors flex gap-2 items-center font-bold'>
@@ -136,6 +143,13 @@ export default function Marquee() {
                             <div>
                                 <p className='text-xl'>Featured in Forbes</p>
                                 <p className=''>(2023)</p>
+                            </div>
+                        </div>
+                        <div className='text-black hover:text-primary duration-300 delay-0 ease-in transition-colors flex gap-2 items-center font-bold'>
+                            <FaAward className='text-7xl'/>
+                            <div>
+                                <p className='text-xl'>Top 20 Black-owned Businesses by Chanel & Lloyd Banks</p>
+                                <p className=''>(2024)</p>
                             </div>
                         </div>
                     </div>

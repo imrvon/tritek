@@ -68,11 +68,9 @@ export default function HomeEvents() {
                     ))}
                 </div>
             </div>
-            <div className="">
-                <Image src='/assets/img/events/event-design.png' width={1920} height={273} alt="event page design" />
-            </div>
+            
             <div className='flex justify-center mt-[3.5%] items-center gap-4 text-white font-nuno'>
-                <Link href='#' className="rounded-[50px] py-[21px] px-[28px] shadow-[0_0_0_4em_#057584_inset] hover:-translate-y-[3px] ease-in-out transition-transform duration-300">See All Events</Link>
+                <Link href='#' className="rounded-[50px] py-[21px] px-[28px] shadow-[0_0_0_4em_#6a008e_inset] hover:-translate-y-[3px] ease-in-out transition-transform duration-300">See All Events</Link>
             </div>
         </div>
     </section>

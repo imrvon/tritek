@@ -72,7 +72,7 @@ export default function Header() {
             </nav>
         </div>
         <div className='hidden md:flex text-white font-nuno justify-end w-5/12'>
-            <Link href='/contact' className="rounded-[50px] py-[21px] px-[28px] shadow-[0_0_0_4em_#057584_inset] hover:-translate-y-[3px] ease-in-out transition-transform duration-300">Contact Us</Link>
+            <Link href='/contact' className="rounded-[50px] py-[21px] px-[28px] shadow-[0_0_0_4em_#6a008e_inset] hover:-translate-y-[3px] ease-in-out transition-transform duration-300">Contact Us</Link>
         </div>
     </header>
   )

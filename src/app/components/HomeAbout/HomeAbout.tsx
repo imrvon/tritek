@@ -17,28 +17,28 @@ export default function HomeAbout() {
                     <div className="h-24 w-24 mb-[1.5%] sm:mb-[2%] border-secondary border-2 border-solid rounded-[50%] flex justify-center items-center text-5xl">
                         <IoPeopleOutline/>
                     </div>
-                    <h4 className="text-[32px] text-head-primary text-spartan font-bold">1.4K</h4>
+                    <h4 className="text-[32px] text-head-primary text-spartan font-bold">5k</h4>
                     <p>Candidates</p>
                 </div>
                 <div className="font-spartan text-center flex flex-col justify-center items-center">
                     <div className="h-24 w-24 mb-[1.5%] sm:mb-[2%] border-secondary border-2 border-solid rounded-[50%] flex justify-center items-center text-5xl">
                         <GiBullseye/>
                     </div>
-                    <h4 className="text-[32px] text-head-primary text-spartan font-bold">400+</h4>
+                    <h4 className="text-[32px] text-head-primary text-spartan font-bold">3k+</h4>
                     <p>Success Stories</p>
                 </div>
                 <div className="font-spartan text-center flex flex-col justify-center items-center">
                     <div className="h-24 w-24 mb-[1.5%] sm:mb-[2%] border-secondary border-2 border-solid rounded-[50%] flex justify-center items-center text-5xl">
                         <LiaRocketSolid/>
                     </div>
-                    <h4 className="text-[32px] text-head-primary text-spartan font-bold">100+</h4>
-                    <p>Completed Projects</p>
+                    <h4 className="text-[32px] text-head-primary text-spartan font-bold">10k+</h4>
+                    <p>Completed Classes</p>
                 </div>
                 <div className="font-spartan text-center flex flex-col justify-center items-center">
                     <div className="h-24 w-24 mb-[1.5%] sm:mb-[2%] border-secondary border-2 border-solid rounded-[50%] flex justify-center items-center text-5xl">
                         <LiaAwardSolid/>
                     </div>
-                    <h4 className="text-[32px] text-head-primary text-spartan font-bold">4</h4>
+                    <h4 className="text-[32px] text-head-primary text-spartan font-bold">10+</h4>
                     <p>Awards</p>
                 </div>
                 
