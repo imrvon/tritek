@@ -83,7 +83,7 @@ export default function Testimonials() {
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-10">
           <div className="rounded-lg overflow-hidden max-w-3xl w-full relative flex justify-center items-center">
-                <div className="absolute top-[10%] text-white right-[5%] text-xl flex gap-1 items-center cursor-pointer" onClick={closeModal}>
+                <div className="absolute top-[10%] text-white right-[5%] text-xl flex gap-1 items-center cursor-pointer z-10" onClick={closeModal}>
                     <PiX />
                     <span className="text-xs bg-primary p-2">CLOSE VIDEO</span>
                 </div>
