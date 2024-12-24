@@ -29,8 +29,6 @@ function PostsBody() {
     fetchPosts();
   }, []);
 
-  // console.log(postsNew);
-
   if (loading) {
     return (
       <div className="flex justify-center items-center h-[10rem]">
