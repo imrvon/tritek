@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Hero() {
   return (
-    <div className='relative min-h-screen flex items-center font-ibm'>
+    <div className='relative min-h-screen flex items-center font-heading'>
         <video
             autoPlay
             playsInline
@@ -21,9 +21,9 @@ export default function Hero() {
         <div className="bg-[#00000098] absolute top-0 left-0 w-full h-full -z-10"></div>
         <div className="px-[5%] w-full">
             <div className="sm:w-9/12 text-white mt-[25%] md:mt-[20%]">
-                <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold italic">Transform <br/>Your Career</h2>
+                <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold">Transform <br/>Your Career</h2>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-light not-italic mt-[1.5%]">Learn. Practice. <span className="font-bold italic">Thrive.</span></h2>
-                <p className="italic text-xl md:text-2xl mt-[3.5%] mb-[7%] md:w-10/12 lg:w-7/12">Practical, hands-on tech training that equips you with the skills and confidence to land high-paying roles you’ll love.</p>
+                <p className="italic text-xl md:text-2xl mt-[3.5%] mb-[7%] md:w-10/12 lg:w-7/12 font-paragraph">Practical, hands-on tech training that equips you with the skills and confidence to land high-paying roles you’ll love.</p>
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link href='/courses' className="rounded-[50px] border-[1px] font-nuno py-4 sm:py-5 px-6 sm:px-7 inline-block bg-transparent shadow-[0_0_0_0_#ffffff_inset] duration-300 ease-in-out transition-all hover:text-primary hover:shadow-[0_0_0_4em_#ffffff_inset,0_5px_15px_rgba(0,0,0,0.1)] hover:-translate-y-[3px] w-fit">Enroll Now</Link>
                     <Link href='/contact' className="rounded-[50px] border-[1px] font-nuno py-4 sm:py-5 px-6 sm:px-7 inline-block bg-transparent shadow-[0_0_0_0_#ffffff_inset] duration-300 ease-in-out transition-all hover:text-primary hover:shadow-[0_0_0_4em_#ffffff_inset,0_5px_15px_rgba(0,0,0,0.1)] hover:-translate-y-[3px] w-fit">Book a Free Consultation</Link>

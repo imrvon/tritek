@@ -25,7 +25,7 @@ export default function Testimonials() {
 
   return (
     <div className='py-[5%] px-[3%] slidercont bg-grey mt-[700px] sm:mt-[50%] md:mt-0'>
-      <h2 className='text-4xl sm:text-5xl font-bold text-head-primary text-center font-dm'>
+      <h2 className='text-4xl sm:text-5xl font-bold text-head-primary text-center font-heading'>
         Success Stories: Real People, Real Results
       </h2>
       <div className="mt-[5%] slidertest">
@@ -52,7 +52,7 @@ export default function Testimonials() {
         >
           {TestimonialsData.map((data) => (
             <SwiperSlide key={data.id} className="pb-[10%]">
-              <div className="flex flex-col justify-center items-center sm:justify-normal sm:flex-row font-nuno">
+              <div className="flex flex-col justify-center items-center sm:justify-normal sm:flex-row font-paragraph">
                 <div
                   className="overflow-hidden sm:mr-8 w-1/2 sm:w-1/4 flex justify-center items-center sm:block sm:mb-0 mb-4 relative"
                   onClick={() => openModal(data.video)}
@@ -70,7 +70,7 @@ export default function Testimonials() {
                   <p className="mb-[5%] w-full sm:w-11/12 sm:px-0 px-4">{data.description}</p>
                   <div className="flex justify-center sm:justify-normal items-center gap-8">
                     <BiSolidQuoteRight className="text-primary text-5xl" />
-                    <p className="text-lg font-semibold">{data.name} - <span className="text-sm font-normal">{data.job}</span></p>
+                    <p className="text-lg font-semibold font-heading">{data.name} - <span className="text-sm font-normal">{data.job}</span></p>
                   </div>
                 </div>
               </div>

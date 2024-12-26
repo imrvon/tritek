@@ -1,12 +1,32 @@
 import { Nunito_Sans, IBM_Plex_Serif, League_Spartan, DM_Serif_Display } from "next/font/google";
+import localFont from 'next/font/local'
 import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
-const nuno = Nunito_Sans({ subsets: ["latin"], weight: ['200', '300', '400', '500', '600', '700', '800', '900', '1000'], variable: '--font-nuno', display: 'swap', adjustFontFallback: false });
-const ibm = IBM_Plex_Serif({ subsets: ["latin"], weight: ['100','200', '300', '400', '500', '600', '700'], variable: '--font-ibm', display: 'swap', adjustFontFallback: false });
-const spartan = League_Spartan({ subsets: ["latin"], weight: ['100','200', '300', '400', '500', '600', '700', '800', '900'], variable: '--font-spartan', display: 'swap', adjustFontFallback: false });
-const dm = DM_Serif_Display({ subsets: ["latin"], weight: ['400'], variable: '--font-dm', display: 'swap', adjustFontFallback: false });
+const paragraph = Nunito_Sans({ subsets: ["latin"], 
+    weight: ['200', '300', '400', '500', '600', '700', '800', '900', '1000'], 
+    variable: '--font-paragraph',
+    display: 'swap', 
+    adjustFontFallback: false });
+    
+const heading = localFont({
+    src: [
+      {
+        path: '../../public/assets/font/GlacialIndifference-Bold.otf',
+        weight: '700',
+        style: 'normal',
+      },
+      {
+        path: '../../public/assets/font/GlacialIndifference-Regular.otf',
+        weight: '400',
+        style: 'normal',
+      },
+    ],
+    variable: '--font-heading',
+    display: 'swap',
+    adjustFontFallback: false  
+  })
 
 export const metadata = {
   title: "Tritek Consulting",
@@ -21,7 +41,7 @@ export default function RootLayout({
     return (
       <html lang="en">
         <body
-          className={`${nuno.variable} ${ibm.variable} ${spartan.variable} ${dm.variable}`}
+          className={`${paragraph.variable} ${heading.variable}`}
         >
             <Header />
             {children}

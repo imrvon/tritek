@@ -1,11 +1,8 @@
-import { FaSpotify } from "react-icons/fa";
-import { FaFedex } from "react-icons/fa6";
-import { SiVerizon, SiSamsung, SiWalmart, SiAliexpress } from "react-icons/si";
 import { FaAward } from "react-icons/fa";
 
 export default function Marquee() {
   return (
-    <section className="relative bg-grey py-[10%] marquee-container before:absolute before:top-0 before:-left-[3px] before:w-1/5 before:inline-block before:bottom-0 before:z-[1] before:pointer-events-none after:absolute after:top-0 after:-right-[3px] after:w-1/5 after:inline-block after:bottom-0 after:z-[1] after:scale-[-1] after:pointer-events-none">
+    <section className="relative bg-grey py-[4%] marquee-container before:absolute before:top-0 before:-left-[3px] before:w-1/5 before:inline-block before:bottom-0 before:z-[1] before:pointer-events-none after:absolute after:top-0 after:-right-[3px] after:w-1/5 after:inline-block after:bottom-0 after:z-[1] after:scale-[-1] after:pointer-events-none font-heading">
         <section className='overflow-hidden'>
             <div className="marquee-wrapper relative">
                 <div className="marquee flex">
