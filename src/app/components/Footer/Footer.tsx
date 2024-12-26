@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link'
-import { FaMobileAlt, FaEnvelope, FaMapMarkerAlt, FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaMobileAlt, FaEnvelope, FaMapMarkerAlt, FaYoutube, FaInstagram, FaTiktok } from "react-icons/fa";
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
 
@@ -53,8 +53,10 @@ export default function Footer() {
                 <Link href='https://www.linkedin.com/company/tritek-consulting-limited/' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary"><FaLinkedinIn /></Link>
                 <Link href='https://www.youtube.com/channel/UC2gN1zoJ8T2KhSEh2kwFH0w' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary"><FaYoutube /></Link>
                 <Link href='https://www.instagram.com/tritekconsultingltd/' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary"><FaInstagram /></Link>
+                <Link href='https://www.tiktok.com/@tritekconsultingltd/' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary"><FaTiktok /></Link>
             </div>
             <p className='text-sm font-nuno w-11/12 sm:w-2/3 md:w-5/6 lg:w-auto'>Join over 5,000 individuals who have trusted Tritek to kickstart their journey into the dynamic world of technology.</p>
+            
         </div>
     </footer>
   )

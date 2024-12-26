@@ -15,8 +15,8 @@ interface Event {
 
 export default function HomeEvents() {
   return (
-    <section className="relative bg-white min-h-screen">
-        <div className="absolute left-[5%] -top-[10%] sm:-top-1/4 md:-top-1/3 lg:-top-1/2 bg-white w-[90%]">
+    <section className="relative bg-white min-h-[500px]">
+        <div className="absolute left-[5%] -top-[25%] sm:-top-[40%] md:-top-[55%] lg:-top-[55%] bg-white w-[90%]">
             <div className="flex flex-col md:flex-row flex-wrap shadow-2xl p-7">
                 {/* Main Highlighted Event */}
                 <div className="relative w-full h-96 md:h-auto md:w-[40%] lg:w-1/2">
@@ -69,8 +69,8 @@ export default function HomeEvents() {
                 </div>
             </div>
             
-            <div className='flex justify-center mt-[3.5%] items-center gap-4 text-white font-paragraph'>
-                <Link href='#' className="rounded-[50px] py-[21px] px-[28px] shadow-[0_0_0_4em_#6a008e_inset] hover:-translate-y-[3px] ease-in-out transition-transform duration-300">See All Events</Link>
+            <div className='flex justify-center mt-[3.5%] items-center gap-4 text-white font-paragraph pb-5 sm:pb-0'>
+                <Link href='#' className="inline-block rounded-[50px] py-[21px] px-[28px] shadow-[0_0_0_4em_#6a008e_inset] hover:-translate-y-[3px] ease-in-out transition-transform duration-300">See All Events</Link>
             </div>
         </div>
     </section>

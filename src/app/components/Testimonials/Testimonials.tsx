@@ -25,7 +25,7 @@ export default function Testimonials() {
 
   return (
     <div className='py-[5%] px-[3%] slidercont bg-grey mt-[700px] sm:mt-[50%] md:mt-0'>
-      <h2 className='text-4xl sm:text-5xl font-bold text-head-primary text-center font-heading'>
+      <h2 className='text-4xl sm:text-5xl font-bold text-head-primary text-center font-heading mt-[50%] min-[350px]:mt-[10%] sm:mt-0'>
         Success Stories: Real People, Real Results
       </h2>
       <div className="mt-[5%] slidertest">

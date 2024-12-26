@@ -3,16 +3,21 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useFormik, FormikHelpers } from 'formik';
-import { FaInstagram, FaSpinner } from 'react-icons/fa';
-import { basicSchema } from '../../../schemas';
+import { FaInstagram, FaSpinner, FaTiktok } from 'react-icons/fa';
+import { homeSchema } from '../../../schemas/home';
 import Link from 'next/link';
 import { FaFacebookF, FaLinkedinIn, FaXTwitter, FaYoutube } from 'react-icons/fa6';
+import { PiCaretDown } from 'react-icons/pi';
 
 interface FormValues {
-  full_name: string;
-  phone_number: string;
-  email_address: string;
-  message: string;
+    first_name: string;
+    last_name: string;
+    phone_number: string;
+    email_address: string;
+    gender: string;
+    date: string;
+    message: string;
+    courseTitle: string;
 }
 
 export default function ContactForm() {
@@ -59,12 +64,16 @@ export default function ContactForm() {
     handleSubmit,
   } = useFormik<FormValues>({
     initialValues: {
-      full_name: '',
-      phone_number: '',
-      email_address: '',
-      message: '',
+        first_name: '',
+        last_name: '',
+        phone_number: '',
+        gender: '',
+        date: '',
+        email_address: '',
+        message: '',
+        courseTitle: '',
     },
-    validationSchema: basicSchema,
+    validationSchema: homeSchema,
     onSubmit,
   });
 
@@ -77,11 +86,12 @@ export default function ContactForm() {
             </h4>
             <p className="sm:w-10/12">Whether you&apos;re ready to kickstart your career in tech, upgrade your skills, or simply have questions about our programs, we&apos;re here to help! At Tritek Academy, we&apos;re passionate about guiding you toward your goals and ensuring your journey in technology is as seamless as possible.</p>
             <div className='flex gap-4 my-[5%]'>
-                <Link href='https://www.facebook.com/tritekconsultingltd' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl"><FaFacebookF /></Link>
-                <Link href='https://twitter.com/Tritek_Consult' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl"><FaXTwitter /></Link>
-                <Link href='https://www.linkedin.com/company/tritek-consulting-limited/' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl"><FaLinkedinIn /></Link>
-                <Link href='https://www.youtube.com/channel/UC2gN1zoJ8T2KhSEh2kwFH0w' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl"><FaYoutube /></Link>
-                <Link href='https://www.instagram.com/tritekconsultingltd/' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl"><FaInstagram /></Link>
+                <Link href='https://www.facebook.com/tritekconsultingltd' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl w-9 h-9 flex items-center justify-center"><FaFacebookF /></Link>
+                <Link href='https://twitter.com/Tritek_Consult' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl w-9 h-9 flex items-center justify-center"><FaXTwitter /></Link>
+                <Link href='https://www.linkedin.com/company/tritek-consulting-limited/' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl w-9 h-9 flex items-center justify-center"><FaLinkedinIn /></Link>
+                <Link href='https://www.youtube.com/channel/UC2gN1zoJ8T2KhSEh2kwFH0w' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl w-9 h-9 flex items-center justify-center"><FaYoutube /></Link>
+                <Link href='https://www.instagram.com/tritekconsultingltd/' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl w-9 h-9 flex items-center justify-center"><FaInstagram /></Link>
+                <Link href='https://www.tiktok.com/@tritekconsultingltd/' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary w-9 h-9 flex justify-center items-center"><FaTiktok /></Link>
             </div>
         </div>
       
@@ -90,111 +100,213 @@ export default function ContactForm() {
             onSubmit={handleSubmit}
             autoComplete="off"
             className="flex-1"
-        >
+            >
             <div className="flex flex-col sm:flex-row space-y-8 sm:space-x-4 sm:space-y-0 mb-8">
                 <div className="relative flex-1">
                     <input
-                        type="text"
-                        name="full_name"
-                        value={values.full_name}
+                      type="text"
+                      name="first_name"
+                      value={values.first_name}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      placeholder="First Name"
+                      className={
+                        errors.first_name && touched.first_name
+                          ? 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
+                          : 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#f8adad] outline-0 transition-all duration-500 ease-[ease]'
+                      }
+                    />
+                    {errors.first_name && touched.first_name && (
+                      <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                        {errors.first_name}
+                      </small>              
+                    )}
+                  </div>
+                  <div className="relative flex-1">
+                    <input
+                      type="text"
+                      name="last_name"
+                      value={values.last_name}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      placeholder="Last Name"
+                      className={
+                        errors.last_name && touched.last_name
+                          ? 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
+                          : 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#f8adad] outline-0 transition-all duration-500 ease-[ease]'
+                      }
+                    />
+                    {errors.last_name && touched.last_name && (
+                      <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                        {errors.last_name}
+                      </small> 
+                    )}
+                  </div>
+                </div>
+        
+                <div className="relative flex flex-col sm:flex-row space-y-8 sm:space-x-4 sm:space-y-0 mb-8">
+                    <div className='relative flex-1'>
+                        <input
+                          type="text"
+                          name="phone_number"
+                          value={values.phone_number}
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          placeholder="Phone Number"
+                          className={
+                            errors.phone_number && touched.phone_number
+                              ? 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
+                              : 'bg-[#efefef] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease]'
+                          }
+                        />
+                        {errors.phone_number && touched.phone_number && (
+                          <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                            {errors.phone_number}
+                          </small>
+                        )}
+                    </div>
+        
+                    <div className='relative flex-1'>
+                        <input
+                            type="email"
+                            name="email_address"
+                            value={values.email_address}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            placeholder="E-mail"
+                            className={
+                            errors.email_address && touched.email_address
+                                ? 'bg-[#efefef] text-primary py-5 px-4 block w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
+                                : 'bg-[#efefef] text-primary py-5 px-4 block w-full mb-[5%] focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease]'
+                            }
+                        />
+                                  {errors.email_address && touched.email_address && (
+                        <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                          {errors.email_address}
+                        </small>
+                                  )}
+                    </div>
+                </div>
+        
+                <div className="relative flex flex-col sm:flex-row space-y-8 sm:space-x-4 sm:space-y-0 mb-8">
+                    <div className='relative flex-1'>
+                        <input
+                          type='date'
+                          name="date"
+                          value={values.date}
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          className={
+                            errors.phone_number && touched.phone_number
+                              ? 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
+                              : 'bg-[#efefef] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease]'
+                          }
+                        />
+                        {errors.date && touched.date && (
+                          <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                            {errors.date}
+                          </small>
+                        )}
+                    </div>
+        
+                    <div className='relative flex-1'>
+                        <select 
+                            name="gender" 
+                            id=""
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            className={
+                                errors.gender && touched.gender
+                                    ? 'bg-[#efefef] text-primary py-5 px-4 block w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease] appearance-none'
+                                    : 'bg-[#efefef] text-primary py-5 px-4 block w-full mb-[5%] focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease] appearance-none'
+                                }>
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        {errors.gender && touched.gender && (
+                        <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                          {errors.gender}
+                        </small>
+                        )}
+                        <PiCaretDown className='absolute right-3 top-1/2 -translate-y-1/2'/>
+                    </div>
+                </div>
+
+                <div className='relative flex-1 mb-8'>
+                    <select 
+                        name="courseTitle" 
+                        id=""
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        placeholder="Name"
                         className={
-                        errors.full_name && touched.full_name
-                        ? 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
-                        : 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#f8adad] outline-0 transition-all duration-500 ease-[ease]'
+                            errors.courseTitle && touched.courseTitle
+                                ? 'bg-[#efefef] text-primary py-5 px-4 block w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease] appearance-none'
+                                : 'bg-[#efefef] text-primary py-5 px-4 block w-full mb-[5%] focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease] appearance-none'
+                            }>
+                        <option value="">Select Course</option>
+                        <option value="">Artificial Intelligence</option>
+                        <option value="Female">Cyber Security</option>
+                        <option value="Female">Digital Marketing</option>
+                        <option value="Female">Scrum Mastery</option>
+                        <option value="Female">Product Management</option>
+                        <option value="Female">Data Analysis</option>
+                        <option value="Female">Cloud Computing</option>
+                        <option value="Female">Blockchain</option>
+                        <option value="Female">Education Technology Specialist</option>
+                        <option value="Female">Telehealth Technology</option>
+                        <option value="Female">Process Automation</option>
+                        <option value="Female">Video Editing</option>
+                        <option value="Female">HR Training</option>
+                    </select>
+                    {errors.courseTitle && touched.courseTitle && (
+                    <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                        {errors.courseTitle}
+                    </small>
+                    )}
+                        <PiCaretDown className='absolute right-3 top-1/2 -translate-y-1/2'/>
+                    </div>
+        
+                <div className="relative mb-8">
+                  <textarea
+                    name="message"
+                    value={values.message}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    placeholder="Your Message"
+                    cols={40}
+                    rows={10}
+                    className={
+                      errors.message && touched.message
+                        ? 'bg-[#efefef] text-primary w-full py-5 px-4 border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease] h-32'
+                        : 'bg-[#efefef] text-primary w-full mb-[5%] py-5 px-4 focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease] h-32'
                     }
-                />
-                {errors.full_name && touched.full_name && (
-                <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
-                    {errors.full_name}
-                </small>
-                )}
-          </div>
-          <div className="relative flex-1">
-            <input
-              type="text"
-              name="phone_number"
-              value={values.phone_number}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              placeholder="Phone Number"
-              className={
-                errors.phone_number && touched.phone_number
-                  ? 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
-                  : 'bg-[#efefef] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease]'
-              }
-            />
-            {errors.phone_number && touched.phone_number && (
-              <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
-                {errors.phone_number}
-              </small>
-            )}
-          </div>
-        </div>
-
-        <div className="relative mb-8">
-          <input
-            type="email"
-            name="email_address"
-            value={values.email_address}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            placeholder="E-mail"
-            className={
-              errors.email_address && touched.email_address
-                ? 'bg-[#efefef] text-primary py-5 px-4 block w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
-                : 'bg-[#efefef] text-primary py-5 px-4 block w-full mb-[5%] focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease]'
-            }
-          />
-          {errors.email_address && touched.email_address && (
-            <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
-              {errors.email_address}
-            </small>
-          )}
-        </div>
-
-        <div className="relative mb-8">
-          <textarea
-            name="message"
-            value={values.message}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            placeholder="Your Message"
-            cols={40}
-            rows={10}
-            className={
-              errors.message && touched.message
-                ? 'bg-[#efefef] text-primary w-full py-5 px-4 border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease] h-32'
-                : 'bg-[#efefef] text-primary w-full mb-[5%] py-5 px-4 focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease] h-32'
-            }
-          ></textarea>
-          {errors.message && touched.message && (
-            <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
-              {errors.message}
-            </small>
-          )}
-        </div>
-
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className={
-            isSubmitting
-              ? 'w-full bg-primary py-5 px-4 text-white cursor-pointer hover:-translate-y-2 transition-transform delay-0 duration-300 opacity-30 flex justify-center items-center'
-              : 'w-full bg-primary py-5 px-4 text-white cursor-pointer hover:-translate-y-2 transition-transform delay-0 duration-300 relative'
-          }
-        >
-          {isSubmitting ? <FaSpinner className="animate-spin mr-2" /> : null}
-          {isSubmitting ? 'Sending...' : 'SEND MESSAGE'}
-          {isSuccess && (
-            <small className="text-green-500 mt-2 absolute -bottom-6 left-0">
-              Form submitted successfully!
-            </small>
-          )}
-        </button>
-      </form>
+                  ></textarea>
+                  {errors.message && touched.message && (
+                    <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                      {errors.message}
+                    </small>
+                  )}
+                </div>
+        
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className={
+                    isSubmitting
+                      ? 'w-full bg-primary py-5 px-4 text-white cursor-pointer hover:-translate-y-2 transition-transform delay-0 duration-300 opacity-30 flex justify-center items-center'
+                      : 'w-full bg-primary py-5 px-4 text-white cursor-pointer hover:-translate-y-2 transition-transform delay-0 duration-300 relative'
+                  }
+                >
+                  {isSubmitting ? <FaSpinner className="animate-spin mr-2" /> : null}
+                  {isSubmitting ? 'Signing up...' : 'SIGN UP'}
+                  {isSuccess && (
+                    <small className="text-green-500 mt-2 absolute -bottom-6 left-0">
+                      Form submitted successfully!
+                    </small>
+                  )}
+                </button>
+              </form>
     </section>
   );
 }

@@ -4,12 +4,16 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useFormik, FormikHelpers } from 'formik';
 import { FaSpinner } from 'react-icons/fa';
-import { basicSchema } from '../../schemas';
+import { basicSchema } from '../../schemas/index';
+import { PiCaretDown } from 'react-icons/pi';
 
 interface FormValues {
-  full_name: string;
+  first_name: string;
+  last_name: string;
   phone_number: string;
   email_address: string;
+  gender: string;
+  date: string;
   message: string;
   courseTitle: string; // Included courseTitle in FormValues
 }
@@ -62,8 +66,11 @@ export default function CourseForm({ courseTitle }: CourseFormProps) {
     handleSubmit,
   } = useFormik<FormValues>({
     initialValues: {
-      full_name: '',
+      first_name: '',
+      last_name: '',
       phone_number: '',
+      gender: '',
+      date: '',
       email_address: '',
       message: '',
       courseTitle, // Automatically include courseTitle in initialValues
@@ -84,64 +91,132 @@ export default function CourseForm({ courseTitle }: CourseFormProps) {
           <div className="relative flex-1">
             <input
               type="text"
-              name="full_name"
-              value={values.full_name}
+              name="first_name"
+              value={values.first_name}
               onChange={handleChange}
               onBlur={handleBlur}
-              placeholder="Name"
+              placeholder="First Name"
               className={
-                errors.full_name && touched.full_name
+                errors.first_name && touched.first_name
                   ? 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
                   : 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#f8adad] outline-0 transition-all duration-500 ease-[ease]'
               }
             />
-            {errors.full_name && touched.full_name && (
+            {errors.first_name && touched.first_name && (
               <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
-                {errors.full_name}
-              </small>
+                {errors.first_name}
+              </small>              
             )}
           </div>
           <div className="relative flex-1">
             <input
               type="text"
-              name="phone_number"
-              value={values.phone_number}
+              name="last_name"
+              value={values.last_name}
               onChange={handleChange}
               onBlur={handleBlur}
-              placeholder="Phone Number"
+              placeholder="Last Name"
               className={
-                errors.phone_number && touched.phone_number
+                errors.last_name && touched.last_name
                   ? 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
-                  : 'bg-[#efefef] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease]'
+                  : 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#f8adad] outline-0 transition-all duration-500 ease-[ease]'
               }
             />
-            {errors.phone_number && touched.phone_number && (
+            {errors.last_name && touched.last_name && (
               <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
-                {errors.phone_number}
-              </small>
+                {errors.last_name}
+              </small> 
             )}
           </div>
         </div>
 
-        <div className="relative mb-8">
-          <input
-            type="email"
-            name="email_address"
-            value={values.email_address}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            placeholder="E-mail"
-            className={
-              errors.email_address && touched.email_address
-                ? 'bg-[#efefef] text-primary py-5 px-4 block w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
-                : 'bg-[#efefef] text-primary py-5 px-4 block w-full mb-[5%] focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease]'
-            }
-          />
-          {errors.email_address && touched.email_address && (
-            <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
-              {errors.email_address}
-            </small>
-          )}
+        <div className="relative flex flex-col sm:flex-row space-y-8 sm:space-x-4 sm:space-y-0 mb-8">
+            <div className='relative flex-1'>
+                <input
+                  type="text"
+                  name="phone_number"
+                  value={values.phone_number}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  placeholder="Phone Number"
+                  className={
+                    errors.phone_number && touched.phone_number
+                      ? 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
+                      : 'bg-[#efefef] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease]'
+                  }
+                />
+                {errors.phone_number && touched.phone_number && (
+                  <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                    {errors.phone_number}
+                  </small>
+                )}
+            </div>
+
+            <div className='relative flex-1'>
+                <input
+                    type="email"
+                    name="email_address"
+                    value={values.email_address}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    placeholder="E-mail"
+                    className={
+                    errors.email_address && touched.email_address
+                        ? 'bg-[#efefef] text-primary py-5 px-4 block w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
+                        : 'bg-[#efefef] text-primary py-5 px-4 block w-full mb-[5%] focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease]'
+                    }
+                />
+                          {errors.email_address && touched.email_address && (
+                <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                  {errors.email_address}
+                </small>
+                          )}
+            </div>
+        </div>
+
+        <div className="relative flex flex-col sm:flex-row space-y-8 sm:space-x-4 sm:space-y-0 mb-8">
+            <div className='relative flex-1'>
+                <input
+                  type='date'
+                  name="date"
+                  value={values.date}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={
+                    errors.phone_number && touched.phone_number
+                      ? 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
+                      : 'bg-[#efefef] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease]'
+                  }
+                />
+                {errors.date && touched.date && (
+                  <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                    {errors.date}
+                  </small>
+                )}
+            </div>
+
+            <div className='relative flex-1'>
+                <select 
+                    name="gender" 
+                    id=""
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className={
+                        errors.gender && touched.gender
+                            ? 'bg-[#efefef] text-primary py-5 px-4 block w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease] appearance-none'
+                            : 'bg-[#efefef] text-primary py-5 px-4 block w-full mb-[5%] focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease] appearance-none'
+                        }>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                {errors.gender && touched.gender && (
+                <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                  {errors.gender}
+                </small>
+                )}
+                <PiCaretDown className='absolute right-3 top-1/2 -translate-y-1/2'/>
+            </div>
         </div>
 
         <div className="relative mb-8">
