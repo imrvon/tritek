@@ -163,6 +163,10 @@ body {
     transition: .5s transform ease-in-out;
 }
 
+.tritek_faq.resources details > summary::after {
+    right: 5%;
+}
+
 .tritek_faq details[open] > summary::after {
     content: url('/assets/img/minus.png');
     transform: rotate(90deg);
