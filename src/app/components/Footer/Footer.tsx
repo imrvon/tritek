@@ -42,12 +42,12 @@ export default function Footer() {
                 <Link href='/privacy'>Privacy Policy</Link>
                 <Link href='/tos'>Terms and Condition</Link>
                 <Link href='/blog'>Media</Link>
-                <Link href='/contact'>Contact Us</Link>
+                <Link href='/mentors'>Mentors</Link>
             </div>
         </div>
         <div className='w-full sm:w-1/2 lg:w-1/4 lg:mb-0 mb-[10%] sm:mb-[5%]'>
             <h4 className='mb-4 font-spartan font-semibold text-xl'>Contact</h4>
-            <div className='flex gap-4 mb-4'>
+            <div className='flex gap-2 sm:gap-4 mb-4'>
                 <Link href='https://www.facebook.com/tritekconsultingltd' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary"><FaFacebookF /></Link>
                 <Link href='https://twitter.com/Tritek_Consult' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary"><FaXTwitter /></Link>
                 <Link href='https://www.linkedin.com/company/tritek-consulting-limited/' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary"><FaLinkedinIn /></Link>

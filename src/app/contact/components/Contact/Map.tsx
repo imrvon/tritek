@@ -23,7 +23,7 @@ export default function Map(): JSX.Element {
         </div>
         <div className="p-[10%]">
           <h3 className="text-[33px] font-medium mb-[10%]">
-            Tetrik <span className="font-light">Academy</span>
+            Tritek <span className="font-light">Academy</span>
           </h3>
           <div className="flex items-center gap-4 border-y-solid border-y-[1px] border-[#ccc] py-4">
             <div className="text-[32px] text-primary">
