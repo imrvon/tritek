@@ -1,8 +1,5 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
-// app/blog/[slug]/page.jsx
-
 import React, { useEffect, useState } from "react";
 import { notFound } from "next/navigation";
 import { BiSolidQuoteRight } from "react-icons/bi";
