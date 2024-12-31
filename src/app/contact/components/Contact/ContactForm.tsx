@@ -81,11 +81,9 @@ export default function ContactForm() {
     <section className="p-[5%] flex flex-col space-y-4 lg:space-y-0 lg:flex-row gap-4 font-nuno">
         <div className="flex-1">
             <h3 className="text-2xl mb-[5%] tracking-[1px] text-primary relative pl-[13%] before:absolute before:w-[10%] before:bg-primary before:h-[1px] before:top-1/2 before:left-0">CONTACT</h3>
-            <h4 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-8">Schedule A Call{' '}
-                <span className="font-light"><br />or Give Us A Call</span>
-            </h4>
+            <h4 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-8">Schedule A Call</h4>
             <p className="sm:w-10/12">Whether you&apos;re ready to kickstart your career in tech, upgrade your skills, or simply have questions about our programs, we&apos;re here to help! At Tritek Academy, we&apos;re passionate about guiding you toward your goals and ensuring your journey in technology is as seamless as possible.</p>
-            <div className='flex gap-4 my-[5%]'>
+            <div className='flex gap-2 sm:gap-4 my-[5%]'>
                 <Link href='https://www.facebook.com/tritekconsultingltd' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl w-9 h-9 flex items-center justify-center"><FaFacebookF /></Link>
                 <Link href='https://twitter.com/Tritek_Consult' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl w-9 h-9 flex items-center justify-center"><FaXTwitter /></Link>
                 <Link href='https://www.linkedin.com/company/tritek-consulting-limited/' className="cursor-pointer text-white bg-white p-2 rounded-full  transition-[color_2s,box-shadow_2s] shadow-[inset_0px_0px_0px_40px_var(--primary)] bg-[length:0px_0px] bg-[50%_50%] hover:shadow-[inset_0px_0px_0px_1px_var(--primary)] hover:text-primary text-xl w-9 h-9 flex items-center justify-center"><FaLinkedinIn /></Link>
@@ -245,19 +243,20 @@ export default function ContactForm() {
                                 : 'bg-[#efefef] text-primary py-5 px-4 block w-full mb-[5%] focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease] appearance-none'
                             }>
                         <option value="">Select Course</option>
-                        <option value="">Artificial Intelligence</option>
-                        <option value="Female">Cyber Security</option>
-                        <option value="Female">Digital Marketing</option>
-                        <option value="Female">Scrum Mastery</option>
-                        <option value="Female">Product Management</option>
-                        <option value="Female">Data Analysis</option>
-                        <option value="Female">Cloud Computing</option>
-                        <option value="Female">Blockchain</option>
-                        <option value="Female">Education Technology Specialist</option>
-                        <option value="Female">Telehealth Technology</option>
-                        <option value="Female">Process Automation</option>
-                        <option value="Female">Video Editing</option>
-                        <option value="Female">HR Training</option>
+                        <option value="Elite Tech Training Programme">HR Training</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Scrum Mastery">Scrum Mastery</option>
+                        <option value="Product Management">Product Management</option>
+                        <option value="Data Analysis">Data Analysis</option>
+                        <option value="Cloud Computing">Cloud Computing</option>
+                        <option value="Blockchain">Blockchain</option>
+                        <option value="Education Technology Specialist">Education Technology Specialist</option>
+                        <option value="Telehealth Technology">Telehealth Technology</option>
+                        <option value="Process Automation">Process Automation</option>
+                        <option value="Video Editing">Video Editing</option>
+                        <option value="HR Training">Elite Tech Training Programme</option>
                     </select>
                     {errors.courseTitle && touched.courseTitle && (
                     <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
@@ -299,14 +298,14 @@ export default function ContactForm() {
                   }
                 >
                   {isSubmitting ? <FaSpinner className="animate-spin mr-2" /> : null}
-                  {isSubmitting ? 'Signing up...' : 'SIGN UP'}
+                  {isSubmitting ? 'BOOKING IN PROGRESS...' : 'BOOK A FREE CONSULTATION'}
                   {isSuccess && (
                     <small className="text-green-500 mt-2 absolute -bottom-6 left-0">
                       Form submitted successfully!
                     </small>
                   )}
                 </button>
-              </form>
+            </form>
     </section>
   );
 }
