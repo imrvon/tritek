@@ -33,7 +33,7 @@ export default function Mentors() {
                     <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl text-head-primary">Ayotunde Odunsi</h3>
                     <div>
                         <p className='font-paragraph mt-[2.5%]'>Ayotunde Odunsi, is a seasoned IT professional, with a keen eye for detail and a passion for ensuring the smooth progression of projects from inception to delivery, an expert in creating cutting-edge technology solutions and a passionate advocate for innovation and positive change in the industry. He is a certified SAFe® 6 Agilist, a Professional Scrum Master and a Certified Product Owner with a wealth of experience spanning over 7 years.</p>
-                        <p className='font-paragraph mt-[2.5%]'>Ayotunde has carved a niche for himself by leading teams in implementing digital solutions, enhance process with latest technologies in Software Development, Project Management, and Leadership. He is an engaging speaker, eager to share his knowledge and experience. He was involved in building and delivering the UK NHS Covid Pass and improving the NHS England Developer Community's scalability and delivery service.</p>
+                        <p className='font-paragraph mt-[2.5%]'>Ayotunde has carved a niche for himself by leading teams in implementing digital solutions, enhance process with latest technologies in Software Development, Project Management, and Leadership. He is an engaging speaker, eager to share his knowledge and experience. He was involved in building and delivering the UK NHS Covid Pass and improving the NHS England Developer Community&apos;s scalability and delivery service.</p>
                         <p className='font-paragraph mt-[2.5%]'>He has also lead other initiatives and product delivery across both public and private sector delivery campaigns and efforts. Beyond his professional achievements, Ayotunde remains deeply connected to several tech communities - he coaches and mentors young, aspiring tech enthusiasts, always seeking opportunity and platforms to contribute and make a positive impact</p>
                     </div>
                 </article>
@@ -84,7 +84,7 @@ export default function Mentors() {
                     <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl text-head-primary">Tolulope Osunade</h3>
                     <div>
                         <p className='font-paragraph mt-[2.5%]'>Senior Project Manager | Digital Transformation Leader | Delivering £15M+ Complex Change Programs | PRINCE2 & Agile | Enterprise Risk Management Expert | Turning Vision into Measurable Impact Through Innovation</p>
-                        <p className='font-paragraph mt-[2.5%]'>Driving digital transformation and organizational change isn't just my profession—it's my passion. With over a decade of experience managing complex, multi-million-pound initiatives, I've consistently delivered measurable impact across public and private sectors, specializing in digital transformation, enterprise risk management, and regulatory compliance.</p>
+                        <p className='font-paragraph mt-[2.5%]'>Driving digital transformation and organizational change isn&apos;t just my profession—it&apos;s my passion. With over a decade of experience managing complex, multi-million-pound initiatives, I&apos;ve consistently delivered measurable impact across public and private sectors, specializing in digital transformation, enterprise risk management, and regulatory compliance.</p>
                         <div className='mt-[5%]'>
                             <p className="font-paragraph mt-[3.5%] text-lg">What I Bring to the Table:</p>
                             <ul className="font-paragraph mt-[5%]">
@@ -96,11 +96,11 @@ export default function Mentors() {
                         </div>
                         <div className='mt-[5%]'>
                             <p className="font-paragraph mt-[3.5%] text-lg">My journey has been marked by transformative achievements:</p>
-                            <p className="font-paragraph mt-[2.5%]">At Capita, I'm revolutionizing healthcare and pension services through digital innovation, achieving 99.8% system uptime while reducing processing times by 65%. At FIS Global, I consolidated 12 financial platforms into a unified system, improving cross-border monitoring by 55% and reducing compliance incidents by 75%.</p>
-                            <p className="font-paragraph mt-[2.5%]">One of my proudest achievements was at Middlesbrough Council, where I led AI-powered initiatives that not only generated £3.8M in efficiency savings but also made a real difference in people's lives—cutting emergency response times by 47% and increasing public engagement by 178%.</p>
+                            <p className="font-paragraph mt-[2.5%]">At Capita, I&apos;m revolutionizing healthcare and pension services through digital innovation, achieving 99.8% system uptime while reducing processing times by 65%. At FIS Global, I consolidated 12 financial platforms into a unified system, improving cross-border monitoring by 55% and reducing compliance incidents by 75%.</p>
+                            <p className="font-paragraph mt-[2.5%]">One of my proudest achievements was at Middlesbrough Council, where I led AI-powered initiatives that not only generated £3.8M in efficiency savings but also made a real difference in people&apos;s lives—cutting emergency response times by 47% and increasing public engagement by 178%.</p>
 
                             <p className="font-paragraph mt-[3.5%] text-lg">My Approach</p>
-                            <p className="font-paragraph mt-[1.5%] text-lg">I believe successful digital transformation is about more than just technology—it's about people. By combining PRINCE2 and Agile methodologies with strong stakeholder engagement, I consistently deliver solutions that drive adoption rates above 85% while maintaining operational excellence.</p>
+                            <p className="font-paragraph mt-[1.5%] text-lg">I believe successful digital transformation is about more than just technology—it&apos;s about people. By combining PRINCE2 and Agile methodologies with strong stakeholder engagement, I consistently deliver solutions that drive adoption rates above 85% while maintaining operational excellence.</p>
 
                             <p className="font-paragraph mt-[3.5%] text-lg">What Sets Me Apart</p>
                             <ul className="font-paragraph mt-[5%]">
@@ -110,10 +110,10 @@ export default function Mentors() {
                                 <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Expert in managing matrix teams across multiple directorates</span></li>
                                 <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Deep understanding of both public and private sector dynamics</span></li>
                             </ul>
-                            <p className="font-paragraph mt-[2.5%]">Currently focused on enterprise-wide digital transformation initiatives, I'm always eager to connect with fellow professionals passionate about driving innovation and creating lasting organizational impact.</p>
+                            <p className="font-paragraph mt-[2.5%]">Currently focused on enterprise-wide digital transformation initiatives, I&apos;m always eager to connect with fellow professionals passionate about driving innovation and creating lasting organizational impact.</p>
                         </div>
                         <p className='font-paragraph mt-[2.5%]'>Specialties: Digital Transformation | Change Management | Enterprise Risk Management | Regulatory Compliance | Stakeholder Engagement | Process Optimization | AI Implementation | PMO Governance | Cross-functional Leadership | Strategic Planning</p>
-                        <p className='font-paragraph mt-[2.5%]'>Let's connect and explore how we can drive innovation and work together to achieve success.</p>
+                        <p className='font-paragraph mt-[2.5%]'>Let&apos;s connect and explore how we can drive innovation and work together to achieve success.</p>
                     </div>
                 </article>
             </div>
