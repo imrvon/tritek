@@ -28,21 +28,21 @@ export default function Footer() {
         <div className='w-full sm:w-1/2 lg:w-1/4 lg:mb-0 mb-[10%] sm:mb-[5%]'>
             <h4 className='mb-4 font-spartan font-semibold text-xl'>Courses</h4>
             <div className='flex flex-col gap-3 text-sm font-nuno'>
-                <Link href='/courses/cyber-security'>Cyber Security</Link>
-                <Link href='/courses/digital-marketing'>Digital Marketing</Link>
-                <Link href='/courses/cloud-computing'>Cloud Computing</Link>
-                <Link href='/courses/telehealth'>Telehealth</Link>
-                <Link href='/courses/hr-training'>HR Training</Link>
+                <Link href='/courses/cyber-security' className='hover:translate-x-2 transition-transform duration-300 ease-in-out'>Cyber Security</Link>
+                <Link href='/courses/digital-marketing' className='hover:translate-x-2 transition-transform duration-300 ease-in-out'>Digital Marketing</Link>
+                <Link href='/courses/cloud-computing' className='hover:translate-x-2 transition-transform duration-300 ease-in-out'>Cloud Computing</Link>
+                <Link href='/courses/telehealth' className='hover:translate-x-2 transition-transform duration-300 ease-in-out'>Telehealth</Link>
+                <Link href='/courses/hr-training' className='hover:translate-x-2 transition-transform duration-300 ease-in-out'>HR Training</Link>
             </div>
         </div>
         <div className='w-full sm:w-1/2 lg:w-1/4 lg:mb-0 mb-[10%] sm:mb-[5%]'>
             <h4 className='mb-4 font-spartan font-semibold text-xl'>Useful Link</h4>
             <div className='flex flex-col gap-3 text-sm font-nuno'>
-                <Link href='/resources'>Resources</Link>
-                <Link href='/privacy'>Privacy Policy</Link>
-                <Link href='/tos'>Terms and Condition</Link>
-                <Link href='/blog'>Media</Link>
-                <Link href='/mentors'>Mentors</Link>
+                <Link href='/resources' className='hover:translate-x-2 transition-transform duration-300 ease-in-out'>Resources</Link>
+                <Link href='/privacy' className='hover:translate-x-2 transition-transform duration-300 ease-in-out'>Privacy Policy</Link>
+                <Link href='/tos' className='hover:translate-x-2 transition-transform duration-300 ease-in-out'>Terms and Condition</Link>
+                <Link href='/blog' className='hover:translate-x-2 transition-transform duration-300 ease-in-out'>Media</Link>
+                <Link href='/mentors' className='hover:translate-x-2 transition-transform duration-300 ease-in-out'>Mentors</Link>
             </div>
         </div>
         <div className='w-full sm:w-1/2 lg:w-1/4 lg:mb-0 mb-[10%] sm:mb-[5%]'>
