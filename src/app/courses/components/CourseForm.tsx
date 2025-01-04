@@ -177,17 +177,25 @@ export default function CourseForm({ courseTitle }: CourseFormProps) {
         <div className="relative flex flex-col sm:flex-row space-y-8 sm:space-x-4 sm:space-y-0 mb-8">
             <div className='relative flex-1'>
                 <input
-                  type='date'
                   name="date"
+                  type="date"
                   value={values.date}
                   onChange={handleChange}
                   onBlur={handleBlur}
                   className={
-                    errors.phone_number && touched.phone_number
+                    errors.date && touched.date
                       ? 'bg-[#efefef] text-[15px] text-primary py-5 px-4 w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease]'
                       : 'bg-[#efefef] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease]'
                   }
                 />
+                {!values.date && (
+                    <label
+                        htmlFor="date"
+                        className="absolute left-0 -top-6 text-sm text-[#888] font-medium font-paragraph pointer-events-none transition-all duration-300"
+                        >
+                        Date of Appointment
+                    </label>
+                )}
                 {errors.date && touched.date && (
                   <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
                     {errors.date}

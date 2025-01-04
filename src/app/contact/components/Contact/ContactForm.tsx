@@ -200,6 +200,14 @@ export default function ContactForm() {
                               : 'bg-[#efefef] text-primary py-5 px-4 w-full focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] outline-[#181818] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease]'
                           }
                         />
+                        {!values.date && (
+                            <label
+                                htmlFor="date"
+                                className="absolute left-0 -top-6 text-sm text-[#888] font-medium font-paragraph pointer-events-none transition-all duration-300"
+                                >
+                                Date of Appointment
+                            </label>
+                        )}
                         {errors.date && touched.date && (
                           <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
                             {errors.date}
