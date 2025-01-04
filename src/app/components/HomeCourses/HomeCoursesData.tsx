@@ -1,8 +1,8 @@
 export default [
     {
         id: 1,
-        name: 'Project Management & Business Analysis',
-        description: "Unlock the dynamic synergy of Project Management and Business Analysis with Tritek's Hybrid Course!",
+        name: 'Product Management',
+        description: "Learn to identify market opportunities, develop product strategies, and lead cross-functional teams.",
         img: '/assets/img/homecourse/course1.webp',
         link: '/courses/product-management',
     },
@@ -15,7 +15,7 @@ export default [
         }, 
     {
         id: 3,
-        name: 'Scrum Master',
+        name: 'Scrum Mastery',
         description: "Lead with agility in the tech landscape with Tritek's Scrum Master Course! ",
         img: '/assets/img/homecourse/course3.webp',
         link: '/courses/scrum-mastery',

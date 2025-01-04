@@ -98,6 +98,7 @@ export default function ContactForm() {
             onSubmit={handleSubmit}
             autoComplete="off"
             className="flex-1"
+            id='contact'
             >
             <div className="flex flex-col sm:flex-row space-y-8 sm:space-x-4 sm:space-y-0 mb-8">
                 <div className="relative flex-1">

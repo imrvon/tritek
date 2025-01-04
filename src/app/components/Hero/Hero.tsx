@@ -23,7 +23,8 @@ export default function Hero() {
             <div className="sm:w-9/12 text-white mt-[25%] md:mt-[20%]">
                 <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold">Transform <br/>Your Career</h2>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-light not-italic mt-[1.5%]">Learn. Practice. <span className="font-bold italic">Thrive.</span></h2>
-                <p className="italic text-xl md:text-2xl mt-[3.5%] mb-[7%] md:w-10/12 lg:w-7/12 font-paragraph">Practical, hands-on tech training that equips you with the skills and confidence to land high-paying roles you’ll love.</p>
+                <p className="italic text-xl md:text-2xl mt-[3.5%] mb-[2%] md:w-10/12 lg:w-7/12 font-paragraph">Practical, hands-on tech training that equips you with the skills and confidence to land high-paying roles you’ll love.</p>
+                <p className="text-lg mb-[7%] md:w-10/12 lg:w-7/12 font-paragraph">Channel 4 & Lloyds Bank Approved. Forbes Top 20 Black-Owned Business. We provide exceptional IT training solutions.</p>
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link href='/courses' className="rounded-[50px] border-[1px] font-nuno py-4 sm:py-5 px-6 sm:px-7 inline-block bg-transparent shadow-[0_0_0_0_#ffffff_inset] duration-300 ease-in-out transition-all hover:text-primary hover:shadow-[0_0_0_4em_#ffffff_inset,0_5px_15px_rgba(0,0,0,0.1)] hover:-translate-y-[3px] w-fit">Enroll Now</Link>
                     <Link href='/contact' className="rounded-[50px] border-[1px] font-nuno py-4 sm:py-5 px-6 sm:px-7 inline-block bg-transparent shadow-[0_0_0_0_#ffffff_inset] duration-300 ease-in-out transition-all hover:text-primary hover:shadow-[0_0_0_4em_#ffffff_inset,0_5px_15px_rgba(0,0,0,0.1)] hover:-translate-y-[3px] w-fit">Book a Free Consultation</Link>
