@@ -78,7 +78,7 @@ export default function ContactForm() {
   });
 
   return (
-    <section className="p-[5%] flex flex-col space-y-4 lg:space-y-0 lg:flex-row gap-4 font-nuno">
+    <section className="p-[5%] flex flex-col space-y-4 lg:space-y-0 lg:flex-row gap-4 font-paragraph">
         <div className="flex-1">
             <h3 className="text-2xl mb-[5%] tracking-[1px] text-primary relative pl-[13%] before:absolute before:w-[10%] before:bg-primary before:h-[1px] before:top-1/2 before:left-0">CONTACT</h3>
             <h4 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-8">Schedule A Call</h4>

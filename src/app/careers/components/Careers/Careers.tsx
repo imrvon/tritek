@@ -8,21 +8,21 @@ export default function Careers() {
             <div className='relative h-screen bg-[url(/assets/img/hero_career.webp)] bg-no-repeat bg-cover flex justify-center items-center sm:bg-top bg-center'>
                 <div className='flex flex-col gap-10 relative z-10'>
                     <p className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-dm text-center'>Careers</p>
-                    <p className='font-medium text-center text-xl sm:text-2xl text-white italic font-ibm w-9/12 mx-auto'>Join a team that’s shaping the future of education, innovation, and technology. At Tritek Academy, we don’t just offer jobs—we offer careers that inspire and empower.</p>
+                    <p className='font-medium text-center text-xl sm:text-2xl text-white italic font-heading w-9/12 mx-auto'>Join a team that’s shaping the future of education, innovation, and technology. At Tritek Academy, we don’t just offer jobs—we offer careers that inspire and empower.</p>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[#0000003a]"></div>
             </div>
 
             <div className="bg-[#f7f7f5] flex flex-wrap">
                 <article className="lg:w-1/2 p-[5%]">
-                    <h2 className="font-spartan text-lg tracking-wider font-medium text-secondary mb-[5%] uppercase">Why Join Tritek Academy?
+                    <h2 className="font-heading text-lg tracking-wider font-medium text-secondary mb-[5%] uppercase">Why Join Tritek Academy?
                     </h2>
                     <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl text-head-primary">Be Part of Something Bigger</h3>
-                    <p className="font-nuno mt-[3.5%] text-lg">At Tritek Academy, we’re more than a company—we’re a mission-driven organization that transforms lives through cutting-edge training and education. Joining us means being part of a dynamic, innovative, and supportive team that values your growth as much as our impact.
+                    <p className="font-paragraph mt-[3.5%] text-lg">At Tritek Academy, we’re more than a company—we’re a mission-driven organization that transforms lives through cutting-edge training and education. Joining us means being part of a dynamic, innovative, and supportive team that values your growth as much as our impact.
                     </p>
                     <div>
-                        <h3 className="font-spartan text-lg my-4 text-head-primary uppercase">Here’s Why You’ll Love Working with Us</h3>
-                        <ul className="font-nuno">
+                        <h3 className="font-heading text-lg my-4 text-head-primary uppercase">Here’s Why You’ll Love Working with Us</h3>
+                        <ul className="font-paragraph">
                             <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Impactful Work: Everything we do empowers individuals to unlock their potential and thrive in high-demand industries. Your contributions will make a real difference.</span></li>
                             <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Innovative Environment: Work with passionate professionals at the forefront of technology, education, and business transformation.</span>
                             </li>
@@ -42,13 +42,13 @@ export default function Careers() {
             <div className="bg-[#f7f7f5] flex flex-col-reverse lg:flex-row flex-wrap">
                 <div className="w-full lg:w-1/2 h-[500px] lg:h-auto bg-[url(/assets/img/career2.webp)] bg-no-repeat bg-cover bg-center"></div>
                 <article className="lg:w-1/2 p-[5%]">
-                    <h2 className="font-spartan text-lg tracking-wider font-medium text-secondary mb-[5%] uppercase">Life at Tritek Academy</h2>
+                    <h2 className="font-heading text-lg tracking-wider font-medium text-secondary mb-[5%] uppercase">Life at Tritek Academy</h2>
                     <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl text-head-primary">Where Passion Meets Purpose</h3>
-                    <p className="font-nuno mt-[3.5%] text-lg">Life at Tritek Academy is dynamic, inspiring, and rewarding. Here’s what you can expect when you join our team.
+                    <p className="font-paragraph mt-[3.5%] text-lg">Life at Tritek Academy is dynamic, inspiring, and rewarding. Here’s what you can expect when you join our team.
                     </p>
                     <div>
-                        <h3 className="font-spartan text-lg my-4 text-head-primary uppercase">Our Values in Action</h3>
-                        <ul className="font-nuno">
+                        <h3 className="font-heading text-lg my-4 text-head-primary uppercase">Our Values in Action</h3>
+                        <ul className="font-paragraph">
                             <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Innovation Every Day: Whether we’re designing new courses or reimagining recruitment strategies, our culture thrives on fresh ideas and forward-thinking solutions.</span></li>
                             <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Collaborative Spirit: We believe in the power of teamwork. Every project, big or small, is a team effort where everyone’s input matters.</span>
                             </li>
@@ -59,8 +59,8 @@ export default function Careers() {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="font-spartan text-lg my-4 text-head-primary uppercase">What Our Team Loves</h3>
-                        <ul className="font-nuno">
+                        <h3 className="font-heading text-lg my-4 text-head-primary uppercase">What Our Team Loves</h3>
+                        <ul className="font-paragraph">
                             <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Modern Workspaces: Whether remote or in-person, our work environment is designed for productivity and creativity.</span></li>
                             <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Professional Development: Gain access to free courses, certifications, and mentorship programs to level up your skills.</span>
                             </li>
@@ -72,12 +72,12 @@ export default function Careers() {
 
             <div className='flex flex-wrap flex-col-reverse lg:flex-row'>
                 <article className="lg:w-1/2 p-[5%]">
-                    <h2 className="font-spartan text-lg tracking-wider font-medium text-secondary mb-[5%] uppercase">Get Ready: Our Recruitment Process</h2>
+                    <h2 className="font-heading text-lg tracking-wider font-medium text-secondary mb-[5%] uppercase">Get Ready: Our Recruitment Process</h2>
                     <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl text-head-primary">Your Journey to Joining Our Team Starts Here</h3>
-                    <p className="font-nuno mt-[3.5%] text-lg">We’re excited to meet individuals who are passionate, innovative, and eager to make an impact. Our recruitment process is designed to be transparent, supportive, and fair.</p>
+                    <p className="font-paragraph mt-[3.5%] text-lg">We’re excited to meet individuals who are passionate, innovative, and eager to make an impact. Our recruitment process is designed to be transparent, supportive, and fair.</p>
                     <div>
-                        <h3 className="font-spartan text-lg my-4 text-head-primary uppercase">How It Works:</h3>
-                        <ul className="font-nuno">
+                        <h3 className="font-heading text-lg my-4 text-head-primary uppercase">How It Works:</h3>
+                        <ul className="font-paragraph">
                             <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Submit Your Application: Find a role that excites you and apply online. Be sure to tailor your CV to showcase your skills and achievements.</span></li>
                             <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Initial Screening: Our recruitment team will review your application to ensure your skills align with the role. If shortlisted, you’ll be invited for the next step.</span>
                             </li>
@@ -96,9 +96,9 @@ export default function Careers() {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="font-spartan text-lg my-4 text-head-primary uppercase">Interview Tips from Our Team:
+                        <h3 className="font-heading text-lg my-4 text-head-primary uppercase">Interview Tips from Our Team:
                         </h3>
-                        <ul className="font-nuno">
+                        <ul className="font-paragraph">
                             <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Be Yourself: We value authenticity, so let your personality and passion shine.</span></li>
                             <li className="flex gap-1 mb-[1%] flex-wrap"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12">Do Your Homework: Familiarize yourself with Tritek Academy, our mission, and the role you’re applying for.</span>
                             </li>
@@ -107,7 +107,7 @@ export default function Careers() {
                         </ul>
                     </div>
                     <Link href=''
-                    className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%] font-nuno"
+                    className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%] font-paragraph"
                     >View Open Roles<span className="hidden sm:inline"> and Start Your Journey</span></Link>
                 </article>
                 <div className='hidden lg:block lg:w-1/2 bg-[url(/assets/img/hands-round.webp)] bg-no-repeat bg-cover'></div>

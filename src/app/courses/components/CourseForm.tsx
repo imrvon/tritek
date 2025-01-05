@@ -80,7 +80,7 @@ export default function CourseForm({ courseTitle }: CourseFormProps) {
   });
 
   return (
-    <section className="p-[5%] space-y-4 lg:space-y-0 lg:flex-row gap-4 font-nuno">
+    <section className="p-[5%] space-y-4 lg:space-y-0 lg:flex-row gap-4 font-paragraph">
       <form
         ref={form}
         onSubmit={handleSubmit}

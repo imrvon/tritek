@@ -9,7 +9,7 @@ export default function Resources() {
             <div className='relative h-screen bg-[url(/assets/img/resources.webp)] bg-no-repeat bg-cover flex justify-center items-center sm:bg-top bg-center'>
                 <div className='flex flex-col gap-10 relative z-10'>
                     <p className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-heading text-center'>Resources</p>
-                    <p className='font-medium text-center text-xl sm:text-2xl text-white italic font-ibm w-9/12 mx-auto font-paragraph'>Find helpful guides, insightful articles, informative videos, and valuable tools to enhance your experience</p>
+                    <p className='font-medium text-center text-xl sm:text-2xl text-white italic w-9/12 mx-auto font-heading'>Find helpful guides, insightful articles, informative videos, and valuable tools to enhance your experience</p>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[#0000003a]"></div>
             </div>

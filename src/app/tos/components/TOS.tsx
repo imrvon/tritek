@@ -7,15 +7,15 @@ export default function TOS() {
         className="relative flex items-center justify-center min-h-screen bg-fixed bg-cover bg-top bg-[url('/assets/img/tos.webp')]"
       >
         <article className="z-10 text-white md:w-7/12 p-2 text-center mt-20">
-          <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-dm">Terms of Service</h1>
-          <p className="text-xl sm:text-2xl italic my-10 sm:leading-10 font-ibm">
+          <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading">Terms of Service</h1>
+          <p className="text-xl sm:text-2xl italic my-10 sm:leading-10 font-heading">
           <h2>Last Updated: November 29, 2023</h2>
           </p>
         </article>
         <div className="absolute top-0 left-0 w-full h-full bg-[#000000ab]"></div>
       </div>
 
-        <div className="p-[5%] font-nuno text-lg">
+        <div className="p-[5%] font-paragraph text-lg">
             <p className="mb-[1.5%]">Please read these Terms and Conditions carefully before using Our Service.</p>
 
             <h3 className="mb-[0.5%] font-semibold text-xl">Introduction</h3>

@@ -71,14 +71,14 @@ function PostsBody() {
   }
 
   return (
-    <div className="px-[5%] font-ibm  py-6 md:py-10">
+    <div className="px-[5%] font-heading  py-6 md:py-10">
       {/* Tabs for categories */}
       <div className="flex flex-wrap justify-center px-[5%] gap-x-4 gap-y-0 mt-8 sm:mt-10 md:mt-16 mb-3">
         {categories.slice(0, 9).map((category) => (
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
-            className={`group px-2 flex flex-col justify-start text-[1rem] font-nuno rounded ${
+            className={`group px-2 flex flex-col justify-start text-[1rem] font-paragraph rounded ${
               selectedCategory === category
                 ? "text-[#9e9f7f]"
                 : "text-black hover:text-[#9e9f7f]"
@@ -128,7 +128,7 @@ function PostsBody() {
 
                 {/* Content Overlay */}
                 <div className="relative z-10 flex flex-col justify-end h-full">
-                  <div className="flex font-spartan text-[1rem] sm:text-[1.1rem] md:text-[1rem] font-medium items-center gap-2 ">
+                  <div className="flex font-paragraph text-[1rem] sm:text-[1.1rem] md:text-[1rem] font-medium items-center gap-2 ">
                     <Link
                       href={`/blog/${post?.slug}`}
                       className="font-bold hover:text-[#9e9f7f] text-center"
@@ -153,7 +153,7 @@ function PostsBody() {
                   </div>
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="flex hover:text-[#9e9f7f] font-nuno items-center gap-2 mt-10 lg:mt-12 "
+                    className="flex hover:text-[#9e9f7f] font-paragraph items-center gap-2 mt-10 lg:mt-12 "
                   >
                     <p className="text-[0.8rem] sm:text-[0.9rem] md:text-[0.8rem] leading-none font-bold">
                       READ MORE

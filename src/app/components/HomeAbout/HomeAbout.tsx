@@ -13,7 +13,7 @@ export default function HomeAbout() {
             <p className="font-paragraph mt-[1.5%]">We remain committed to fostering a culture of growth and innovation, paving the way for fulfilling and rewarding careers in technology. With Tritek, your success is not just a goal — it&apos;s a guarantee backed by experience and dedication.</p>
             <div className="h-[1px] bg-[#ccc] my-[5%]"></div>
             <div className="flex flex-col justify-center items-center sm:flex-row sm:justify-between sm:items-start gap-5 sm:gap-2 text-secondary">
-                <div className="font-spartan text-center flex flex-col justify-center items-center">
+                <div className="font-heading text-center flex flex-col justify-center items-center">
                     <div className="h-24 w-24 mb-[1.5%] sm:mb-[2%] border-secondary border-2 border-solid rounded-[50%] flex justify-center items-center text-5xl">
                         <IoPeopleOutline/>
                     </div>

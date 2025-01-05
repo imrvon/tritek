@@ -1,4 +1,4 @@
-import { Nunito_Sans, IBM_Plex_Serif, League_Spartan, DM_Serif_Display } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import localFont from 'next/font/local'
 import "./globals.css";
 import Header from "./components/Header/Header";
