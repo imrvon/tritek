@@ -18,7 +18,7 @@ export default function Services() {
       <div className="bg-[#f7f7f5] flex flex-wrap">
           <article className="lg:w-1/2 p-[5%]">
             <h2 className="font-heading text-lg tracking-wider font-medium text-secondary mb-[5%]">INTRODUCTION</h2>
-            <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl text-head-primary">Helping You Solve Workforce Challenges</h3>
+            <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl text-head-primary">Helping You Solve Workforce Challenges</h3>
             <p className="font-paragraph mt-[3.5%] text-lg">Organisations today face a rapidly shifting landscape: skills gaps, evolving technologies, and the need for agile, innovative teams. Whether you’re a corporate entity or a public-sector organisation, Tritek Academy provides targeted solutions to equip your teams with the knowledge, tools, and confidence they need to thrive.</p>
           </article>
 
@@ -46,7 +46,7 @@ export default function Services() {
             <div className="w-full h-[500px] lg:h-auto lg:w-1/3 bg-[url(/assets/img/serv1.webp)] bg-center bg-cover lg:bg-left bg-no-repeat"></div>
             <div className="w-full lg:w-2/3 p-[5%]">
                 <h2 className="font-heading text-lg font-medium text-secondary mb-[5%] uppercase">Corporate Training Services</h2>
-                <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Transform Your Teams. Elevate Your Results</h3>
+                <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Transform Your Teams. Elevate Your Results</h3>
                 <p className="italic my-5 sm:text-2xl text-xl">
                     Our corporate training programs are designed to address the unique challenges of businesses across industries. We deliver hands-on, practical training to upskill your workforce and ensure they’re prepared for the demands of today—and tomorrow.</p>
                 <div>
@@ -84,7 +84,7 @@ export default function Services() {
       <div className="bg-grey flex flex-col-reverse lg:flex-row flex-wrap" id="pub">
             <div className="w-full lg:w-2/3 p-[5%]">
                 <h2 className="font-heading text-lg font-medium text-secondary mb-[5%] uppercase">Public-Sector Partnerships</h2>
-                <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Driving Impact for Communities and Institutions</h3>
+                <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Driving Impact for Communities and Institutions</h3>
                 <p className="italic my-5 sm:text-2xl text-xl">
                 We collaborate with government agencies and public-sector organisations to design impactful training programs that address societal and institutional challenges.</p>
                 <div>

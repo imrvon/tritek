@@ -6,7 +6,7 @@ export default function About() {
         <section>
             <div className='bg-[url(/assets/img/about.webp)] min-h-screen bg-no-repeat bg-cover relative bg-top sm:bg-center'>
                 <div className='flex flex-col gap-5 absolute top-0 left-0 w-full h-full justify-center items-center z-10'>
-                    <p className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-dm text-center'>About Us</p>
+                    <p className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-heading text-center'>About Us</p>
                     <p className='font-medium text-center text-xl sm:text-2xl text-white italic font-heading w-10/12 sm:w-9/12'>We are a Multi-Award winning project management and business analysis training company that provides both training and practical work experience with mentorship support.</p>
                 </div>
                 <div className='absolute top-0 left-0 w-full h-full bg-[#000000bb]'></div>
@@ -31,7 +31,7 @@ export default function About() {
             <div className="flex flex-wrap flex-col-reverse md:flex-row">
                 <div className='h-[500px] md:h-auto md:w-1/2 bg-[url(/assets/img/about3.webp)] bg-cover bg-no-repeat md:bg-top lg:bg-left'></div>
                 <div className='md:w-1/2 p-[5%]'>
-                    <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">What Sets Us Apart</h3>
+                    <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">What Sets Us Apart</h3>
                         <div>
                             <ul className='mt-[5%]'>
                                 <li className="flex gap-1 mb-[1%] flex-wrap items-start"><PiCheckCircle className="text-xl w-1/12" /><span className="w-10/12 leading-[20px]">Human-Centric Approach: Every learner’s story matters. From healthcare professionals embracing telehealth to educators driving digital innovation, we tailor education to real-world needs.</span></li>
@@ -56,7 +56,7 @@ export default function About() {
             <div className="flex flex-wrap flex-col md:flex-row">
                 <div className='md:w-1/2 p-[5%]'>
                     <h2 className="font-heading text-lg tracking-wider font-medium text-secondary mb-[5%] uppercase">About the CEO</h2>
-                    <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Dr. Adeshola Cole</h3>
+                    <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Dr. Adeshola Cole</h3>
                     
                     <p className="font-paragraph mt-[3.5%] text-lg">Dr. Adeshola Cole is the driving force behind Tritek Academy’s transformative mission. As the CEO and Founder, she has dedicated her career to creating pathways for individuals to excel in tech, regardless of their background.</p>
                     <p className="font-paragraph mt-[3.5%] text-lg">Under Dr. Cole’s leadership, Tritek Academy has grown into a globally recognized EdTech organisation, empowering over 5,000 individuals to transition into tech careers. Her vision has earned her numerous accolades, including:</p>

@@ -13,7 +13,7 @@ export default function Scrum() {
   
           <div className="flex flex-wrap">
               <div className="w-full lg:w-1/2 p-[5%]">
-                  <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Scrum Mastery</h3>
+                  <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Scrum Mastery</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-heading">
                   Become a certified Scrum Master in 6 weeks and step into one of tech&apos;s most in-demand roles. Master Agile frameworks, learn to lead high-performing teams, and gain hands-on experience facilitating real sprint sessions.</p>
                   <p className="font-paragraph">You&apos;ll work with actual development teams, handle real sprint ceremonies, and learn advanced Scrum techniques that separate great Scrum Masters from good ones. Perfect for project managers, team leads, or anyone passionate about Agile delivery.

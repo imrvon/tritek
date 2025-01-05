@@ -13,7 +13,7 @@ export default function VideoEditing() {
   
           <div className="flex flex-wrap">
               <div className="w-full lg:w-1/2 p-[5%]">
-                  <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Video Editing</h3>
+                  <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Video Editing</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-heading">
                   Transform into a professional video editor in 8 weeks. Master industry-standard editing software while building a portfolio of commercial-grade video content that clients want.</p>
                   <p className="font-paragraph">Learn Adobe Premiere Pro, After Effects, and modern editing techniques. Create motion graphics, master color grading, and develop the technical skills that separate professional editors from amateurs. Perfect for creative professionals or anyone passionate about video production.</p>

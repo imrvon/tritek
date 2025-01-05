@@ -13,7 +13,7 @@ export default function Digital() {
   
           <div className="flex flex-wrap">
               <div className="w-full lg:w-1/2 p-[5%]">
-                  <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Digital Marketing</h3>
+                  <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Digital Marketing</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-paragraph">
                   Master digital marketing in 10 weeks and step into one of today&apos;s most dynamic, high-paying careers. Learn to create campaigns that convert, master data-driven marketing strategies, and build real marketing campaigns for actual businesses.</p>
                   <p className="font-paragraph">You&apos;ll work with Google Analytics, Facebook Ads, SEO tools, and marketing automation platforms while creating campaigns that deliver measurable results. Perfect for marketers seeking advancement or professionals ready to enter the digital marketing space.</p>

@@ -14,7 +14,7 @@ export default function Cyber() {
   
           <div className="flex flex-wrap">
               <div className="w-full lg:w-1/2 p-[5%]">
-                  <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Cyber Security</h3>
+                  <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Cyber Security</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-heading">
                   Break into cybersecurity in 14 weeks. Master ethical hacking, threat detection, and security architecture while earning industry-recognised certifications. Cybersecurity professionals are desperately needed – with 3.5 million unfilled positions globally.</p>
                   <p className="font-paragraph">This isn&apos;t theoretical security training. You&apos;ll hack real systems (legally), stop actual cyber attacks, and build security infrastructure using industry-standard tools. Perfect for IT professionals, network administrators, or anyone passionate about digital security.</p>

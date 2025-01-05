@@ -13,7 +13,7 @@ export default function EdTech() {
   
           <div className="flex flex-wrap">
               <div className="w-full lg:w-1/2 p-[5%]">
-                  <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Education Technology Specialist</h3>
+                  <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Education Technology Specialist</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-heading">
                   Designed exclusively for educators: Transform into an EdTech specialist in 10 weeks. Bridge your teaching expertise with technical knowledge while mastering the tools reshaping modern education.</p>
                   <p className="font-paragraph">Learn to implement learning management systems, develop digital curricula, and lead educational technology initiatives. Perfect for teachers and administrators ready to advance their careers in the growing EdTech sector.

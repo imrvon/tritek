@@ -25,7 +25,7 @@ export default function Courses() {
             <div className="w-full h-[500px] lg:h-auto lg:w-1/3 bg-[url(/assets/img/courses1.webp)] bg-center bg-cover lg:bg-right bg-no-repeat"></div>
             <div className="w-full lg:w-2/3 p-[5%]">
                 <h2 className="font-heading text-lg font-medium text-secondary mb-[5%] uppercase">Elite Tech Training Programme</h2>
-                <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Transform Your Career in Project Management and Business Analysis</h3>
+                <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Transform Your Career in Project Management and Business Analysis</h3>
                 <p className="italic my-5 sm:text-2xl text-xl">
                 Step into the future of work with the Elite Tech Training Programme, the ultimate gateway to high-paying, impactful roles in Project Management and Business Analysis. In just 12 weeks, you’ll master the skills that top employers demand, gaining the confidence to lead projects and drive business success.</p>
                 <div>
@@ -67,7 +67,7 @@ export default function Courses() {
 
         <div className='flex flex-wrap py-[5%]'>
             <div className='w-full lg:w-1/3 p-[5%] lg:text-left text-center'>
-                <h3 className='text-5xl font-bold font-dm lg:w-2/3'>How It All Works</h3>
+                <h3 className='text-5xl font-bold font-heading lg:w-2/3'>How It All Works</h3>
                 <p className='text-lg font-paragraph py-[5%] lg:w-10/12'>Here are a few of the important things you should know</p>
                 <div className='h-[2px] w-1/6 bg-[#0a0a0a80] lg:mx-0 mx-auto'></div>
             </div>
@@ -101,7 +101,7 @@ export default function Courses() {
         </div>
 
         <div className="py-[5%]" id="courses">
-            <h4 className="text-4xl font-bold text-center font-dm pb-[5%]">Our Courses</h4>
+            <h4 className="text-4xl font-bold text-center font-heading pb-[5%]">Our Courses</h4>
             <div className="flex flex-wrap">
                 {CoursesData.map((course: Course, index: number) => (
                 <div key={index} className='w-full sm:w-1/2 lg:w-1/3 pb-[5%] bg-white hover:bg-grey duration-100 transition-colors ease-in-out'>
@@ -115,7 +115,7 @@ export default function Courses() {
                         />
                     </div>
                     <div className="text-center pt-[2.5%] px-[2.5%] pb-[5%]">
-                        <h3 className="text-3xl text-head-primary font-medium font-dm">{course.title}</h3>
+                        <h3 className="text-3xl text-head-primary font-medium font-heading">{course.title}</h3>
                         <h3 className="text-lg font-paragraph w-9/12 mx-auto">{course.description}</h3>
                         <Link href={course.link} className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 mt-[5%] font-paragraph"
                     >Enroll Now</Link>

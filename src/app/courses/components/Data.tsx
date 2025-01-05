@@ -13,7 +13,7 @@ export default function Data() {
   
           <div className="flex flex-wrap">
               <div className="w-full lg:w-1/2 p-[5%]">
-                  <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Data Analysis</h3>
+                  <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">Data Analysis</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-heading">
                   Turn data into insights and launch your data analysis career in 12 weeks. Master SQL, Python, and visualisation tools while working on real datasets that solve actual business problems.</p>
                   <p className="font-paragraph">Learn to clean data, perform advanced analysis, and create compelling visualisations that drive business decisions. Work with tools like Tableau, Power BI, and Python libraries used by top companies. Perfect for analysts seeking advancement or professionals ready to enter the data field.</p>

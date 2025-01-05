@@ -146,7 +146,7 @@ function PostsBody() {
                   <div className="mt-3 h-auto md:h-[3.5rem] lg:h-[4rem]">
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="font-dm text-[1.3rem] sm:text-[1.5rem]  md:text-[1.45rem] leading-[130%] hover:text-[#9e9f7f] font-bold text-center"
+                      className="font-heading text-[1.3rem] sm:text-[1.5rem]  md:text-[1.45rem] leading-[130%] hover:text-[#9e9f7f] font-bold text-center"
                     >
                       {truncateTextByChars(post.title.rendered || "", 45)}
                     </Link>

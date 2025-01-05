@@ -13,7 +13,7 @@ export default function HR() {
   
           <div className="flex flex-wrap">
               <div className="w-full lg:w-1/2 p-[5%]">
-                  <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">HR Training</h3>
+                  <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl w-5/6 text-head-primary">HR Training</h3>
                   <p className="italic my-5 sm:text-2xl text-xl font-heading">
                   Modernise your HR career in 10 weeks. Master HR technologies, data-driven people analytics, and digital HR transformation while implementing real HR tech solutions.</p>
                   <p className="font-paragraph">Learn HRIS platforms, HR analytics tools, and digital recruitment technologies. Perfect for HR professionals ready to lead digital transformation initiatives or transition into HR tech roles.</p>

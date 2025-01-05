@@ -101,7 +101,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
           {/* Title */}
           <div>
-            <h1 className="text-[2rem] md:text-[2.2rem] lg:text-[2.7rem] font-dm font-bold mb-4">
+            <h1 className="text-[2rem] md:text-[2.2rem] lg:text-[2.7rem] font-heading font-bold mb-4">
               {title?.rendered}
             </h1>
             <h4 className="font-heading italic font-medium text-[1.1rem] mb-8">
@@ -137,7 +137,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                         <BiSolidQuoteRight className="text-[3rem] italic" />
                       </div>
                       <blockquote
-                        className="text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem] font-dm text-black leading-[150%] italic"
+                        className="text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem] font-heading text-black leading-[150%] italic"
                         dangerouslySetInnerHTML={{ __html: para }}
                       />
                     </div>
@@ -160,8 +160,8 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         </div>
 
         {/* Recent Posts Section */}
-        <div className=" w-full md:w-1/4  font-dm">
-          <h1 className="text-[1.2rem] font-dm mt-0 md:mt-6 mb-4">Recent Posts</h1>
+        <div className=" w-full md:w-1/4  font-heading">
+          <h1 className="text-[1.2rem] font-heading mt-0 md:mt-6 mb-4">Recent Posts</h1>
           <div className="grid grid-cols-1 gap-4">
             {recentPosts.slice(0, 5).map((recentPost: any) => {
               const recentImage =

@@ -8,8 +8,8 @@ export default function Contact() {
         <div className="bg-black opacity-50 absolute top-0 left-0 w-full h-full"></div>
         
         <div className="relative z-10 font-paragraph w-full sm:w-auto">
-            <h4 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-center mb-8 font-dm">Want to reach out<span className="font-light"><br/>to us?</span></h4>
-            <span className="font-heading text-center mx-auto block font-paragraph">WE WANT TO HEAR ABOUT IT</span>
+            <h4 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-center mb-8 font-heading">Want to reach out<span className="font-light"><br/>to us?</span></h4>
+            <span className="font-heading text-center mx-auto block">WE WANT TO HEAR ABOUT IT</span>
             <div className="flex justify-center items-center sm:items-center lg:items-start p-[5%] sm:p-0 gap-4 mt-[10%] flex-col lg:flex-row">
               <Link href='tel:447401262066' className="inline-block sm:w-auto w-full sm:flex items-center sm:items-end gap-4 bg-primary p-6 hover:-translate-y-2 transition-transform delay-0 duration-300 flex-col sm:flex-row">
                 <div className="text-5xl flex justify-center sm:block sm:-mx-[9px] my-1"><PiDeviceMobileCameraLight/></div>

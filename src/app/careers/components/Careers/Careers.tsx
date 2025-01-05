@@ -7,7 +7,7 @@ export default function Careers() {
         <div className='bg-[#f7f7f5]'>
             <div className='relative h-screen bg-[url(/assets/img/hero_career.webp)] bg-no-repeat bg-cover flex justify-center items-center sm:bg-top bg-center'>
                 <div className='flex flex-col gap-10 relative z-10'>
-                    <p className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-dm text-center'>Careers</p>
+                    <p className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-heading text-center'>Careers</p>
                     <p className='font-medium text-center text-xl sm:text-2xl text-white italic font-heading w-9/12 mx-auto'>Join a team that’s shaping the future of education, innovation, and technology. At Tritek Academy, we don’t just offer jobs—we offer careers that inspire and empower.</p>
                 </div>
                 <div className="absolute top-0 left-0 w-full h-full bg-[#0000003a]"></div>
@@ -17,7 +17,7 @@ export default function Careers() {
                 <article className="lg:w-1/2 p-[5%]">
                     <h2 className="font-heading text-lg tracking-wider font-medium text-secondary mb-[5%] uppercase">Why Join Tritek Academy?
                     </h2>
-                    <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl text-head-primary">Be Part of Something Bigger</h3>
+                    <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl text-head-primary">Be Part of Something Bigger</h3>
                     <p className="font-paragraph mt-[3.5%] text-lg">At Tritek Academy, we’re more than a company—we’re a mission-driven organization that transforms lives through cutting-edge training and education. Joining us means being part of a dynamic, innovative, and supportive team that values your growth as much as our impact.
                     </p>
                     <div>
@@ -43,7 +43,7 @@ export default function Careers() {
                 <div className="w-full lg:w-1/2 h-[500px] lg:h-auto bg-[url(/assets/img/career2.webp)] bg-no-repeat bg-cover bg-center"></div>
                 <article className="lg:w-1/2 p-[5%]">
                     <h2 className="font-heading text-lg tracking-wider font-medium text-secondary mb-[5%] uppercase">Life at Tritek Academy</h2>
-                    <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl text-head-primary">Where Passion Meets Purpose</h3>
+                    <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl text-head-primary">Where Passion Meets Purpose</h3>
                     <p className="font-paragraph mt-[3.5%] text-lg">Life at Tritek Academy is dynamic, inspiring, and rewarding. Here’s what you can expect when you join our team.
                     </p>
                     <div>
@@ -73,7 +73,7 @@ export default function Careers() {
             <div className='flex flex-wrap flex-col-reverse lg:flex-row'>
                 <article className="lg:w-1/2 p-[5%]">
                     <h2 className="font-heading text-lg tracking-wider font-medium text-secondary mb-[5%] uppercase">Get Ready: Our Recruitment Process</h2>
-                    <h3 className="font-dm text-3xl sm:text-4xl md:text-5xl text-head-primary">Your Journey to Joining Our Team Starts Here</h3>
+                    <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl text-head-primary">Your Journey to Joining Our Team Starts Here</h3>
                     <p className="font-paragraph mt-[3.5%] text-lg">We’re excited to meet individuals who are passionate, innovative, and eager to make an impact. Our recruitment process is designed to be transparent, supportive, and fair.</p>
                     <div>
                         <h3 className="font-heading text-lg my-4 text-head-primary uppercase">How It Works:</h3>
