@@ -8,6 +8,7 @@ import { homeSchema } from '../../../schemas/home';
 import Link from 'next/link';
 import { FaFacebookF, FaLinkedinIn, FaXTwitter, FaYoutube } from 'react-icons/fa6';
 import { PiCaretDown } from 'react-icons/pi';
+import { countries } from './CountriesList';
 
 interface FormValues {
     first_name: string;
@@ -18,6 +19,7 @@ interface FormValues {
     date: string;
     message: string;
     courseTitle: string;
+    country: string;
 }
 
 export default function ContactForm() {
@@ -72,6 +74,7 @@ export default function ContactForm() {
         email_address: '',
         message: '',
         courseTitle: '',
+        country: '',
     },
     validationSchema: homeSchema,
     onSubmit,
@@ -240,40 +243,67 @@ export default function ContactForm() {
                     </div>
                 </div>
 
-                <div className='relative flex-1 mb-8'>
-                    <select 
-                        name="courseTitle" 
-                        id=""
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        className={
-                            errors.courseTitle && touched.courseTitle
-                                ? 'bg-[#efefef] text-primary py-5 px-4 block w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease] appearance-none'
-                                : 'bg-[#efefef] text-primary py-5 px-4 block w-full mb-[5%] focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease] appearance-none'
-                            }>
-                        <option value="">Select Course</option>
-                        <option value="Elite Tech Training Programme">HR Training</option>
-                        <option value="Artificial Intelligence">Artificial Intelligence</option>
-                        <option value="Cyber Security">Cyber Security</option>
-                        <option value="Digital Marketing">Digital Marketing</option>
-                        <option value="Scrum Mastery">Scrum Mastery</option>
-                        <option value="Product Management">Product Management</option>
-                        <option value="Data Analysis">Data Analysis</option>
-                        <option value="Cloud Computing">Cloud Computing</option>
-                        <option value="Blockchain">Blockchain</option>
-                        <option value="Education Technology Specialist">Education Technology Specialist</option>
-                        <option value="Telehealth Technology">Telehealth Technology</option>
-                        <option value="Process Automation">Process Automation</option>
-                        <option value="Video Editing">Video Editing</option>
-                        <option value="HR Training">Elite Tech Training Programme</option>
-                    </select>
-                    {errors.courseTitle && touched.courseTitle && (
-                    <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
-                        {errors.courseTitle}
-                    </small>
-                    )}
+                <div className="relative flex flex-col sm:flex-row space-y-8 sm:space-x-4 sm:space-y-0 mb-8">
+                    <div className='relative flex-1'>
+                        <select
+                            name="courseTitle"
+                            id=""
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            className={
+                                errors.courseTitle && touched.courseTitle
+                                    ? 'bg-[#efefef] text-primary py-5 px-4 block w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease] appearance-none'
+                                    : 'bg-[#efefef] text-primary py-5 px-4 block w-full mb-[5%] focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease] appearance-none'
+                                }>
+                            <option value="">Select Course</option>
+                            <option value="Elite Tech Training Programme">HR Training</option>
+                            <option value="Artificial Intelligence">Artificial Intelligence</option>
+                            <option value="Cyber Security">Cyber Security</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Scrum Mastery">Scrum Mastery</option>
+                            <option value="Product Management">Product Management</option>
+                            <option value="Data Analysis">Data Analysis</option>
+                            <option value="Cloud Computing">Cloud Computing</option>
+                            <option value="Blockchain">Blockchain</option>
+                            <option value="Education Technology Specialist">Education Technology Specialist</option>
+                            <option value="Telehealth Technology">Telehealth Technology</option>
+                            <option value="Process Automation">Process Automation</option>
+                            <option value="Video Editing">Video Editing</option>
+                            <option value="HR Training">Elite Tech Training Programme</option>
+                        </select>
+                        {errors.courseTitle && touched.courseTitle && (
+                        <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                            {errors.courseTitle}
+                        </small>
+                        )}
                         <PiCaretDown className='absolute right-3 top-1/2 -translate-y-1/2'/>
                     </div>
+                    <div className='relative flex-1'>
+                        <select
+                            name="country"
+                            id="country"
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            className={
+                                errors.country && touched.country
+                                ? 'bg-[#efefef] text-primary py-5 px-4 block w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease] appearance-none'
+                                : 'bg-[#efefef] text-primary py-5 px-4 block w-full mb-[5%] focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease] appearance-none'
+                        }>
+                            <option value="">Select Country</option>
+                            {countries.map((country: { code: string; name: string }) => (
+                                <option key={country.code} value={country.name}>
+                                    {country.name}
+                                </option>
+                            ))}
+                        </select>
+                        {errors.country && touched.country && (
+                        <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                            {errors.country}
+                        </small>
+                        )}
+                        <PiCaretDown className='absolute right-3 top-1/2 -translate-y-1/2'/>
+                    </div>
+                </div>
         
                 <div className="relative mb-8">
                   <textarea

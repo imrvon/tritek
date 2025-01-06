@@ -6,6 +6,7 @@ import { useFormik, FormikHelpers } from 'formik';
 import { FaSpinner } from 'react-icons/fa';
 import { basicSchema } from '../../schemas/index';
 import { PiCaretDown } from 'react-icons/pi';
+import { countries } from '../../contact/components/Contact/CountriesList';
 
 interface FormValues {
   first_name: string;
@@ -15,7 +16,8 @@ interface FormValues {
   gender: string;
   date: string;
   message: string;
-  courseTitle: string; // Included courseTitle in FormValues
+  courseTitle: string;
+  country: string;
 }
 
 interface CourseFormProps {
@@ -73,7 +75,8 @@ export default function CourseForm({ courseTitle }: CourseFormProps) {
       date: '',
       email_address: '',
       message: '',
-      courseTitle, // Automatically include courseTitle in initialValues
+      courseTitle,
+      country: '',
     },
     validationSchema: basicSchema,
     onSubmit,
@@ -225,6 +228,32 @@ export default function CourseForm({ courseTitle }: CourseFormProps) {
                 )}
                 <PiCaretDown className='absolute right-3 top-1/2 -translate-y-1/2'/>
             </div>
+        </div>
+
+        <div className='relative flex-1'>
+            <select
+                name="country"
+                id="country"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                className={
+                    errors.country && touched.country
+                    ? 'bg-[#efefef] text-primary py-5 px-4 block w-full border-2 border-[#fc7f7f] outline-0 transition-all duration-500 ease-[ease] appearance-none'
+                    : 'bg-[#efefef] text-primary py-5 px-4 block w-full mb-[5%] focus:shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] border-0 border-[#181818] outline-0 transition-all duration-500 ease-[ease] appearance-none'
+            }>
+                <option value="">Select Country</option>
+                {countries.map((country: { code: string; name: string }) => (
+                    <option key={country.code} value={country.name}>
+                        {country.name}
+                    </option>
+                ))}
+            </select>
+            {errors.country && touched.country && (
+            <small className="absolute -bottom-5 left-0 text-[#fc7f7f]">
+                {errors.country}
+            </small>
+            )}
+            <PiCaretDown className='absolute right-3 top-1/2 -translate-y-1/2'/>
         </div>
 
         <div className="relative mb-8">

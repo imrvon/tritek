@@ -5,6 +5,7 @@ export const homeSchema = yup.object().shape({
     last_name: yup.string().required("Last Name is Required"),
     gender: yup.string().required("Gender is Required"),
     date: yup.string().required("Date is Required"),
+    country: yup.string().required("Country is Required"),
     courseTitle: yup.string().required("Select the related course for your enquiry"),
     phone_number: yup.string().min(5, 'Phone number must be at least 5 digits long').max(32, 'Phone number must not exceed 32 digits').required("Phone Number is Required"),
     email_address: yup.string().email("Please enter a valid email").required("Email Address is Required"),
