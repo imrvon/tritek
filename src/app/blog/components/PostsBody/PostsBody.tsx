@@ -11,11 +11,13 @@ function PostsBody() {
   const [postsNew, setPostsNew] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const timestamp = new Date().getTime();
+
   useEffect(() => {
     async function fetchPosts() {
       try {
         const response = await fetch(
-          "https://dev-jozz-portfolio.pantheonsite.io/wp-json/wp/v2/posts?_embed"
+          `https://dev-tritek.pantheonsite.io/wp-json/wp/v2/posts?_embed&_=${timestamp}`
         );
         const data = await response.json();
         setPostsNew(data);

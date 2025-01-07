@@ -25,13 +25,14 @@ export default function JobDetails({ params }: { params: { slug: string } }) {
   const [job, setJob] = useState<JobType | null>(null);
   // const [recentPosts, setRecentPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const timestamp = new Date().getTime();
 
   useEffect(() => {
     async function fetchPostData() {
       try {
         // Fetch posts from the API
         const response = await fetch(
-          `https://dev-jozz-portfolio.pantheonsite.io/wp-json/wp/v2/job?_embed`
+          `https://dev-tritek.pantheonsite.io/wp-json/wp/v2/job?_embed&_=${timestamp}`
         );
         const jobs = await response.json();
 

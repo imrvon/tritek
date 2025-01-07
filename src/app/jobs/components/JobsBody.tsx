@@ -6,11 +6,14 @@ import React, { useEffect, useState } from "react";
 export default function JobsBody() {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const timestamp = new Date().getTime();
+
   useEffect(() => {
     async function fetchJobs() {
       try {
         const response = await fetch(
-          "https://dev-jozz-portfolio.pantheonsite.io/wp-json/wp/v2/job?_embed"
+          `https://dev-tritek.pantheonsite.io/wp-json/wp/v2/job?_embed&_=${timestamp}`
         );
         const data = await response.json();
         setJobs(data);
@@ -24,7 +27,7 @@ export default function JobsBody() {
     fetchJobs();
   }, []);
 
-//   console.log("jobs", jobs);
+  console.log("jobs", jobs);
   
   if (loading) {
     return (
