@@ -73,7 +73,8 @@ function PostsBody() {
   return (
     <div className="px-[5%] font-ibm  py-6 md:py-10">
       {/* Tabs for categories */}
-      <div className="flex flex-wrap justify-center px-[5%] gap-x-4 gap-y-0 mt-8 sm:mt-10 md:mt-16 mb-3">
+  {filteredPosts?.length > 0 && (
+        <div className="flex flex-wrap justify-center px-[5%] gap-x-4 gap-y-0 mt-8 sm:mt-10 md:mt-16 mb-3">
         {categories.slice(0, 9).map((category) => (
           <button
             key={category}
@@ -98,6 +99,7 @@ function PostsBody() {
           </button>
         ))}
       </div>
+  )}
 
       {/* Post Cards */}
       {filteredPosts?.length > 0 ? (
