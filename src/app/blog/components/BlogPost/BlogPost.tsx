@@ -24,13 +24,14 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   const [post, setPost] = useState<PostType | null>(null);
   const [recentPosts, setRecentPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const timestamp = new Date().getTime();
 
   useEffect(() => {
     async function fetchPostData() {
       try {
         // Fetch posts from the API
         const response = await fetch(
-          `https://dev-jozz-portfolio.pantheonsite.io/wp-json/wp/v2/posts?_embed`
+          `https://dev-tritek.pantheonsite.io/wp-json/wp/v2/posts?_embed&_=${timestamp}`
         );
         const posts = await response.json();
 
