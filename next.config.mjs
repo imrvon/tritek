@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    images: {
+      domains: ["dev-tritek.pantheonsite.io"], // Add the allowed hostname here
+    },
+  };
+  
+  export default nextConfig;
+  
