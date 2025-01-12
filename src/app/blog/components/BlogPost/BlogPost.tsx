@@ -1,13 +1,11 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
-// app/blog/[slug]/page.jsx
-
 import React, { useEffect, useState } from "react";
 import { notFound } from "next/navigation";
 import { BiSolidQuoteRight } from "react-icons/bi";
 import Link from "next/link";
 import "../../styles/blog.css"
+import Image from "next/image";
 
 interface PostType {
   title: { rendered: string };
@@ -67,7 +65,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   if (loading) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <p className="text-2xl font-ibm">Loading post...</p>
+        <p className="text-2xl font-heading">Loading post...</p>
       </div>
     );
   }
@@ -75,7 +73,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   if (!post) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <p className="text-2xl font-ibm">Post not found</p>
+        <p className="text-2xl font-heading">Post not found</p>
       </div>
     );
   }
@@ -110,7 +108,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
           {/* Title */}
           <div>
-            <h1 className="text-[2rem] md:text-[2.2rem] lg:text-[2.7rem] font-dm font-bold mb-4">
+            <h1 className="text-[2rem] md:text-[2.2rem] lg:text-[2.7rem] font-heading font-bold mb-4">
               {title?.rendered}
             </h1>
             {/* <h4 className="font-ibm italic font-medium text-[1.1rem] mb-8">
@@ -121,10 +119,12 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           {/* Featured Image */}
           {featuredImage && (
             <div>
-              <img
+              <Image
                 src={featuredImage}
                 alt={title?.rendered}
                 className="w-full h-[25rem] object-cover mb-6"
+                height={100}
+                width={100}
               />
             </div>
           )}
@@ -145,7 +145,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                         <BiSolidQuoteRight className="text-[3rem] italic" />
                       </div>
                       <blockquote
-                        className="text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem] font-dm text-black leading-[150%] italic"
+                        className="text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem] font-heading text-black leading-[150%] italic"
                         dangerouslySetInnerHTML={{ __html: para }}
                       />
                     </div>
@@ -197,17 +197,19 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                   {/* Featured Image */}
                   <div className="w-1/3">
                     {recentImage && (
-                      <img
+                      <Image
                         src={recentImage}
                         alt={recentPost.title.rendered}
                         className="w-full h-28 sm:h-32 md:h-20 object-cover"
+                        width={100}
+                        height={100}
                       />
                     )}
                   </div>
 
                   {/* Post Details */}
                   <div className=" w-2/3 ">
-                    <p className=" font-spartan text-[0.85rem] ">
+                    <p className=" font-paragraph text-[0.85rem] ">
                       {recentDate}
                     </p>
                     <h2 className="text-[1rem]  mt-1">

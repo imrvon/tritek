@@ -15,10 +15,8 @@ module.exports = {
         "head-primary": "var(--head-primary)",
       },
       fontFamily: {
-        nuno: ['var(--font-nuno)'],
-        ibm: ['var(--font-ibm)'],
-        spartan: ['var(--font-spartan)'],
-        dm: ['var(--font-dm)'],
+        paragraph: ['var(--font-paragraph)'],
+        heading: ['var(--font-heading)'],
       },
     },
   },
