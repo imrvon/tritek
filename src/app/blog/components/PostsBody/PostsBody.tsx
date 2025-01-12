@@ -8,6 +8,7 @@ import { PiDotOutline } from "react-icons/pi";
 
 function PostsBody() {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [imageURL, setImageURL] = useState<string | null>(null);
   const [postsNew, setPostsNew] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -35,6 +36,7 @@ function PostsBody() {
             );
             const mediaData = await mediaResponse.json();
             imageUrl = mediaData?.source_url || null;  // Get the image URL
+            setImageURL(imageUrl)
           }
 
           return {
@@ -131,7 +133,7 @@ function PostsBody() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-10 gap-y-7 lg:gap-y-10 gap-x-[3.5%] ">
           {filteredPosts.map((post: any) => {
             const featuredImage =
-              post?._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "";
+              imageURL || post?._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
             const category =
               post?._embedded?.["wp:term"]?.[0]?.[0]?.name || "Uncategorized";
 

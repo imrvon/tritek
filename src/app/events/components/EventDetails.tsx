@@ -128,8 +128,8 @@ export default function EventDetails({ params }: { params: { slug: string } }) {
     <div className="px-[5%] mt-12 lg:mt-20 py-10">
       <section className="flex flex-col md:flex-row md:items-center gap-8 lg:gap-16">
         {/* Event Image */}
-        <div className="w-full lg:w-1/3">
-          <div className="relative w-full h-72 md:h-96">
+        <div className="w-full lg:w-1/2">
+          <div className="relative w-full h-60 sm:h-72 md:h-96">
             {featuredImage ? (
               <Image
                 src={featuredImage}
@@ -146,13 +146,13 @@ export default function EventDetails({ params }: { params: { slug: string } }) {
         </div>
 
         {/* Event Details */}
-        <div className="w-full lg:w-2/3 font-ibm space-y-4">
+        <div className="w-full lg:w-1/2 font-ibm space-y-4">
           <h1 className="text-[1.8rem] sm:text-[2rem] md:text-[2.5rem] font-bold font-spartan">
             {eventTitle}
           </h1>
 
           <div
-            className="text-[0.95rem] sm:text-base text-gray-700 text-justify font-nuno space-y-4"
+            className="text-[0.95rem] sm:text-base text-gray-700  font-nuno space-y-4"
             dangerouslySetInnerHTML={{ __html: eventContent }}
           />
 

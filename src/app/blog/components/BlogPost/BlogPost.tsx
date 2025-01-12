@@ -24,6 +24,7 @@ interface PostType {
 
 export default function BlogPost({ params }: { params: { slug: string } }) {
   const [post, setPost] = useState<PostType | null>(null);
+  const [imageURL, setImageURL] = useState<string | null>(null);
   const [recentPosts, setRecentPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const timestamp = new Date().getTime();
@@ -51,10 +52,36 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           (p: any) => p.slug !== params.slug
         );
         setRecentPosts(filteredRecentPosts);
+
+        // If acf.image is an ID, fetch its URL
+        if (matchingPost.acf?.image) {
+          fetchImageURL(matchingPost?.acf?.image);
+          console.log("if fetch");
+        }
       } catch (error) {
         console.error("Failed to fetch data:", error);
       } finally {
         setLoading(false);
+      }
+    }
+
+    async function fetchImageURL(imageID: number) {
+      // console.log("fetching image...")
+      try {
+        const response = await fetch(
+          `https://dev-tritek.pantheonsite.io/wp-json/wp/v2/media/${imageID}`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch image URL");
+        }
+
+        const imageData = await response.json();
+        // console.log("imageData", imageData)  
+        setImageURL(imageData.source_url);
+      } catch (error) {
+        console.error("Failed to fetch image URL:", error);
+        setImageURL(null); // Fallback if image cannot be fetched
       }
     }
 
@@ -84,7 +111,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   console.log("post", post)
   console.log("Embedded media:", _embedded?.["wp:featuredmedia"]);
 
-  const featuredImage = _embedded?.["wp:featuredmedia"]?.[0]?.source_url || "";
+  const featuredImage = imageURL || _embedded?.["wp:featuredmedia"]?.[0]?.source_url;
   const categories =
     _embedded?.["wp:term"]?.[0]?.map((term: any) => term.name).join(", ") ||
     "Uncategorized";
@@ -101,14 +128,14 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       <div className="flex items-center gap-2 text-gray-500 mb-2">
         <span className="font-semibold">{categories}</span>
       </div>
-      <section className="flex flex-col md:flex-row gap-8 lg:gap-16 ">
+      <section className="flex flex-col lg:flex-row gap-6 lg:gap-8 ">
         {/* Main Blog Post */}
-        <div className=" w-full md:w-4/5  font-ibm">
+        <div className=" w-full lg:w-4/5  font-ibm">
           {/* Categories */}
 
           {/* Title */}
           <div>
-            <h1 className="text-[2rem] md:text-[2.2rem] lg:text-[2.7rem] font-heading font-bold mb-4">
+            <h1 className="text-[1.5rem] sm:text-[1.8rem] md:text-[2.2rem] lg:text-[2.7rem] font-heading font-bold mb-4">
               {title?.rendered}
             </h1>
             {/* <h4 className="font-ibm italic font-medium text-[1.1rem] mb-8">
@@ -122,7 +149,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
               <Image
                 src={featuredImage}
                 alt={title?.rendered}
-                className="w-full h-[25rem] object-cover mb-6"
+                className="w-full h-[15rem] sm:h-[20rem] md:h-[25rem] object-cover mb-6"
                 height={100}
                 width={100}
               />
@@ -168,13 +195,13 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         </div>
 
         {/* Recent Posts Section */}
-        <div className=" w-full md:w-1/5  font-dm">
+        <div className=" w-full lg:w-1/5  font-dm">
           <h1 className="text-[1.2rem] font-dm mt-0 md:mt-6 mb-4">Recent Posts</h1>
           {recentPosts?.length > 0 ? (
             <div className="grid grid-cols-1 gap-4">
             {recentPosts.slice(0, 5).map((recentPost: any) => {
               const recentImage =
-                recentPost?._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
+                recentPost?._embedded?.["wp:featuredmedia"]?.[0]?.source_url  ||
                 "";
               const recentCategories =
                 recentPost?._embedded?.["wp:term"]?.[0]
@@ -192,7 +219,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
               return (
                 <div
                   key={recentPost.id}
-                  className="bg-white flex items-center border-b pb-4 gap-4 md:gap-2"
+                  className="bg-white flex items-center border-b pb-4 gap-4 lg:gap-2"
                 >
                   {/* Featured Image */}
                   <div className="w-1/3">
@@ -200,7 +227,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                       <Image
                         src={recentImage}
                         alt={recentPost.title.rendered}
-                        className="w-full h-28 sm:h-32 md:h-20 object-cover"
+                        className="w-full h-24 sm:h-24 md:h-28 lg:h-16 xl:h-16 object-cover"
                         width={100}
                         height={100}
                       />
@@ -209,10 +236,10 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
                   {/* Post Details */}
                   <div className=" w-2/3 ">
-                    <p className=" font-paragraph text-[0.85rem] ">
+                    <p className=" font-paragraph text-[0.8rem] sm:text-[0.8rem]  md:text-[1.1rem] lg:text-[0.75rem] xl:text-[0.8rem] ">
                       {recentDate}
                     </p>
-                    <h2 className="text-[1rem]  mt-1">
+                    <h2 className="text-[0.9rem] sm:text-[0.9rem] md:text-[0.9rem] lg:text-[1.15rem] xl:text-[0.9rem]  mt-1">
                       <Link
                         href={`/blog/${recentPost.slug}`}
                         className="hover:text-[#9e9f7f]"

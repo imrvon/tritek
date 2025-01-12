@@ -3,11 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Pic from "../assets/blog1.jpg";
 
 export default function EventsBody() {
   const [events, setEvents] = useState([]);
-  const [imageURL, setImageURL] = useState<string | null>(null);
+  const [imageURLs, setImageURLs] = useState<{ [key: number]: string | null }>(
+    {}
+  );
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
@@ -28,16 +29,21 @@ export default function EventsBody() {
         setEvents(data);
 
         // Fetch image URLs for each event
-        const imagePromises = data.map((event: any) => {
+        const imagePromises = data.map(async (event: any) => {
           if (event.acf?.image) {
-            return fetchImageURL(event.acf.image);
+            const imageUrl = await fetchImageURL(event.acf.image);
+            return { id: event.id, url: imageUrl };
           }
-          return Promise.resolve(null); // In case there's no image
+          return { id: event.id, url: null }; // In case there's no image
         });
 
-        // Wait for all image URLs to be fetched
-        const imageUrls = await Promise.all(imagePromises);
-        setImageURL(imageUrls.filter((url) => url !== null)[0]); // Take first non-null URL since state expects single string
+        // Resolve all image URLs and update state
+        const resolvedImages = await Promise.all(imagePromises);
+        const imageMap = resolvedImages.reduce(
+          (acc, { id, url }) => ({ ...acc, [id]: url }),
+          {}
+        );
+        setImageURLs(imageMap);
       } catch (error) {
         console.error("Failed to fetch events:", error);
         setError(true);
@@ -66,7 +72,6 @@ export default function EventsBody() {
 
     fetchEvents();
   }, [timestamp]);
-
 
   if (loading) {
     return (
@@ -127,7 +132,7 @@ export default function EventsBody() {
         const time = acf?.time || "Time Not Specified";
         const location = acf?.location || "Location Not Specified";
         const featuredImage =
-          imageURL || _embedded?.["wp:featuredmedia"]?.[0]?.source_url;
+          imageURLs[id] || _embedded?.["wp:featuredmedia"]?.[0]?.source_url;
 
         return (
           <Link
@@ -137,15 +142,15 @@ export default function EventsBody() {
           >
             {/* Event Image */}
             <div className="h-48 w-full relative overflow-hidden ">
-             {featuredImage && (
-               <Image
-               src={featuredImage}
-               alt={eventTitle}
-               className="w-full h-full object-cover absolute  transition-transform transform duration-700 group-hover:scale-[107.5%]"
-               width={100}
-               height={100}
-             />
-             )}
+              {featuredImage && (
+                <Image
+                  src={featuredImage}
+                  alt={eventTitle}
+                  className="w-full h-full object-cover absolute  transition-transform transform duration-700 group-hover:scale-[107.5%]"
+                  width={100}
+                  height={100}
+                />
+              )}
             </div>
 
             <section className="py-4 px-[3%] ">
