@@ -1,0 +1,14 @@
+
+.blogBody {
+    color: black;
+}
+.blogBody figcaption {
+    padding: 1rem 0;
+}
+.blogBody ol, .blogBody ul {
+    /* padding-top: 1rem;    */
+    
+}
+.blogBody li{
+    margin-top: 1rem;
+}

@@ -8,6 +8,7 @@ import { PiDotOutline } from "react-icons/pi";
 
 function PostsBody() {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [imageURL, setImageURL] = useState<string | null>(null);
   const [postsNew, setPostsNew] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -17,10 +18,34 @@ function PostsBody() {
     async function fetchPosts() {
       try {
         const response = await fetch(
-          `https://dev-tritek.pantheonsite.io/wp-json/wp/v2/posts?_embed&_=${timestamp}`
+          `https://dev-tritek.pantheonsite.io/wp-json/wp/v2/posts?_embed=true&_=${timestamp}`
         );
         const data = await response.json();
-        setPostsNew(data);
+
+        // Process the posts to add image URL from ACF
+        const postsWithImages = await Promise.all(data.map(async (post: any) => {
+          // Get the image ID from ACF field
+          const imageId = post.acf?.image;  // Replace 'image' with your ACF field key
+
+          let imageUrl = null;
+
+          if (imageId) {
+            // Fetch image details using the WordPress media endpoint
+            const mediaResponse = await fetch(
+              `https://dev-tritek.pantheonsite.io/wp-json/wp/v2/media/${imageId}`
+            );
+            const mediaData = await mediaResponse.json();
+            imageUrl = mediaData?.source_url || null;  // Get the image URL
+            setImageURL(imageUrl)
+          }
+
+          return {
+            ...post,
+            imageUrl,  // Add the image URL to the post
+          };
+        }));
+
+        setPostsNew(postsWithImages as any); // Update state with the posts including the image URL
       } catch (error) {
         console.error("Failed to fetch posts:", error);
       } finally {
@@ -29,7 +54,7 @@ function PostsBody() {
     }
 
     fetchPosts();
-  }, []);
+  }, [timestamp]);
 
   if (loading) {
     return (
@@ -38,6 +63,8 @@ function PostsBody() {
       </div>
     );
   }
+
+  console.log("Posts", postsNew)
 
   // Extract categories
   const categories = [
@@ -106,7 +133,7 @@ function PostsBody() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-10 gap-y-7 lg:gap-y-10 gap-x-[3.5%] ">
           {filteredPosts.map((post: any) => {
             const featuredImage =
-              post?._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "";
+              imageURL || post?._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
             const category =
               post?._embedded?.["wp:term"]?.[0]?.[0]?.name || "Uncategorized";
 

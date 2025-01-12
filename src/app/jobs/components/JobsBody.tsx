@@ -27,7 +27,7 @@ export default function JobsBody() {
     fetchJobs();
   }, []);
 
-  console.log("jobs", jobs);
+  // console.log("jobs", jobs);
   
   if (loading) {
     return (
