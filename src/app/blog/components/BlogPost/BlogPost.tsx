@@ -7,7 +7,7 @@ import { BiSolidQuoteRight } from "react-icons/bi";
 import Link from "next/link";
 import "../../styles/blog.css"
 import Image from "next/image";
-import Pic from '../../assets/img/blog1.jpg'
+// import Pic from '../../assets/img/blog1.jpg'
 
 
 interface MediaDetails {
@@ -126,7 +126,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
             post?._embedded?.["wp:featuredmedia"]?.[0]?.media_details?.sizes?.full?.source_url || 
             post?._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
 
-             console.log("image", featuredImage)
+            //  console.log("image", featuredImage)
           
   const categories =
     _embedded?.["wp:term"]?.[0]?.map((term: any) => term.name).join(", ") ||
