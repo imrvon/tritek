@@ -37,7 +37,7 @@ export default function EventDetails({ params }: { params: { slug: string } }) {
           // If acf.image is an ID, fetch its URL
           if (matchingEvent.acf?.image) {
             fetchImageURL(matchingEvent?.acf?.image);
-            console.log("if fetch");
+            // console.log("if fetch");
           }
         }
       } catch (error) {
@@ -49,22 +49,28 @@ export default function EventDetails({ params }: { params: { slug: string } }) {
     }
 
     async function fetchImageURL(imageID: number) {
-      console.log("fetching image...")
       try {
         const response = await fetch(
           `https://dev-tritek.pantheonsite.io/wp-json/wp/v2/media/${imageID}`
         );
-
+    
         if (!response.ok) {
           throw new Error("Failed to fetch image URL");
         }
-
+    
         const imageData = await response.json();
-        console.log("imageData", imageData)
-        setImageURL(imageData.source_url);
+    
+        // Get the 'full' size image URL if available
+        const fullImage = imageData.media_details?.sizes?.full?.source_url;
+        const imageUrl = fullImage || imageData.source_url;
+        setImageURL(imageUrl)
+        // console.log("fullImage", fullImage)
+    
+        // Fallback to the default source_url if 'full' size isn't available
+        return fullImage || imageData.source_url;
       } catch (error) {
         console.error("Failed to fetch image URL:", error);
-        setImageURL(null); // Fallback if image cannot be fetched
+        return null; // Fallback if image cannot be fetched
       }
     }
 
@@ -99,9 +105,9 @@ export default function EventDetails({ params }: { params: { slug: string } }) {
   const endDate = acf?.end_date || "End Date Not Available";
   const time = acf?.time || "Time Not Specified";
   const location = acf?.location || "Location Not Specified";
-  const featuredImage = imageURL || _embedded?.["wp:featuredmedia"]?.[0]?.source_url;
+  const featuredImage = imageURL || _embedded?.["wp:featuredmedia"]?.[0]?.media_details?.sizes?.full?.source_url;
 
-  console.log("eventdetails", event)
+  // console.log("eventdetails", event)
 
   function convertTo12HourFormat(time: string) {
     const [hours, minutes] = time.split(":");
