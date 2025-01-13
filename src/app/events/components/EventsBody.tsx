@@ -57,18 +57,24 @@ export default function EventsBody() {
         const response = await fetch(
           `https://dev-tritek.pantheonsite.io/wp-json/wp/v2/media/${imageID}`
         );
-
+    
         if (!response.ok) {
           throw new Error("Failed to fetch image URL");
         }
-
+    
         const imageData = await response.json();
-        return imageData.source_url; // Return the image URL
+    
+        // Get the 'full' size image URL if available
+        const fullImage = imageData.media_details?.sizes?.full?.source_url;
+    
+        // Fallback to the default source_url if 'full' size isn't available
+        return fullImage || imageData.source_url;
       } catch (error) {
         console.error("Failed to fetch image URL:", error);
         return null; // Fallback if image cannot be fetched
       }
     }
+    
 
     fetchEvents();
   }, [timestamp]);
@@ -132,7 +138,7 @@ export default function EventsBody() {
         const time = acf?.time || "Time Not Specified";
         const location = acf?.location || "Location Not Specified";
         const featuredImage =
-          imageURLs[id] || _embedded?.["wp:featuredmedia"]?.[0]?.source_url;
+          imageURLs[id] || _embedded?.["wp:featuredmedia"]?.[0]?.media_details?.sizes?.full?.source_url;
 
         return (
           <Link
@@ -147,8 +153,8 @@ export default function EventsBody() {
                   src={featuredImage}
                   alt={eventTitle}
                   className="w-full h-full object-cover absolute  transition-transform transform duration-700 group-hover:scale-[107.5%]"
-                  width={100}
-                  height={100}
+                  width={800}
+                  height={600}
                 />
               )}
             </div>
