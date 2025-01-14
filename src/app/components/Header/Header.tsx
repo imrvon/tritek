@@ -30,17 +30,30 @@ export default function Header() {
     setMenuOpen(false);
   }, [pathname]);
 
+  const isBlogPost = pathname.startsWith('/blog/') && pathname !== '/blog';
+
+  const textColor = isBlogPost
+    ? 'text-white lg:text-black' // White by default, black on large screens for blog posts
+    : 'text-white'; // Always white for non-blog routes
+
+  const linkClass = (defaultClass: string) => 
+    `${defaultClass} ${isBlogPost ? 'text-black' : 'text-white'}`;
+
   return (
     <header className={navbar ? "font-paragraph flex justify-between items-center px-[5%] py-[1.5%] fixed top-0 left-0 w-full z-50 bg-[#000000a6]" : "font-paragraph flex justify-between items-center px-[5%] py-[1.5%] fixed top-0 left-0 w-full z-50"}>
         <div className={menuOpen ? "fixed top-0 left-0 w-full text-3xl text-white flex justify-end lg:hidden bg-[#191919] py-4 pr-4" : "hidden"}>
             <PiX onClick={()=> setMenuOpen(!menuOpen)} />
         </div>
         <div className="flex items-center gap-[5%] w-8/12">
-            <div className="text-3xl text-white mr-4 lg:hidden" onClick={()=> setMenuOpen(!menuOpen)}>
+            <div className={`${isBlogPost ? 'text-black' : 'text-white'} text-3xl mr-4 lg:hidden`} onClick={()=> setMenuOpen(!menuOpen)}>
                 <PiList />
             </div>
-            <Link href='/' className="w-1/2 lg:w-1/6"><Image src='/assets/img/logo-white.png' width={2710} height={1003} alt="logo" /></Link>
-            <nav className={menuOpen ? "flex p-[5%] justify-center items-center lg:items-start lg:justify-start lg:p-0 flex-col lg:flex-row fixed top-0 left-0 w-[80%] min-h-screen lg:min-h-[unset] lg:static lg:gap-8 text-white text-[15px] lg:w-5/6 bg-[#191919] lg:bg-transparent -translate-x-0 lg:-translate-x-0 duration-200 ease-in-out transition-transform" : "flex p-[5%] justify-center items-center lg:items-start lg:justify-start lg:p-0 flex-col lg:flex-row fixed top-0 left-0 w-[80%] min-h-screen lg:min-h-[unset] lg:static lg:gap-8 text-white text-[15px] lg:w-5/6 bg-[#191919] lg:bg-transparent -translate-x-full lg:-translate-x-0 duration-200 ease-in-out transition-transform"}>
+            <Link href='/' className={`${isBlogPost ? 'invert' : ''} w-1/2 lg:w-1/6`}><Image src='/assets/img/logo-white.png' width={2710} height={1003} alt="logo" /></Link>
+            <nav className={`${
+                menuOpen
+                ? 'flex p-[5%] justify-center items-center lg:items-start lg:justify-start lg:p-0 flex-col lg:flex-row fixed top-0 left-0 w-[80%] min-h-screen lg:min-h-[unset] lg:static lg:gap-8 lg:w-5/6 bg-[#191919] lg:bg-transparent -translate-x-0 lg:-translate-x-0 duration-200 ease-in-out transition-transform'
+                : 'flex p-[5%] justify-center items-center lg:items-start lg:justify-start lg:p-0 flex-col lg:flex-row fixed top-0 left-0 w-[80%] min-h-screen lg:min-h-[unset] lg:static lg:gap-8 lg:w-5/6 bg-[#191919] lg:bg-transparent -translate-x-full lg:-translate-x-0 duration-200 ease-in-out transition-transform'
+            } ${textColor}`}>
                 <Link href='/' className="w-1/2 mb-[5%] lg:hidden"><Image src='/assets/img/logo-white.png' width={2710} height={1003} alt="logo" /></Link>
                 <Link href='/about' className="tracking-wide uppercase lg:capitalize border-b-solid border-b-[1px] border-b-[rgba(255,255,255,.2)] lg:border-b-transparent w-full text-center p-4 lg:p-0 lg:text-left lg:w-auto">About</Link>
                 <Link href='/services' className="tracking-wide uppercase lg:capitalize border-b-solid border-b-[1px] border-b-[rgba(255,255,255,.2)] lg:border-b-transparent w-full text-center p-4 lg:p-0 lg:text-left lg:w-auto">Services</Link>
