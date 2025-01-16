@@ -166,6 +166,9 @@ body {
 .tritek_faq.resources details > summary::after {
     right: 5%;
 }
+.tritek_faq.event details > summary::after {
+    right: 2%;
+}
 
 .tritek_faq details[open] > summary::after {
     content: url('/assets/img/minus.png');
@@ -205,3 +208,8 @@ body {
     transition: max-height 700ms ease-in-out;
   }
 
+  button.atcb-button.atcb-single {
+    padding: 20px !important;
+    border: 1px solid var(--secondary) !important;
+    box-shadow: none !important;
+  }

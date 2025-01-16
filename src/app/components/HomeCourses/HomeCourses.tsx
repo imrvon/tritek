@@ -6,7 +6,7 @@ import { PiCaretCircleRight, PiCheckCircle } from "react-icons/pi"
 
 export default function HomeCourses() {
   return (
-    <section className="flex flex-col lg:flex-row justify-between px-[5%] pt-[7%] pb-[5%] bg-grey">
+    <section className="flex flex-col lg:flex-row justify-between px-[5%] pt-[7%] pb-[50%] sm:pb-[35%] md:pb-[40%] lg:pb-[30%] bg-grey">
         <div className="flex flex-wrap w-full sm:lg:w-[48%] justify-between">
             {HomeCoursesData.map((data) => (
                 <div className="w-full sm:w-[47%] mb-[5%] rounded-md overflow-clip shadow-sm group flex flex-col" key={data.id}>

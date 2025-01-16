@@ -1,13 +1,10 @@
-import Hero from "./components/Hero";
-import EventsBody from "./components/EventsBody";
-
+import Events from "./components/Events";
 
 export default function page() {
     
   return (
     <div>
-        <Hero />
-      <EventsBody />
+        <Events />
     </div>
   )
 }
