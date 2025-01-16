@@ -51,12 +51,12 @@ export default function Events() {
                                 >Register Now</Link>
                             <div className='w-1/2'>
                                 <AddToCalendarButton
-                                    name="Title"
+                                    name="Elite Tech Day in Business Analysis & Project Management"
                                     options={['Google']}
                                     location="World Wide Web"
-                                    startDate="2025-01-19"
-                                    endDate="2025-01-19"
-                                    startTime="10:15"
+                                    startDate="2025-01-16"
+                                    endDate="2025-01-25"
+                                    startTime="08:15"
                                     endTime="23:30"
                                     timeZone="America/Los_Angeles"
                                     ></AddToCalendarButton>
@@ -98,12 +98,12 @@ export default function Events() {
                                 >Register Now</Link>
                             <div className='w-1/2'>
                                 <AddToCalendarButton
-                                    name="Title"
+                                    name="Digital Conference"
                                     options={['Google']}
                                     location="World Wide Web"
-                                    startDate="2025-01-19"
-                                    endDate="2025-01-19"
-                                    startTime="10:15"
+                                    startDate="2025-01-15"
+                                    endDate="2025-01-15"
+                                    startTime="08:15"
                                     endTime="23:30"
                                     timeZone="America/Los_Angeles"
                                     ></AddToCalendarButton>
@@ -144,12 +144,12 @@ export default function Events() {
                                 >Register Now</Link>
                             <div className='w-1/2'>
                                 <AddToCalendarButton
-                                    name="Title"
+                                    name="Tech n Brunch"
                                     options={['Google']}
                                     location="World Wide Web"
-                                    startDate="2025-01-19"
-                                    endDate="2025-01-19"
-                                    startTime="10:15"
+                                    startDate="2025-03-29"
+                                    endDate="2025-03-29"
+                                    startTime="08:15"
                                     endTime="23:30"
                                     timeZone="America/Los_Angeles"
                                     ></AddToCalendarButton>
