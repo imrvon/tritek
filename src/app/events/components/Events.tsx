@@ -23,7 +23,7 @@ export default function Events() {
                 <article className="lg:w-1/2 p-[5%]">
                     <h2 className="font-heading text-lg tracking-wider font-medium text-white mb-[5%] uppercase bg-black w-fit p-2">FREE EVENT</h2>
                     <h3 className="font-heading text-3xl sm:text-4xl md:text-5xl text-head-primary">Elite Tech Day in Business Analysis & Project Management</h3>
-                    <p className="font-paragraph mt-[3.5%] text-lg">Join our exclusive Tech Day, held twice monthly, to explore how to transition into Business Analysis & Project Management; enjoy hands-on sessions with our CEO and Expert Trainers. Whether you'&apos;re new to tech or looking to upskill, this is your gateway to transforming your career.
+                    <p className="font-paragraph mt-[3.5%] text-lg">Join our exclusive Tech Day, held twice monthly, to explore how to transition into Business Analysis & Project Management; enjoy hands-on sessions with our CEO and Expert Trainers. Whether you&apos;re new to tech or looking to upskill, this is your gateway to transforming your career.
                     </p>
                     <div>
                         <h3 className="font-heading text-lg my-4 text-head-primary uppercase">FAQs</h3>
