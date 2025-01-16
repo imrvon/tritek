@@ -70,7 +70,7 @@ export default function HomeEvents() {
             </div>
             
             <div className='flex justify-center mt-[3.5%] items-center gap-4 text-white font-paragraph pb-5 sm:pb-0'>
-                <Link href='#' className="inline-block rounded-[50px] py-[21px] px-[28px] shadow-[0_0_0_4em_#6a008e_inset] hover:-translate-y-[3px] ease-in-out transition-transform duration-300">See All Events</Link>
+                <Link href='/events' className="inline-block rounded-[50px] py-[21px] px-[28px] shadow-[0_0_0_4em_#6a008e_inset] hover:-translate-y-[3px] ease-in-out transition-transform duration-300">See All Events</Link>
             </div>
         </div>
     </section>

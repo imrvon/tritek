@@ -46,7 +46,7 @@ export default function Events() {
                             }
                         </div>
                         <div className='flex mt-[5%] justify-stretch items-stretch gap-[5%]'>
-                            <Link href=''
+                            <Link href='#events-form'
                                 className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 font-paragraph w-1/2 text-center"
                                 >Register Now</Link>
                             <div className='w-1/2'>
@@ -93,7 +93,7 @@ export default function Events() {
                             }
                         </div>
                         <div className='flex mt-[5%] justify-stretch items-stretch gap-[5%]'>
-                            <Link href=''
+                            <Link href='#events-form'
                                 className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 font-paragraph w-1/2 text-center"
                                 >Register Now</Link>
                             <div className='w-1/2'>
@@ -139,7 +139,7 @@ export default function Events() {
                             }
                         </div>
                         <div className='flex mt-[5%] justify-stretch items-stretch gap-[5%]'>
-                            <Link href=''
+                            <Link href='#events-form'
                                 className="p-5 bg-secondary text-white inline-block hover:-translate-y-[3px] ease-in-out transition-transform duration-300 font-paragraph w-1/2 text-center"
                                 >Register Now</Link>
                             <div className='w-1/2'>
@@ -159,7 +159,7 @@ export default function Events() {
                 </article>
                 <div className='hidden lg:block lg:w-1/2 bg-[url(/assets/img/events/single_event3.webp)] bg-no-repeat bg-cover'></div>
             </div>
-            <div>
+            <div id='events-form'>
                 <EventsForm />
             </div>
         </div>
