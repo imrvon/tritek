@@ -208,7 +208,16 @@ body {
     transition: max-height 700ms ease-in-out;
   }
 
-  button.atcb-button.atcb-single {
+  .add-to-calendar.atcb-light {
+    display: block;
+    width: 100%;
+  }
+
+  div.atcb-initialized {
+    width: 100% !important;
+  }
+
+  .atcb-button.atcb-single {
     padding: 20px !important;
     border: 1px solid var(--secondary) !important;
     box-shadow: none !important;

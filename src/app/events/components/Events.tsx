@@ -59,6 +59,10 @@ export default function Events() {
                                     startTime="08:15"
                                     endTime="23:30"
                                     timeZone="America/Los_Angeles"
+                                    recurrence="weekly"
+                                    recurrence_interval="1"
+                                    recurrence_count="6"
+                                    recurrence_byDay="SA"
                                     ></AddToCalendarButton>
                             </div>
                         </div>
