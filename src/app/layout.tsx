@@ -30,8 +30,8 @@ const heading = localFont({
   })
 
 export const metadata = {
-  title: "Tritek Consulting",
-  description: "Consulting.",
+  title: "Tritek Academy",
+  description: "Learning tech skills to push your career forward.",
 };
 
 export default function RootLayout({
