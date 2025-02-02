@@ -1,11 +1,11 @@
-import React from 'react'
-import Careers from './components/Careers/Careers'
-import Header from '../components/Header/Header'
+import CareersBody from "./components/CareersBody";
+import Hero from "./components/Hero";
 
 export default function page() {
   return (
     <div>
-        <Careers />
+      <Hero />
+      <CareersBody />
     </div>
-  )
+  );
 }
