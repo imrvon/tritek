@@ -45,7 +45,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       try {
         // Fetch posts from the API
         const response = await fetch(
-          `https://dev-tritek.pantheonsite.io/wp-json/wp/v2/posts?_embed&_=${timestamp}`
+          `https://dev-wordpress-ninjas.pantheonsite.io/wp-json/wp/v2/posts?_embed&_=${timestamp}`
         );
         const posts = await response.json();
 

@@ -18,7 +18,7 @@ function PostsBody() {
     async function fetchPosts() {
       try {
         const response = await fetch(
-          `https://dev-tritek.pantheonsite.io/wp-json/wp/v2/posts?_embed=true&_=${timestamp}`
+          `https://dev-wordpress-ninjas.pantheonsite.io/wp-json/wp/v2/posts?_embed=true&_=${timestamp}`
         );
         const data = await response.json();
 
@@ -66,7 +66,7 @@ function PostsBody() {
     );
   }
 
-  // console.log("Posts", postsNew)
+  console.log("Posts", postsNew)
 
   // Extract categories
   const categories = [
